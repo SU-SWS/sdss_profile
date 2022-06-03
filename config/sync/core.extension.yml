@@ -214,12 +214,13 @@ module:
   externalauth: 10
   menu_link_weight: 10
   stanford_profile_helper: 10
+  sdss_profile_helper: 10
   paragraphs: 11
-  stanford_profile: 1000
+  sdss_profile: 1000
 theme:
   stable: 0
   seven: 0
   stanford_basic: 0
   stable9: 0
   minimally_branded_subtheme: 0
-profile: stanford_profile
+profile: sdss_profile
