@@ -1,6 +1,6 @@
 {
-    "name": "su-sws/stanford_profile",
-    "description": "Installation Profile for the Stanford Webservice's Jumpstart Product.",
+    "name": "su-sws/sdss_profile",
+    "description": "Installation Profile for the Stanford Doerr School of Sustainability.",
     "type": "drupal-custom-profile",
     "license": "GPL-2.0-or-later",
     "minimum-stability": "dev",
