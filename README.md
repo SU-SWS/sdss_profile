@@ -2,7 +2,7 @@
 ##### 1.x
 [![CircleCI](https://circleci.com/gh/SU-SWS/sdss_profile.svg?style=svg)](https://circleci.com/gh/SU-SWS/sdss_profile)
 
-Maintainers: [Mike Decker](https://github.com/pookmish), [joegl](https://github.com/joegl)
+Maintainers: [Mike Decker](https://github.com/pookmish), [sherakama](https://github.com/sherakama), [joegl](https://github.com/joegl)
 
 Changelog: [Changelog.md](CHANGELOG.md)
 
