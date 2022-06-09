@@ -211,11 +211,11 @@ module:
   menu_link_content: 1
   pathauto: 1
   xmlsitemap: 1
+  sdss_profile_helper: 9
   config_pages_overrides: 10
   externalauth: 10
   menu_link_weight: 10
   stanford_profile_helper: 10
-  sdss_profile_helper: 10
   paragraphs: 11
   sdss_profile: 1000
 theme:
