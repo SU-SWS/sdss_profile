@@ -1,0 +1,76 @@
+# Example react_behaviors plugin definitions.
+# Plugin property $defaults are defined in ReactBehaviorsPluginManager.
+card_variant_info:  # part of the key after the :
+  id: card_type
+  label: 'Card Paragraphs Type'
+  bundles:
+    - paragraphs_type|stanford_card
+  config:
+    card_style:
+      type: select
+      title: 'Card Style'
+      description: Select the card style.
+#      default_value: sdss-card-wrapper--regular
+      options:
+        sdss-card-wrapper--stat: Stat
+        sdss-card-wrapper--regular: Regular
+    card_button_style:
+      type: select
+      title: 'Card Button Style'
+      description: Select the button color for displaying this card.
+#      default_value: su-card-wrapper--border-regular
+      options:
+        sdss-wrapper--button-green: Primary
+        sdss-wrapper--secondary-button: Secondary
+    card_border_style:
+      type: select
+      title: 'Card Border Style'
+      description: Select the border style for displaying this card.
+#      default_value: su-card-wrapper--border-regular
+      options:
+        sdss-card-wrapper--border-none: Minimal (no border)
+        sdss-card-wrapper--border-regular: Border and Drop Shadow
+banner_variant_info:  # part of the key after the :
+  id: banner_type
+  label: 'Banner Paragraphs Type'
+  bundles:
+    - paragraphs_type|stanford_banner
+  config:
+    banner_button_style:
+      type: select
+      title: 'Banner Button Style'
+      description: Select the button color for displaying this banner.
+#      default_value: su-card-wrapper--border-regular
+      options:
+        sdss-wrapper--button-blue: Blue
+        sdss-wrapper--button-green: Green
+        sdss-wrapper--button-red: Stanford Red
+    # card_list_style:
+    #   type: select
+    #   title: 'Card List Style'
+    #   description: 'Select the style for list format. First paragraph tag will appear regular and all following paragraphs will be styled as a list.'
+    #   options:
+    #     su-card-wrapper--no-style: No List Style
+    #     su-card-wrapper--simple-list: Simple List
+    #     su-card-wrapper--bordered-list: Bordered List
+    # horizontal_card_image_style:
+    #   type: select
+    #   title: 'Horizontal Card: Image Style'
+    #   description: If this is a horizontal card, Select the image style for this card.
+    #   options:
+    #     su-horizontal-card-wrapper--small-circle: Small Circle (220px)
+    #     su-horizontal-card-wrapper--large-rectangle: Large Rectangle (2:1 ratio)
+    # horizontal_card_image_position:
+    #   type: select
+    #   title: 'Horizontal Card: Image Position'
+    #   description: If this is a horizontal card, Select the image style for this card. (Currently only used for Large Rectangle Image Style.)
+    #   options:
+    #     su-horizontal-card-wrapper--image-left: Image on Left
+    #     su-horizontal-card-wrapper--image-right: Image on Right
+#card_style:
+#  id: card_style
+#  label: 'Card Paragraph Style'
+#  bundles:
+#    - paragraphs_type|stanford_card
+#  config:
+

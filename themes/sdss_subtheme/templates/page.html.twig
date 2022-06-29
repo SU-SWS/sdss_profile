@@ -1,0 +1,30 @@
+{#
+/**
+ * Page.html.twig from stanford_basic.
+ */
+#}
+{%- extends "@stanford_basic/page.html.twig" -%}
+
+{# Change the brand bar. #}
+{%- set brand_bar_variant = "su-brand-bar--dark" -%}
+
+{# Masthead Section. #}
+{%- block block_header -%}
+  {%- if page.header or page.search or page.menu -%}
+    <header class="su-masthead su-masthead--right">
+      <section>
+        {{ page.header }}
+        {{ page.search }}
+        {{ page.menu }}
+      </section>
+    </header>
+  {%- endif -%}
+{%- endblock -%}
+
+{# Override the footer #}
+{# {% block block_footer %}
+  <footer id="footer">
+    {%- include "@newschool_subtheme/components/fat-footer/fat-footer.html.twig" -%}
+    {%- include "@basic-dist/decanter/components/global-footer/global-footer.twig" with {modifier_class : "su-global-footer--dark"} -%}
+  </footer>
+{% endblock %} #}

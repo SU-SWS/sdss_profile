@@ -89,14 +89,14 @@
 allpages:
   version: VERSION
   css:
-    base:
-      dist/css/base.css: { weight: 100 }
-    layout:
-      dist/css/layout.css: {}
-    component:
-      dist/css/components.css: {}
-    state:
-      dist/css/state.css: {}
-    theme:
-      dist/css/theme.css: {}
-      dist/css/print.css: { media: print }
+   theme:
+     dist/css/sdss_subtheme.css: {minified: true }
+  js:
+    dist/js/scripts.js: { scope: footer }
+
+#fonts:
+#  css:
+#    theme:
+#      '//fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap': { type: external, minified: true }
+#      # Source Sans Light Font
+

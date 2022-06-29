@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+
+.su-button,
+.su-button.su-link,
+a.su-link--external.su-button {
+  @include sdss-button--primary;
+
+}
+
+.su-button--secondary,
+a.su-link--external.su-button--secondary {
+  @include sdss-button--secondary;
+
+}
+
+.su-button--secondary-neg,
+a.su-link--external.su-button--secondary-neg {
+  @include sdss-button--secondary-neg;
+
+}
+
+.su-button--big,
+.su-button--big.su-link,
+a.su-link--external.su-button--big {
+  @include sdss-button--big;
+
+}
+
+.sdss-wrapper--secondary-button {
+  .su-card__button {
+    .su-button {
+      @include sdss-button--secondary;
+
+    }
+  }
+}
+
+.sdss-wrapper--button-green {
+  .su-card__button {
+    .su-button {
+      @include sdss-button--primary;
+
+    }
+  }
+}
+
+.sdss-wrapper--button-red {
+  .su-card__button {
+    .su-button {
+      @include sdss-button-su-red--primary;
+
+    }
+  }
+}
+
