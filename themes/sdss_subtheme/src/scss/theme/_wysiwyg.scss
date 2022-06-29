@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+// Reusing the intro text class for the Display
+.su-wysiwyg-text {
+  p {
+    // Intro = Display
+    &.su-intro-text {
+      @include sdss-display;
+    }
+
+    // Splash = Block Quote Big
+    &.su-font-splash {
+      @include sdss-block-quote--big;
+    }
+
+    // Quote Text = Block Quote Medium
+    &.su-quote-text {
+      @include sdss-block-quote--med;
+    }
+
+    // Callout text = Block Quote Small
+    &.su-callout-text {
+      @include sdss-block-quote--sm;
+    }
+  }
+}

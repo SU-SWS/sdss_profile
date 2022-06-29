@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+// Row Background Colors
+// su-row-bgcolor--green|Green
+// su-row-bgcolor--blue|Blue
+// su-row-bgcolor--transparent|Transparent
+// su-row-bgcolor--white|White
+
+// Hide the row with the label.
+.node-stanford-page-row {
+  &.su-para-row-bgcolor {
+    display: none;
+  }
+}
+
+.su-row-bgcolor--green {
+  background-color: $sdss-color-palo-alto-dark;
+  color: $su-color-white;
+}
+
+.su-row-bgcolor--blue {
+  background-color: $sdss-color-blue-light;
+}
