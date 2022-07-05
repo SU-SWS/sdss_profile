@@ -61,7 +61,7 @@ footer {
   }
 
   &:hover {
-    color: sdss-color-blue-hover;
+    color: $sdss-color-blue-hover;
   }
 
   &:focus {
@@ -98,10 +98,10 @@ footer {
   }
 }
 
-.su-local-footer__action-links {
-  a {
-    &:after {
-      background-color: $sdss-color-palo-alto-dark;
-    }
-  }
-}
+// .su-local-footer__action-links {
+//   a {
+//     &:after {
+//       background-color: $sdss-color-palo-alto-dark;
+//     }
+//   }
+// }
