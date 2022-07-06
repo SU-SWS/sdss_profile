@@ -2,12 +2,18 @@
 
 {# Removing the weblogin in the footer. Better way to do this? #}
 {%- set weblogin_url = "" -%}
+{%- set content_cell_1 = cell1 -%}
+{%- set cell1 = "" -%}
+
 
 {% block contentcell1 %}
   <div class="sdss-footer--stay-connected">
     <h5>Stay connected</h5>
     <p>Stanford Doerr School of Sustainability</p>
-    <span><a href='' class='sdss-link--contact-us'>Contact Us</a></span>
+    {# Variable for the First Content block  #}
+    {# Content will be the contact or the person #}
+    {{ content_cell_1 }}
+
   </div>
 
   {#
