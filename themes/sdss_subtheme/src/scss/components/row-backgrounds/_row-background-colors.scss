@@ -16,8 +16,50 @@
 .su-row-bgcolor--green {
   background-color: $sdss-color-palo-alto-dark;
   color: $su-color-white;
+
+  a,
+  a.su-link {
+    color: $sdss-color-blue-bright;
+    outline-color: $sdss-color-blue-bright;
+    text-decoration: underline;
+
+    &::after {
+      background-color: $sdss-color-blue-bright;
+    }
+
+    &.mailto {
+      svg {
+        fill: $sdss-color-blue-bright;
+      }
+    }
+
+    &:hover,
+    &:active {
+      color: $sdss-color-white;
+
+      &::after {
+        background-color: $sdss-color-white;
+      }
+    }
+
+    &:focus {
+      color: $sdss-color-white;
+      border: 1px solid $sdss-color-white;
+      background-color: transparent;
+      padding: 0 6px 1px;
+    }
+
+  }
+
+  .su-link--action {
+    &::after {
+      background-color: $sdss-color-blue-bright;
+    }
+  }
 }
 
 .su-row-bgcolor--blue {
   background-color: $sdss-color-blue-light;
 }
+
+

@@ -8,7 +8,7 @@ a {
 }
 
 // Moving the focus out to keep out of main navigation
-#block-sdss-subtheme-content,
+.block-sdss-subtheme-content,
 footer {
   .su-link,
   a {
@@ -20,16 +20,24 @@ footer {
       background-color: transparent;
       padding: 0 3px 1px;
     }
+
     &.su-button {
       &:focus {
         padding: 1.6rem 2.4rem;
       }
     }
+
     &.su-link--action {
 
       &:focus {
         border-radius: 30px;
         padding: 0 6px 1px;
+      }
+    }
+
+    &.mailto {
+      svg {
+        fill: $sdss-color-palo-alto-dark;
       }
     }
   }
