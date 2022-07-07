@@ -12,14 +12,11 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: su-row-bgcolor--green
-      label: Green
-    -
       value: su-row-bgcolor--blue
       label: Blue
     -
-      value: su-row-bgcolor--transparent
-      label: Transparent
+      value: su-row-bgcolor--green
+      label: Green
     -
       value: su-row-bgcolor--white
       label: White
