@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.su-banner-wrapper--default {
+  .su-hero {
+    justify-content: flex-end;
+
+    .su-hero__card {
+      background: transparent;
+      border: 0;
+      bottom: 48px;
+      box-shadow: none;
+      left: 48px;
+      margin-top: unset;
+      margin-bottom: 0;
+      max-width: 80%;
+      top: auto;
+
+      .su-card__contents {
+        h2 {
+          display: inline-block;
+        }
+        .su-card__button {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+}
