@@ -13,6 +13,11 @@
   }
 }
 
+.su-row-bgcolor--white {
+  background-color: $sdss-color-white;
+  color: $su-color-palo-alto-dark;
+}
+
 .su-row-bgcolor--green {
   background-color: $sdss-color-palo-alto-dark;
   color: $su-color-white;

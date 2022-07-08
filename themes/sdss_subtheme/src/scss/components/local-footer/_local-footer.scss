@@ -17,6 +17,30 @@ nav[aria-label^='footer'] {
   background-color: $sdss-color-palo-alto-dark;
   color: $sdss-color-white;
 
+  // Setting the 4th grid col to 0px
+  .su-local-footer__columns {
+    grid-template-columns: 1.5fr 1fr 1fr 0px;
+
+    .su-local-footer__cell3 {
+      display: none;
+    }
+  }
+
+  @include grid-media-min('lg') {
+    .su-local-footer__header {
+      @include responsive-spacing('padding-top', 5);
+    }
+
+    .su-local-footer__columns {
+      @include responsive-spacing('padding-top', 4);
+      @include responsive-spacing('padding-bottom', 4);
+     }
+
+    .su-local-footer__action-links {
+      @include responsive-spacing('padding-bottom', 2);
+    }
+  }
+
   // Lockup
   span.su-lockup__wordmark {
     color: $sdss-color-white;
@@ -29,13 +53,17 @@ nav[aria-label^='footer'] {
   // Contact us
   .sdss-footer--stay-connected {
     @include responsive-spacing('margin-bottom', 0);
+
+    p {
+      padding-bottom: 5px;
+    }
   }
 
   // Address
   .su-local-footer__address {
     @include type_e;
 
-    padding-bottom: 0;
+    padding-bottom: 5px;
 
     .organization {
       @include sdss-h5;
@@ -109,5 +137,10 @@ nav[aria-label^='footer'] {
     @include sdss-h5;
 
     font-weight: $su-font-bold;
+  }
+
+  //Local footer contact button.address
+  a.su-link--external.su-button--secondary {
+    @include sdss-button--secondary-neg;
   }
 }
