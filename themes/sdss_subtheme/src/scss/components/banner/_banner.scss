@@ -17,8 +17,11 @@
 
       .su-card__contents {
         h2 {
+          color: $sdss-color-white;
           display: inline-block;
+          margin-right: 40px;
         }
+
         .su-card__button {
           display: inline-block;
         }
