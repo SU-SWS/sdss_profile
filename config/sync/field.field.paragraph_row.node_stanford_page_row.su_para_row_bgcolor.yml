@@ -11,8 +11,8 @@ id: paragraph_row.node_stanford_page_row.su_para_row_bgcolor
 field_name: su_para_row_bgcolor
 entity_type: paragraph_row
 bundle: node_stanford_page_row
-label: para_row_bgcolor
-description: 'Please select a background color for the row. The default is white. '
+label: 'Row Background Color'
+description: 'Please select a background color for the row. The default is white.'
 required: false
 translatable: false
 default_value:
