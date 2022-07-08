@@ -23,7 +23,7 @@
   color: $su-color-white;
 
   a,
-  a.su-link {
+  .su-link {
     color: $sdss-color-blue-bright;
     outline-color: $sdss-color-blue-bright;
     text-decoration: underline;
@@ -31,6 +31,11 @@
     &::after {
       background-color: $sdss-color-blue-bright;
     }
+
+    &.su-button {
+      color: $sdss-color-palo-alto-dark;
+    }
+
 
     &.mailto {
       svg {
