@@ -19,25 +19,32 @@
 
   &.sdss-wrapper--button-green {
     .su-card {
+      @include responsive-spacing('padding-top', 2);
+
       box-shadow: none;
       border: none;
       color: $su-color-white;
       background-color: $sdss-color-palo-alto-dark;
 
-      .su-card__contents {
 
-        span {
-          @include sdss-display;
-        }
-
-        >h2 {
-          @include sdss-h3;
-        }
-
-        p {
-          @include type-d;
-        }
+      section.su-card__contents {
+        padding-bottom: 0;
+        padding-top: 0;
       }
+
+      .su-card__superheadline {
+        @include sdss-display;
+      }
+
+      >.su-card__headline {
+        @include sdss-h3;
+        @include responsive-spacing('padding', null 2);
+      }
+
+      p {
+        @include type-d;
+      }
+
     }
   }
 }
