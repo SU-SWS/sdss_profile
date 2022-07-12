@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
-.su-banner-wrapper--default {
+.sdss-banner-wrapper--headline-center {
+  .su-hero__card {
+    margin: 0 auto;
+  }
+}
+
+.sdss-banner-wrapper--default {
   //Gradiant on banner image.
   z-index: 1;
 
@@ -23,10 +29,10 @@
       border: 0;
       bottom: 48px;
       box-shadow: none;
-      left: 48px;
+      // left: 48px;
       margin-top: unset;
       margin-bottom: 0;
-      max-width: 80%;
+      max-width: 94%;
       top: auto;
 
       .su-card__contents {
@@ -47,4 +53,40 @@
     }
   }
 
+// Mobile style
+  @include grid-media-max('md') {
+    .su-hero {
+      &.overlay-left {
+        display: block;
+      }
+
+      .su-hero__card {
+        .su-card__contents {
+          display: block;
+          position: relative;
+          margin-top: 50px;
+          gap: 10px;
+          flex-wrap: wrap;
+
+          h2 {
+            color: $sdss-color-palo-alto-dark;
+          }
+        }
+      }
+
+      // needs to be deep nested due to inheritance.
+      .su-hero__card {
+        .su-card__contents {
+
+        }
+      }
+
+      .su-hero__media {
+        background: none;
+        position: relative;
+      }
+    }
+
+
+  }
 }

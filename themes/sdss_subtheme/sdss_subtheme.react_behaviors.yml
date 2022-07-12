@@ -47,10 +47,17 @@ banner_variant_info:  # part of the key after the :
     banner_list_style:
       type: select
       title: 'Banner Style'
-      description: 'Select the style for list format. First paragraph tag will appear regular and all following paragraphs will be styled as a list.'
+      description: 'Select the banner style.'
       options:
-        su-banner-wrapper--default: Default
-        su-banner-wrapper--style-four: Style Four
+        sdss-banner-wrapper--default: Default
+        sdss-banner-wrapper--style-four: Style Four
+    banner_list_headline:
+      type: select
+      title: 'Banner Headline Alignment'
+      description: 'Center the alignment for the headline. Choose the Text Alignment to shift all the text left or right'
+      options:
+        sdss-banner-wrapper--headline-default: Default
+        sdss-banner-wrapper--headline-center: Center
     # horizontal_card_image_style:
     #   type: select
     #   title: 'Horizontal Card: Image Style'
