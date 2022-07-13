@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+// People all page
+.stanford-people-grid,
+.people-terms {
+  .views-field-title {
+    a {
+      @include sdss-h4;
+
+      color: $sdss-color-green-link;
+      font-weight: $su-font-regular;
+    }
+  }
+
+  .views-field-su-person-short-title {
+    color: $sdss-color-grey-dark;
+  }
+}

@@ -37,9 +37,10 @@ banner_variant_info:  # part of the key after the :
       type: select
       title: 'Banner Style'
       description: 'Select the banner style.'
+      # default_value: sdss-banner-wrapper--default
       options:
         sdss-banner-wrapper--default: Default
-        sdss-banner-wrapper--style-four: Style Four
+        #sdss-banner-wrapper--style-four: Style Four -- add this later.
     banner_list_headline:
       type: select
       title: 'Banner Headline Alignment'
