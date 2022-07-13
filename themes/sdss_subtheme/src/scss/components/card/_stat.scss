@@ -7,44 +7,43 @@
     color: $su-color-white;
     background-color: $sdss-color-palo-alto-dark;
   }
+}
 
+.sdss-card-wrapper--stat {
+
+  // white left line for the Stat card only.
   .container-3-items {
     .paragraph-item {
       border-left: 1px solid $su-color-white;
     }
   }
-}
 
-.sdss-card-wrapper--stat {
+  .su-card {
+    @include responsive-spacing('padding-top', 2);
 
-  &.sdss-wrapper--button-green {
-    .su-card {
-      @include responsive-spacing('padding-top', 2);
-
-      box-shadow: none;
-      border: none;
-      color: $su-color-white;
-      background-color: $sdss-color-palo-alto-dark;
+    box-shadow: none;
+    border: none;
+    color: $su-color-white;
+    background-color: $sdss-color-palo-alto-dark;
 
 
-      section.su-card__contents {
-        padding-bottom: 0;
-        padding-top: 0;
-      }
-
-      .su-card__superheadline {
-        @include sdss-display;
-      }
-
-      >.su-card__headline {
-        @include sdss-h3;
-        @include responsive-spacing('padding', null 2);
-      }
-
-      p {
-        @include type-d;
-      }
-
+    section.su-card__contents {
+      padding-bottom: 0;
+      padding-top: 0;
     }
+
+    .su-card__superheadline {
+      @include sdss-display;
+    }
+
+    >.su-card__headline {
+      @include sdss-h3;
+      @include responsive-spacing('padding', null 2);
+    }
+
+    p {
+      @include type-d;
+    }
+
   }
 }

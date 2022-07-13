@@ -30,15 +30,6 @@
   }
 }
 
-// Grey backgound with dropshadow
-.sdss-card-wrapper--border-background {
-  .su-card {
-    background-color: $sdss-color-grey-light;
-    border: 1px solid $sdss-color-grey-light;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
-  }
-}
-
 // All card variants order set up
 .sdss-card-wrapper--topic {
 
@@ -108,11 +99,11 @@
   }
 
   .su-card__headline {
-    order: 1;
+    order: 2;
   }
 
   .image {
-    order: 2;
+    order: 1;
   }
 
   section.su-card__contents {
