@@ -9,14 +9,16 @@
   }
 }
 
-.sdss-card-wrapper--stat {
-
+.su-row-bgcolor--green-stat {
   // white left line for the Stat card only.
   .container-3-items {
     .paragraph-item {
       border-left: 1px solid $su-color-white;
     }
   }
+}
+
+.sdss-card-wrapper--stat {
 
   .su-card {
     @include responsive-spacing('padding-top', 2);
