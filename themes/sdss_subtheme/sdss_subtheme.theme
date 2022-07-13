@@ -52,10 +52,7 @@ function sdss_subtheme_preprocess_card(&$variables) {
   $paragraph = $variables['content']['#paragraph'];
 
   // Add border style class to card wrapper.
-  $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:card_variant_info', 'card_border_style', 'sdss-card-wrapper--border-regular');
-
-  // Add button color style class to card wrapper.
-  $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:card_variant_info', 'card_button_style', 'sdss-wrapper--button-green');
+  $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:card_variant_info', 'card_border_style', 'sdss-card-wrapper--border-none');
 
   // Add card style class to card wrapper.
   $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:card_variant_info', 'card_style', 'sdss-card-wrapper--regular');
