@@ -31,7 +31,7 @@ card_variant_info:  # part of the key after the :
 #      default_value: su-card-wrapper--border-regular
       options:
         sdss-card-wrapper--border-none: Minimal (no border)
-        sdss-card-wrapper--border-regular: Border and Drop Shadow
+        sdss-card-wrapper--border-background: Background and Drop Shadow
 banner_variant_info:  # part of the key after the :
   id: banner_type
   label: 'Banner Paragraphs Type'

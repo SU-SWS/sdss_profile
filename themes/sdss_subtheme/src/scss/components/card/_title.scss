@@ -16,7 +16,18 @@
 }
 
 .sdss-card-wrapper--title {
+  .su-card {
+    .su-card__contents {
+      padding-left: 0;
 
-  &.sdss-wrapper--button-green {
+      p,
+      a {
+        @include big_paragraph;
+      }
+    }
+
+    .su-card__headline {
+      @include sdss-h4;
+    }
   }
 }
