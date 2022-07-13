@@ -16,3 +16,19 @@
     color: $sdss-color-grey-dark;
   }
 }
+
+//People teasers
+.ds-entity--stanford-person {
+  .su-card {
+    a {
+      @include sdss-h4;
+
+      color: $sdss-color-green-link;
+      font-weight: $su-font-regular;
+    }
+
+    .su-person-short-title {
+      color: $sdss-color-grey-dark;
+    }
+  }
+}
