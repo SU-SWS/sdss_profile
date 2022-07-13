@@ -7,6 +7,15 @@
   .su-card {
     .su-card__contents {
       padding-left: 0;
+
+      p,
+      a {
+        @include big_paragraph;
+      }
+    }
+
+    .su-card__headline {
+      @include sdss-h4;
     }
   }
 }
