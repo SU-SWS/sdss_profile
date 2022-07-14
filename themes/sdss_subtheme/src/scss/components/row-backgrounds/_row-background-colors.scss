@@ -3,7 +3,6 @@
 // Row Background Colors
 // su-row-bgcolor--green|Green
 // su-row-bgcolor--blue|Blue
-// su-row-bgcolor--transparent|Transparent
 // su-row-bgcolor--white|White
 
 // Hide the row with the label.
@@ -31,42 +30,12 @@
   }
 
   a,
-  .su-link {
-    color: $sdss-color-blue-bright;
-    outline-color: $sdss-color-blue-bright;
-    text-decoration: underline;
-
-    &::after {
-      background-color: $sdss-color-blue-bright;
-    }
+  a.su-link {
+    @include sdss-link--negative;
 
     &.su-button {
       color: $sdss-color-palo-alto-dark;
     }
-
-
-    &.mailto {
-      svg {
-        fill: $sdss-color-blue-bright;
-      }
-    }
-
-    &:hover,
-    &:active {
-      color: $sdss-color-white;
-
-      &::after {
-        background-color: $sdss-color-white;
-      }
-    }
-
-    &:focus {
-      color: $sdss-color-white;
-      border: 1px solid $sdss-color-white;
-      background-color: transparent;
-      padding: 0 6px 1px;
-    }
-
   }
 
   .su-link--action {

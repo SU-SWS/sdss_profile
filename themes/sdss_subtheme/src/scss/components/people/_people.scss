@@ -18,6 +18,11 @@
 }
 
 //People teasers
+.stanford-people-grid .views-field-title a {
+  @include sdss-link--primary;
+}
+
+
 .ds-entity--stanford-person {
   .su-card {
     a {
@@ -25,6 +30,22 @@
 
       color: $sdss-color-green-link;
       font-weight: $su-font-regular;
+
+      &:hover {
+        color: $sdss-color-blue-hover;
+      }
+
+      &:focus {
+        color: $sdss-color-grey-dark;
+        border: 1px solid $sdss-color-palo-alto-dark;
+        background-color: transparent;
+        border-radius: 30px;
+        padding: 0 6px 1px;
+      }
+
+      &:active {
+        color: $sdss-color-grey-dark;
+      }
     }
 
     .su-person-short-title {
