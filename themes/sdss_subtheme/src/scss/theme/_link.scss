@@ -12,7 +12,8 @@ a {
 footer {
   .su-link,
   a {
-    outline-color: $sdss-color-palo-alto-dark;
+    // color: $sdss-color-palo-alto-dark;
+    // outline-color: $sdss-color-palo-alto-dark;
 
     &:focus {
       color: $sdss-color-grey-dark;
@@ -40,6 +41,13 @@ footer {
         fill: $sdss-color-palo-alto-dark;
       }
     }
+
+    // &.su-link--external {
+    //   &:after {
+    //     background-color: $sdss-color-palo-alto-dark;
+    //   }
+    // }
+
   }
 }
 
