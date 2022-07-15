@@ -6,9 +6,10 @@
   .views-field-title {
     a {
       @include sdss-h4;
+      @include sdss-link--primary;
 
-      color: $sdss-color-green-link;
-      font-weight: $su-font-regular;
+      // color: $sdss-color-green-link;
+      // font-weight: $su-font-regular;
     }
   }
 
