@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-// nav[aria-label^='footer'] a.su-link--external:hover
-
 nav[aria-label^='footer'] {
   a {
     &:hover {
@@ -76,34 +74,10 @@ nav[aria-label^='footer'] {
     }
   }
 
-  // Links
-  a {
-    color: $sdss-color-blue-bright;
-
-    &::after {
-      background-color: $sdss-color-blue-bright;
-    }
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: $sdss-color-blue-bright-dark;
-
-      &::after {
-        background-color: $sdss-color-blue-bright-dark;
-      }
-
-      &.mailto {
-        svg {
-          fill: $sdss-color-blue-bright-dark;
-        }
-      }
-    }
-
-    &.mailto {
-      svg {
-        fill: $sdss-color-blue-bright;
-      }
+  // Links but excluding the lockup
+  .su-local-footer__columns {
+    a {
+      @include sdss-link--negative;
     }
   }
 
@@ -117,19 +91,7 @@ nav[aria-label^='footer'] {
 
   .su-local-footer__action-links {
     a {
-      &:hover,
-      &:active,
-      &:focus {
-        color: $sdss-color-blue-bright-dark;
-
-        &::after {
-          background-color: $sdss-color-blue-bright-dark;
-        }
-      }
-      &:after {
-        background-color: $sdss-color-blue-bright;
-      }
-
+      @include sdss-link--negative;
     }
   }
 
