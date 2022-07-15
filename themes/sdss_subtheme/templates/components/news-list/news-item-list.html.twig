@@ -16,7 +16,7 @@
  * - news_url: A url to wrap the image and heading with
  */
 #}
-{%- set attributes = attributes.addClass(['su-news-article 88', modifier_class]) -%}
+{%- set attributes = attributes.addClass(['su-news-article', modifier_class]) -%}
 
 {# If the news source url is set go there instead of the default. #}
 {%- if news_source|render|striptags("<drupal-render-placeholder>")|trim is not empty -%}
@@ -55,7 +55,7 @@
         {% endblock -%}
         {# Link for headline h2 #}
         {%- if news_url is not empty -%}
-          <a {{ news_url_attributes }} href="{{ news_url }}">
+          <a class="su-link--action" {{ news_url_attributes }} href="{{ news_url }}">
         {%- endif -%}
 
         {% if news_list_headline|render_clean %}
