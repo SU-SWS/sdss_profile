@@ -849,8 +849,8 @@ display:
             view_node: 0
             edit_node: 0
           separator: ''
-          hide_empty: 0
-          pattern: news-list
+          hide_empty: 1
+          pattern: sdss-news-list
           variants:
             alert: default
             brandbar: default
@@ -868,39 +868,34 @@ display:
               weight: 0
               plugin: views_row
               source: view_node
-            'views_row:su_news_publishing_date':
-              destination: news_list_publishing_date
-              weight: 1
-              plugin: views_row
-              source: su_news_publishing_date
             'views_row:su_news_source':
               destination: news_source
-              weight: 2
+              weight: 1
               plugin: views_row
               source: su_news_source
-            'views_row:su_news_featured_media':
-              destination: news_list_image
+            'views_row:su_news_topics':
+              destination: news_list_topics
+              weight: 2
+              plugin: views_row
+              source: su_news_topics
+            'views_row:su_news_publishing_date':
+              destination: news_list_publishing_date
               weight: 3
               plugin: views_row
-              source: su_news_featured_media
-            'views_row:su_news_dek':
-              destination: news_list_dek
+              source: su_news_publishing_date
+            'views_row:su_news_featured_media':
+              destination: news_list_image
               weight: 4
               plugin: views_row
-              source: su_news_dek
+              source: su_news_featured_media
             'views_row:title':
               destination: news_list_headline
               weight: 5
               plugin: views_row
               source: title
-            'views_row:su_news_topics':
-              destination: news_list_topics
-              weight: 6
-              plugin: views_row
-              source: su_news_topics
             'views_row:edit_node':
               destination: news_list_footer
-              weight: 7
+              weight: 6
               plugin: views_row
               source: edit_node
       block_category: 'News Lists (Views)'
@@ -1076,8 +1071,8 @@ display:
             view_node: 0
             edit_node: 0
           separator: ''
-          hide_empty: 0
-          pattern: news-list
+          hide_empty: 1
+          pattern: sdss-news-list
           variants:
             alert: default
             brandbar: default
@@ -1095,39 +1090,34 @@ display:
               weight: 0
               plugin: views_row
               source: view_node
-            'views_row:title':
-              destination: news_list_headline
-              weight: 1
-              plugin: views_row
-              source: title
-            'views_row:su_news_publishing_date':
-              destination: news_list_publishing_date
-              weight: 2
-              plugin: views_row
-              source: su_news_publishing_date
             'views_row:su_news_source':
               destination: news_source
-              weight: 3
+              weight: 1
               plugin: views_row
               source: su_news_source
+            'views_row:su_news_topics':
+              destination: news_list_topics
+              weight: 2
+              plugin: views_row
+              source: su_news_topics
+            'views_row:su_news_publishing_date':
+              destination: news_list_publishing_date
+              weight: 3
+              plugin: views_row
+              source: su_news_publishing_date
             'views_row:su_news_featured_media':
               destination: news_list_image
               weight: 4
               plugin: views_row
               source: su_news_featured_media
-            'views_row:su_news_dek':
-              destination: news_list_dek
+            'views_row:title':
+              destination: news_list_headline
               weight: 5
               plugin: views_row
-              source: su_news_dek
-            'views_row:su_news_topics':
-              destination: news_list_topics
-              weight: 6
-              plugin: views_row
-              source: su_news_topics
+              source: title
             'views_row:edit_node':
               destination: news_list_footer
-              weight: 7
+              weight: 6
               plugin: views_row
               source: edit_node
       defaults:
