@@ -10,11 +10,16 @@
 }
 
 .su-row-bgcolor--green-stat {
+  > div {
+    color: $su-color-white;
+    background-color: $sdss-color-palo-alto-dark;
+  }
   // white left line for the Stat card only.
-  .container-3-items {
-    .paragraph-item {
-      border-left: 1px solid $su-color-white;
-    }
+  .paragraph-item {
+    border-left: 1px solid $su-color-white;
+  }
+  .paragraph-item:first-child {
+    border-left: none;
   }
 }
 
