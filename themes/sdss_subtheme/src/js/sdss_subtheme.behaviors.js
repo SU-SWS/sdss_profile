@@ -7,7 +7,7 @@
  * scripts so special handling is needed.
  */
 
- export default {
+export default {
 
   // Attach Drupal Behavior.
   attach (context, settings) {
