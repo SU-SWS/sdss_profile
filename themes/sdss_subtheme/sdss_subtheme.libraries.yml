@@ -94,9 +94,3 @@ allpages:
   js:
     dist/js/scripts.js: { scope: footer }
 
-#fonts:
-#  css:
-#    theme:
-#      '//fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap': { type: external, minified: true }
-#      # Source Sans Light Font
-
