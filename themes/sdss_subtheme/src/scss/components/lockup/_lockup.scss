@@ -54,32 +54,15 @@
 
 }
 
-// Mobile Header lockup
-@include grid-media-min('lg') {
-  .su-masthead {
-    .su-lockup--option-a {
-      .su-lockup__cell2 {
-        // padding-left: 20px;
-      }
-    }
-  }
-}
-
 @include grid-media-max('md') {
   .su-masthead {
     .su-lockup--option-a {
       .su-lockup__cell1 {
-        // margin-right: 15px;
         border-right: none;
       }
 
       .su-lockup__cell2 {
         border-left: 1px solid $sdss-color-black;
-      }
-
-      .su-lockup__line1 {
-        // margin-left: 15px;
-        // line-height: 2rem;
       }
 
       .su-lockup__line5 {
@@ -102,12 +85,7 @@
 
     .su-lockup--option-a {
       .su-lockup__cell1 {
-        // margin-right: 10px;
         border-right: none;
-      }
-
-      .su-lockup__line1 {
-        // margin-left: 10px;
       }
 
       .su-lockup__line5 {
