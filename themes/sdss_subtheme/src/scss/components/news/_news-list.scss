@@ -44,12 +44,22 @@
   }
 }
 
-// turning on the images even when not the only one in the row.
-.ptype-stanford-lists:not([data-react-columns="12"]) .su-news-list img {
-  display: unset;
+// turning on the images when there
+// is one or two paragraphs per row.
+.ptype-stanford-lists {
+    &:is([data-react-columns="12"]),
+    &:is([data-react-columns="6"]) {
+    .su-news-list {
+      img {
+        display: unset;
+      }
+    }
+  }
 }
 
-.ptype-stanford-lists[data-react-columns="4"] .su-news-list__header,
-.ptype-stanford-lists[data-react-columns="6"] .su-news-list__header {
-  grid-template-columns: unset;
+// override to give that image space.
+.ptype-stanford-lists[data-react-columns="6"] {
+  .su-news-list__header {
+    grid-template-columns: unset;
+  }
 }
