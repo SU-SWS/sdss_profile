@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.sdss-card-wrapper--title {
+  .su-card {
+    .su-card__contents {
+      padding-left: 0;
+      padding-top: 0;
+
+      p,
+      a {
+        @include big_paragraph;
+      }
+
+      a {
+        margin-top: 0;
+      }
+    }
+
+    .su-card__headline {
+      @include sdss-h4;
+      @include responsive-spacing('padding-top', 1);
+
+      margin-bottom: 0;
+    }
+  }
+}

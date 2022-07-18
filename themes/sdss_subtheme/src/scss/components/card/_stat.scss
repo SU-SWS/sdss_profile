@@ -7,37 +7,50 @@
     color: $su-color-white;
     background-color: $sdss-color-palo-alto-dark;
   }
+}
 
-  .container-3-items {
-    .paragraph-item {
-      border-left: 1px solid $su-color-white;
-    }
+.su-row-bgcolor--green-stat {
+  > div {
+    color: $su-color-white;
+    background-color: $sdss-color-palo-alto-dark;
+  }
+  // white left line for the Stat card only.
+  .paragraph-item {
+    border-left: 1px solid $su-color-white;
+  }
+  .paragraph-item:first-child {
+    border-left: none;
   }
 }
 
 .sdss-card-wrapper--stat {
 
-  &.sdss-wrapper--button-green {
-    .su-card {
-      box-shadow: none;
-      border: none;
-      color: $su-color-white;
-      background-color: $sdss-color-palo-alto-dark;
+  .su-card {
+    @include responsive-spacing('padding-top', 2);
 
-      .su-card__contents {
+    box-shadow: none;
+    border: none;
+    color: $su-color-white;
+    background-color: $sdss-color-palo-alto-dark;
 
-        span {
-          @include sdss-display;
-        }
 
-        >h2 {
-          @include sdss-h3;
-        }
-
-        p {
-          @include type-d;
-        }
-      }
+    section.su-card__contents {
+      padding-bottom: 0;
+      padding-top: 0;
     }
+
+    .su-card__superheadline {
+      @include sdss-display;
+    }
+
+    >.su-card__headline {
+      @include sdss-h3;
+      @include responsive-spacing('padding', null 2);
+    }
+
+    p {
+      @include type-d;
+    }
+
   }
 }

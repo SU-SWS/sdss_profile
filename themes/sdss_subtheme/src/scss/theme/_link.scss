@@ -8,23 +8,23 @@ a {
 }
 
 // Moving the focus out to keep out of main navigation
-#block-sdss-subtheme-content,
+.block-sdss-subtheme-content,
 footer {
   .su-link,
   a {
-    outline-color: $sdss-color-palo-alto-dark;
-
     &:focus {
       color: $sdss-color-grey-dark;
       border: 1px solid $sdss-color-palo-alto-dark;
       background-color: transparent;
       padding: 0 3px 1px;
     }
+
     &.su-button {
       &:focus {
         padding: 1.6rem 2.4rem;
       }
     }
+
     &.su-link--action {
 
       &:focus {
@@ -32,6 +32,13 @@ footer {
         padding: 0 6px 1px;
       }
     }
+
+    &.mailto {
+      svg {
+        fill: $sdss-color-palo-alto-dark;
+      }
+    }
+
   }
 }
 
@@ -97,11 +104,3 @@ footer {
     }
   }
 }
-
-// .su-local-footer__action-links {
-//   a {
-//     &:after {
-//       background-color: $sdss-color-palo-alto-dark;
-//     }
-//   }
-// }

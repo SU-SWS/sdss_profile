@@ -15,11 +15,14 @@ settings:
       value: su-row-bgcolor--green
       label: Green
     -
-      value: su-row-bgcolor--blue
-      label: Blue
+      value: su-row-bgcolor--green-stat
+      label: Green Stat Card
     -
-      value: su-row-bgcolor--transparent
-      label: Transparent
+      value: su-row-bgcolor--blue
+      label: 'Light Blue'
+    -
+      value: su-row-bgcolor--grey
+      label: 'Light Grey'
     -
       value: su-row-bgcolor--white
       label: White

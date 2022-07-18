@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.su_person_full_title
     - field.storage.node.su_person_photo
-    - field.storage.node.su_person_short_title
     - node.type.stanford_person
   module:
     - node
@@ -398,10 +398,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        su_person_short_title:
-          id: su_person_short_title
-          table: node__su_person_short_title
-          field: su_person_short_title
+        su_person_full_title:
+          id: su_person_full_title
+          table: node__su_person_full_title
+          field: su_person_full_title
           relationship: reverse__node__su_person_type_group
           group_type: group
           admin_label: ''
@@ -448,9 +448,8 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
+          type: basic_string
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -909,7 +908,7 @@ display:
           default_row_class: true
           type: ul
           wrapper_class: ''
-          class: 'su-list-unstyled grid-container-3'
+          class: 'su-list-unstyled grid-container-4'
       row:
         type: fields
         options:
@@ -1001,8 +1000,8 @@ display:
         - url.query_args
         - user.permissions
       tags:
+        - 'config:field.storage.node.su_person_full_title'
         - 'config:field.storage.node.su_person_photo'
-        - 'config:field.storage.node.su_person_short_title'
   results_for:
     id: results_for
     display_title: '"Results For" Block'

@@ -45,11 +45,11 @@ a.su-link--external.su-button--big {
   }
 }
 
-.sdss-wrapper--button-red {
-  .su-card__button {
-    .su-button {
-      @include sdss-button-su-red--primary;
-
+// Load more buttons on list pages.
+.js-pager__items {
+  .pager__item {
+    .button {
+      @include sdss-button--primary;
     }
   }
 }

@@ -12,47 +12,42 @@ card_variant_info:  # part of the key after the :
       description: Select the card style.
 #      default_value: sdss-card-wrapper--regular
       options:
+        sdss-card-wrapper--icon: Icon
         sdss-card-wrapper--stat: Stat
-        sdss-card-wrapper--regular: Regular
-    card_button_style:
-      type: select
-      title: 'Card Button Style'
-      description: Select the button color for displaying this card.
-#      default_value: su-card-wrapper--border-regular
-      options:
-        sdss-wrapper--button-green: Primary
-        sdss-wrapper--secondary-button: Secondary
+        sdss-card-wrapper--title: Title
+        sdss-card-wrapper--topic: Topic
     card_border_style:
       type: select
       title: 'Card Border Style'
       description: Select the border style for displaying this card.
-#      default_value: su-card-wrapper--border-regular
+#      default_value: sdss-card-wrapper--border-none
       options:
         sdss-card-wrapper--border-none: Minimal (no border)
-        sdss-card-wrapper--border-regular: Border and Drop Shadow
+        sdss-card-wrapper--grey-dropshadow: Light Grey Background with shadow
+        sdss-card-wrapper--white-dropshadow: White Background with shadow
+        sdss-card-wrapper--white-border: White Background with border
+
 banner_variant_info:  # part of the key after the :
   id: banner_type
   label: 'Banner Paragraphs Type'
   bundles:
     - paragraphs_type|stanford_banner
   config:
-    banner_button_style:
+    banner_list_style:
       type: select
-      title: 'Banner Button Style'
-      description: Select the button color for displaying this banner.
-#      default_value: su-card-wrapper--border-regular
+      title: 'Banner Style'
+      description: 'Select the banner style.'
+      # default_value: sdss-banner-wrapper--default
       options:
-        sdss-wrapper--button-blue: Blue
-        sdss-wrapper--button-green: Green
-        sdss-wrapper--button-red: Stanford Red
-    # card_list_style:
-    #   type: select
-    #   title: 'Card List Style'
-    #   description: 'Select the style for list format. First paragraph tag will appear regular and all following paragraphs will be styled as a list.'
-    #   options:
-    #     su-card-wrapper--no-style: No List Style
-    #     su-card-wrapper--simple-list: Simple List
-    #     su-card-wrapper--bordered-list: Bordered List
+        sdss-banner-wrapper--default: Default
+        #sdss-banner-wrapper--style-four: Style Four -- add this later.
+    banner_list_headline:
+      type: select
+      title: 'Banner Headline Alignment'
+      description: 'Center the alignment for the headline. Choose the Text Alignment to shift all the text left or right'
+      options:
+        sdss-banner-wrapper--headline-default: Default
+        sdss-banner-wrapper--headline-center: Center
     # horizontal_card_image_style:
     #   type: select
     #   title: 'Horizontal Card: Image Style'

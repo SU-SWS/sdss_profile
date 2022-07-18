@@ -29,3 +29,84 @@
     }
   }
 }
+
+// All card variants order set up
+.sdss-card-wrapper--topic {
+
+  article.su-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .su-card__headline {
+    order: 1;
+  }
+
+  .image {
+    order: 2;
+  }
+
+  section.su-card__contents {
+    order: 3;
+  }
+}
+
+.sdss-card-wrapper--stat {
+
+  article.su-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .su-card__headline {
+    order: 2;
+  }
+
+  .image {
+    order: 3;
+  }
+
+  section.su-card__contents {
+    order: 1;
+  }
+}
+
+.sdss-card-wrapper--icon {
+
+  article.su-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .su-card__headline {
+    order: 2;
+  }
+
+  .image {
+    order: 1;
+  }
+
+  section.su-card__contents {
+    order: 3;
+  }
+}
+
+.sdss-card-wrapper--title {
+
+  article.su-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .su-card__headline {
+    order: 2;
+  }
+
+  .image {
+    order: 1;
+  }
+
+  section.su-card__contents {
+    order: 3;
+  }
+}
