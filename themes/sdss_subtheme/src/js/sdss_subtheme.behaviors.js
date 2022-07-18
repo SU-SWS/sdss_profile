@@ -12,10 +12,27 @@ export default {
   // Attach Drupal Behavior.
   attach (context, settings) {
     // console.log("Attached.");
+
+
+    (function ($) {
+      /* ==========================================
+        scrollTop() >= 300
+        Should be equal the the height of the header
+      ========================================== */
+      $(window).scroll(function(){
+        if ($(window).scrollTop() >= 30) {
+            $('header.su-masthead').addClass('fixed-header');
+        }
+        else {
+            $('header').removeClass('fixed-header');
+        }
+      });
+
+    })(jQuery);
   },
 
   // Detach Example.
-  detach () {
+  detach() {
     // console.log("Detached.");
   }
-}
+};
