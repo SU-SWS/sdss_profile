@@ -6,3 +6,82 @@
   top: 140px;
 }
 
+.su-secondary-nav.su-secondary-nav--accordion {
+
+  >.su-secondary-nav__menu {
+    >.su-secondary-nav__item {
+      border: 0;
+    }
+  }
+
+  .su-secondary-nav__item--current {
+    > a.su-secondary-nav__link {
+      &:before {
+        background-color: transparent;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $sdss-color-grey-dark;
+        padding: 1.6rem 4.8rem 1.6rem 2.4rem;
+
+        &:before {
+          background-color: transparent;
+          color: transparent;
+        }
+      }
+    }
+  }
+
+  a.su-secondary-nav__link {
+    color: $sdss-color-grey-dark;
+    font-weight: $su-font-regular;
+    font-size: 1.3em;
+
+    &:before {
+      background-color: transparent;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+
+      padding: 1.6rem 4.8rem 1.6rem 2.4rem;
+
+      &:before,
+      &:after {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+
+// Accordion icons
+.su-secondary-nav--accordion {
+  .su-secondary-nav__item--parent.su-secondary-nav__item--expanded {
+    >.su-secondary-nav__link {
+      &:after {
+        background: transparent url("../../assets/svg/caret-down-green.svg") no-repeat center / 50%;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.su-secondary-nav--accordion {
+  .su-secondary-nav__item--parent {
+    >.su-secondary-nav__link {
+      &:after {
+        background: transparent url("../../assets/svg/caret-down-green.svg") no-repeat center / 50%;
+        border: 2px solid $sdss-color-green-link;
+        border-radius: 19px;
+        width: 32px;
+        height: 32px;
+     }
+    }
+  }
+}
+
+// .su-secondary-nav--light a.su-secondary-nav__link:hover:after
