@@ -5,6 +5,10 @@ a {
   color: $sdss-color-palo-alto-dark;
   text-decoration: underline;
   font-weight: $su-font-regular;
+
+  &:hover {
+    color: $sdss-color-blue-bright-dark;
+  }
 }
 
 // Moving the focus out to keep out of main navigation
@@ -54,6 +58,7 @@ footer {
 // Theme details not overrides.
 .su-link {
   color: $sdss-color-palo-alto-dark;
+  font-weight: $su-font-regular;
   outline-color: $sdss-color-palo-alto-dark;
   text-decoration: underline;
 
@@ -86,6 +91,21 @@ footer {
 }
 
 .su-link--action {
+  font-weight: $su-font-semi-bold;
+}
+
+.su-link--action,
+.su-link--external {
+  text-decoration: underline;
+
+  &:hover {
+    color: $sdss-color-blue-bright-dark;
+
+    &::after {
+      background-color: $sdss-color-blue-bright-dark;
+    }
+  }
+
   &::after {
     background-color: $sdss-color-palo-alto-dark;
   }
