@@ -30,3 +30,31 @@ h4 {
 h5 {
   @include sdss-h5;
 }
+
+// Headings with Links
+.su-wysiwyg-text {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    a,
+    &.su-link--external {
+      color: $sdss-color-palo-alto-dark;
+      font-weight: unset;
+      text-decoration: none;
+
+      &:hover {
+        color: $sdss-color-blue-dark-hover;
+
+        &::after {
+          background-color: $sdss-color-blue-dark-hover;
+        }
+      }
+
+      &::after {
+        background-color: $sdss-color-palo-alto-dark;
+      }
+    }
+  }
+}
