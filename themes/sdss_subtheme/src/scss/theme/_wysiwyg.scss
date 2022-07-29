@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
 // Reusing the intro text class for the Display
+// .tablesaw-cell-content == content within a table
 .su-wysiwyg-text {
-  p {
+  p,
+  .tablesaw-cell-content {
+    font-size: 2.4rem;
+
     // Intro = Display
     &.su-intro-text {
       @include sdss-display;

@@ -31,7 +31,7 @@ h5 {
   @include sdss-h5;
 }
 
-// Headings with Links
+// Headings with Links - white, grey, blue row backgrounds.
 .su-wysiwyg-text {
   h2,
   h3,
@@ -54,6 +54,36 @@ h5 {
 
       &::after {
         background-color: $sdss-color-palo-alto-dark;
+      }
+    }
+  }
+}
+
+// Headings with Links - green row backgrounds.
+.su-row-bgcolor--green {
+  .su-wysiwyg-text {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      a,
+      &.su-link--external {
+        color: $sdss-color-white;
+        font-weight: unset;
+        text-decoration: none;
+
+        &:hover {
+          color: $sdss-color-blue-bright-dark;
+
+          &::after {
+            background-color: $sdss-color-blue-bright-dark;
+          }
+        }
+
+        &::after {
+          background-color: $sdss-color-white;
+        }
       }
     }
   }
