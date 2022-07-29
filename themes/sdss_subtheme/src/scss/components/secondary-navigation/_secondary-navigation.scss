@@ -24,12 +24,16 @@
       &:active,
       &:focus {
         color: $sdss-color-grey-dark;
-        padding: 1.6rem 4.8rem 1.6rem 2.4rem;
 
         &:before {
           background-color: transparent;
           color: transparent;
         }
+      }
+
+      // Padding needed for the focus ring.
+      &:focus {
+        padding: 1.6rem 4.8rem 1.6rem 2.4rem;
       }
     }
   }
@@ -47,12 +51,15 @@
     &:active,
     &:focus {
 
-      padding: 1.6rem 4.8rem 1.6rem 2.4rem;
-
       &:before,
       &:after {
         background-color: transparent;
       }
+    }
+
+    // Padding needed for the focus ring.
+    &:focus {
+      padding: 1.6rem 4.8rem 1.6rem 2.4rem;
     }
   }
 }
@@ -84,4 +91,3 @@
   }
 }
 
-// .su-secondary-nav--light a.su-secondary-nav__link:hover:after
