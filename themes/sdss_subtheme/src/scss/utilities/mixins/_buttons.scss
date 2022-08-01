@@ -94,7 +94,7 @@
 @mixin sdss-button--primary {
   @include button-primary;
   @include sdss-button-primary--hover-and-focus;
-  @include type-f;
+  @include type-e;
   @include padding(1.6rem 2.4rem 1.6rem);
 
   background: $sdss-color-green-bright;
@@ -122,7 +122,7 @@
 }
 
 @mixin sdss-button--secondary {
-  @include type-f;
+  @include type-e;
   @include padding(1.6rem 2.4rem 1.6rem);
   @include sdss-button-secondary--hover-and-focus;
 
@@ -140,7 +140,7 @@
 }
 
 @mixin sdss-button--secondary-neg {
-  @include type-f;
+  @include type-e;
   @include padding(1.6rem 2.4rem 1.6rem);
   @include sdss-button-secondary-neg--hover-and-focus;
 
@@ -163,7 +163,7 @@
 
 @mixin sdss-button-su-red--primary {
   @include button-primary;
-  @include type-f;
+  @include type-e;
   @include padding(1.6rem 2.4rem 1.6rem);
 
   background: $su-color-bright-red;
