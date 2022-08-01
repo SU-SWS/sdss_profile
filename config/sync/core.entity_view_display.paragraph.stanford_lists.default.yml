@@ -47,7 +47,7 @@ content:
     type: entity_title_heading
     label: hidden
     settings:
-      tag: h2
+      tag: h3
       linked: false
     third_party_settings:
       field_formatter_class:

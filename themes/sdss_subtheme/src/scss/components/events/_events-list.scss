@@ -34,6 +34,46 @@
     padding: 20px;
   }
 
+  .su-event-list-item__details {
+    .event-list-item__type {
+      a {
+        @include sdss-link--primary;
+        @include type_f;
 
+        color: $sdss-color-grey-60;
+        font-weight: $su-font-regular;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
 
+    h2 {
+      >a {
+        @include sdss-link--primary;
+
+        text-decoration: none;
+      }
+    }
+  }
+
+  .views-field-su-event-date-time {
+    span {
+      padding-right: 0;
+    }
+  }
+
+  // removes the calendar icon.
+  .date-icon:before {
+    content: "";
+  }
 }
+
+
+// Columns of event lists
+
+.ptype-stanford-lists[data-react-columns="4"],
+.ptype-stanford-lists[data-react-columns="6"] {
+   .su-event-list-item__date {
+    margin-bottom: inherit;
+   }
+  }
