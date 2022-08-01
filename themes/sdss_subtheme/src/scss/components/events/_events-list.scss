@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+// Event list page.
+
+
+
+.su-event-list-item {
+
+  flex-direction: row;
+  gap: 40px;
+  justify-content: flex-start;
+
+  .su-date-stacked {
+    max-width: unset;
+  }
+
+  .su-event-list-item__date {
+    max-width: unset;
+    margin-right: unset;
+    margin-bottom: unset;
+
+    .su-event-end-month,
+    .su-event-start-month,
+    .su-event-end-date,
+    .su-event-start-date {
+      font-weight: $su-font-regular;
+    }
+  }
+
+  .su-date-stacked.su-date-stacked--no-background {
+    border: 1px solid $sdss-color-palo-alto-dark;
+    border-radius: 65px;
+    width: 130px;
+    padding: 20px;
+  }
+
+
+
+}
