@@ -13,7 +13,7 @@ dependencies:
     - layout_builder
     - layout_builder_restrictions
     - layout_library
-    - system
+    - menu_block
     - text
     - views
 third_party_settings:
@@ -81,20 +81,6 @@ third_party_settings:
                     class: ''
             weight: 2
             additional: {  }
-          70d9646f-55ac-460b-bea3-8a04f0a24293:
-            uuid: 70d9646f-55ac-460b-bea3-8a04f0a24293
-            region: left
-            configuration:
-              id: 'system_menu_block:stanford-event-types'
-              label: 'Event Types'
-              label_display: '0'
-              provider: system
-              context_mapping: {  }
-              level: 1
-              depth: 0
-              expand_all_items: false
-            weight: 0
-            additional: {  }
           418009ee-2c7e-4d17-a0b6-4316b1ce133f:
             uuid: 418009ee-2c7e-4d17-a0b6-4316b1ce133f
             region: main
@@ -130,6 +116,26 @@ third_party_settings:
               label_display: '0'
               provider: jumpstart_ui
               context_mapping: {  }
+            weight: 0
+            additional: {  }
+          bc4d35d3-ce39-4baa-9edb-4d7d2e19575f:
+            uuid: bc4d35d3-ce39-4baa-9edb-4d7d2e19575f
+            region: left
+            configuration:
+              id: 'menu_block:stanford-event-types'
+              label: 'Event Types'
+              label_display: visible
+              provider: menu_block
+              context_mapping: {  }
+              follow: false
+              follow_parent: child
+              label_link: false
+              label_type: block
+              level: 1
+              depth: 0
+              expand_all_items: false
+              parent: 'stanford-event-types:'
+              suggestion: stanford_event_types
             weight: 0
             additional: {  }
         third_party_settings: {  }
