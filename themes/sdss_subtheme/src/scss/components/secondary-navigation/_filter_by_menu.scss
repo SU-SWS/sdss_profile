@@ -13,6 +13,8 @@
 }
 
 .filter-menu {
+  @include responsive-spacing('margin-bottom', 6);
+
   border: 0;
 
   .topics__collapsable-menu {
