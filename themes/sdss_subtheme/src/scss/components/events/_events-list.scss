@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 // Event list page.
-
 .su-event-list-item {
 
   flex-direction: row;
@@ -22,19 +21,28 @@
     .su-event-end-date,
     .su-event-start-date {
       font-weight: $su-font-regular;
+      line-height: 1;
     }
   }
 
-  .su-date-stacked.su-date-stacked--no-background {
-    background-color: $sdss-color-blue-light;
-    border: 1px solid $sdss-color-palo-alto-dark;
-    border-radius: 65px;
-    width: 130px;
-    padding: 20px;
+  .su-date-stacked {
+    &.su-date-stacked--no-background {
+      background-color: $sdss-color-blue-light;
+      border: 1px solid $sdss-color-palo-alto-dark;
+      border-radius: 70px;
+      width: 110px;
+      padding: 20px;
+    }
   }
 
   .su-event-list-item__details {
+    display: flex;
+    flex-direction: column;
+
+    // changing the order so the heading read first then the type.
     .event-list-item__type {
+      order: -1;
+
       a {
         @include sdss-link--primary;
         @include type_f;
@@ -50,10 +58,15 @@
     }
 
     h2 {
-      >a {
+      > a {
+        @include link--action;
         @include sdss-link--primary;
 
         text-decoration: none;
+
+        &:after {
+          background-color: $sdss-color-palo-alto-dark;
+        }
       }
     }
   }

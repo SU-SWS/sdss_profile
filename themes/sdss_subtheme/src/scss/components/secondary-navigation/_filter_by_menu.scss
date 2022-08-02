@@ -15,8 +15,6 @@
 .filter-menu {
   @include responsive-spacing('margin-bottom', 6);
 
-  border: 0;
-
   .topics__collapsable-menu {
     color: $sdss-color-grey-dark;
     font-weight: $su-font-regular;
