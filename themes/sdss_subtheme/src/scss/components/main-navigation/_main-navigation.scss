@@ -23,6 +23,13 @@
   width: 100%;
 }
 
+// if logged in
+.role--authenticated {
+  .fixed-header {
+    top: 79px;
+  }
+}
+
 // Drop down menu
 @include grid-media-min('lg') {
   .su-multi-menu {
