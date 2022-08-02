@@ -1,9 +1,15 @@
 @charset "UTF-8";
 
-.navigation.menu--main,
-.filter-menu {
+.navigation.menu--main {
   position: sticky;
-  top: 200px;
+  top: 250px;
+}
+
+// if logged in
+.role--authenticated {
+  .navigation.menu--main {
+    top: 300px;
+  }
 }
 
 .su-secondary-nav.su-secondary-nav--accordion {
