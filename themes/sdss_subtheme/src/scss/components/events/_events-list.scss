@@ -2,8 +2,6 @@
 
 // Event list page.
 
-
-
 .su-event-list-item {
 
   flex-direction: row;
@@ -28,6 +26,7 @@
   }
 
   .su-date-stacked.su-date-stacked--no-background {
+    background-color: $sdss-color-blue-light;
     border: 1px solid $sdss-color-palo-alto-dark;
     border-radius: 65px;
     width: 130px;
@@ -39,7 +38,10 @@
       a {
         @include sdss-link--primary;
         @include type_f;
+        @include responsive-spacing('padding-top', 0);
+        @include responsive-spacing('padding-bottom', 0);
 
+        display: inline-block;
         color: $sdss-color-grey-60;
         font-weight: $su-font-regular;
         text-transform: uppercase;
@@ -68,12 +70,43 @@
   }
 }
 
+// Event list with Cards.
+.su-event-card.su-card {
+  border: none;
+  box-shadow: none;
+
+  .su-event-list-item__details {
+    .event-list-item__type {
+      a {
+        @include sdss-link--primary;
+        @include type_f;
+
+        color: $sdss-color-grey-60;
+        font-weight: $su-font-regular;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+
+    h2 {
+      >a {
+        @include sdss-link--primary;
+
+        text-decoration: none;
+      }
+    }
+
+    // Removing the subtheadline for everyone.
+    .event-list-item__subheadline {
+      display: none;
+    }
+  }
+}
 
 // Columns of event lists
-
 .ptype-stanford-lists[data-react-columns="4"],
 .ptype-stanford-lists[data-react-columns="6"] {
    .su-event-list-item__date {
-    margin-bottom: inherit;
+      margin-bottom: inherit;
    }
-  }
+}

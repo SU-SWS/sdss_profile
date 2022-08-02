@@ -1,32 +1,81 @@
 @charset "UTF-8";
 
-.su-news-vertical-teaser {
-  &.su-card {
-    box-shadow: none;
-    border: none;
+// Event teasers
+.stanford-entity {
+  .ds-entity--stanford-event {
 
-    h2 {
-      margin-left: 0;
-      margin-right: 0;
+    .su-event-list-item.su-card {
+      border: 0;
+      box-shadow: none;
+
+      .su-event-list-item__details {
+        .event-list-item__type {
+          a {
+            @include sdss-link--primary;
+            @include type_f;
+
+            display: inline-block;
+            color: $sdss-color-grey-60;
+            font-weight: $su-font-regular;
+            text-transform: uppercase;
+            text-decoration: none;
+          }
+        }
+
+        h2 {
+          >a {
+            @include sdss-link--primary;
+
+            font-weight: $su-font-regular;
+            text-decoration: none;
+          }
+        }
+
+        // Removing the subtheadline for everyone.
+        .event-list-item__subheadline {
+          display: none;
+        }
+      }
     }
+  }
+}
 
-    .su-link {
+// Event page
+.stanford-events {
+  .more-link a {
+    @include sdss-button--primary;
+  }
+}
+
+// Event page top type.
+.section-editorial-content {
+  .su-event-type {
+    a {
       @include sdss-link--primary;
+      @include type_f;
+
+      display: inline-block;
+      color: $sdss-color-grey-60;
+      font-weight: $su-font-regular;
+      text-transform: uppercase;
       text-decoration: none;
     }
+  }
+}
 
-    .su-card__contents {
-      padding-left: 0;
-      padding-right: 0;
+// Event page bottom type.
+.su-events-type-schedule {
+  .node-stanford-event-su-event-type {
+    .su-event-type-bottom {
+      a {
+        @include sdss-link--primary;
+        @include type_f;
 
-      .news-vertical-teaser__topics {
-        a {
-          @include type_d;
-
-          color: $sdss-color-grey-60;
-          font-weight: $su-font-regular;
-          text-transform: uppercase;
-        }
+        display: inline-block;
+        color: $sdss-color-grey-60;
+        font-weight: $su-font-regular;
+        text-transform: uppercase;
+        text-decoration: none;
       }
     }
   }
