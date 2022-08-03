@@ -78,6 +78,7 @@
 }
 
 @mixin sdss-button-secondary-neg--focus {
+  @include padding(.6rem 2.4rem);
   border: 3px solid $sdss-color-white;
   background-color: transparent;
   box-shadow: none;
@@ -94,13 +95,14 @@
 @mixin sdss-button--primary {
   @include button-primary;
   @include sdss-button-primary--hover-and-focus;
-  @include padding(1.6rem 2.4rem 1.6rem);
+  @include padding(.6rem 2.4rem);
 
   background: $sdss-color-green-bright;
   border-radius: 30px;
   color: $sdss-color-black;
   font-weight: $su-font-regular;
   line-height: 1.15;
+  text-decoration: none;
 
   &::after {
     background-color: $sdss-color-black;
@@ -114,23 +116,26 @@
   background: $sdss-color-green-bright;
   border-radius: 35px;
   color: $sdss-color-black;
+  text-decoration: none;
 
   &::after {
     background-color: $sdss-color-black;
   }
 }
 
+
 @mixin sdss-button--secondary {
-  @include padding(1.6rem 2.4rem 1.6rem);
+  @include padding(.6rem 2.4rem);
   @include sdss-button-secondary--hover-and-focus;
 
   box-shadow: none;
-  background: $su-color-white;
+  background: transparent;
   color: $sdss-color-palo-alto-dark;
   border: 1px solid $sdss-color-palo-alto-dark;
   border-radius: 30px;
   font-weight: $su-font-regular;
   line-height: 1.15;
+  text-decoration: none;
 
   &::after {
     background-color: $sdss-color-palo-alto-dark;
@@ -138,7 +143,7 @@
 }
 
 @mixin sdss-button--secondary-neg {
-  @include padding(1.6rem 2.4rem 1.6rem);
+  @include padding(.6rem 2.4rem);
   @include sdss-button-secondary-neg--hover-and-focus;
 
   box-shadow: none;
@@ -149,6 +154,7 @@
   border-radius: 30px;
   font-weight: $su-font-regular;
   line-height: 1.15;
+  text-decoration: none;
 
   &::after {
     background-color: $sdss-color-white;
@@ -160,7 +166,7 @@
 
 @mixin sdss-button-su-red--primary {
   @include button-primary;
-  @include padding(1.6rem 2.4rem 1.6rem);
+  @include padding(.6rem 2.4rem);
 
   background: $su-color-bright-red;
   border-radius: 30px;

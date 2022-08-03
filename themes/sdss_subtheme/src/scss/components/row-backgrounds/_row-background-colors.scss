@@ -36,16 +36,29 @@
   background-color: $sdss-color-palo-alto-dark;
   color: $su-color-white;
 
+  table {
+    tbody,
+    thead {
+      th {
+        color: $su-color-white;
+      }
+    }
+  }
+
   article.su-card {
     background: transparent;
   }
 
-  a,
-  a.su-link {
+  a {
     @include sdss-link--negative;
+
 
     &.su-button {
       color: $sdss-color-palo-alto-dark;
+    }
+
+    &.su-button--secondary {
+      @include sdss-button--secondary-neg;
     }
   }
 
