@@ -1,6 +1,14 @@
 @charset "UTF-8";
 
 .su-card {
+
+  @include grid-media-max('sm') {
+    figure,
+    img {
+      display: block;
+    }
+  }
+
   .su-card__contents {
     >span {
       // Superhead in cards
