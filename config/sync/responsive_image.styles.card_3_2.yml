@@ -4,7 +4,8 @@ status: true
 dependencies:
   config:
     - image.style.card_3_2_1200x800_
-    - image.style.card_3_2_1800x1200_
+    - image.style.card_3_2_1920x1280_
+    - image.style.card_3_2_480x320_
     - image.style.card_3_2_960x640_
   module:
     - stanford_image_styles
@@ -18,7 +19,7 @@ image_style_mappings:
     multiplier: 1x
   -
     image_mapping_type: image_style
-    image_mapping: card_3_2_1800x1200_
+    image_mapping: card_3_2_1920x1280_
     breakpoint_id: stanford_image_styles.lg
     multiplier: 2x
   -
@@ -28,22 +29,17 @@ image_style_mappings:
     multiplier: 1x
   -
     image_mapping_type: image_style
-    image_mapping: card_3_2_1800x1200_
-    breakpoint_id: stanford_image_styles.md
-    multiplier: 2x
-  -
-    image_mapping_type: image_style
     image_mapping: card_3_2_960x640_
     breakpoint_id: stanford_image_styles.sm
     multiplier: 1x
   -
     image_mapping_type: image_style
-    image_mapping: card_3_2_1800x1200_
+    image_mapping: card_3_2_1200x800_
     breakpoint_id: stanford_image_styles.sm
     multiplier: 2x
   -
     image_mapping_type: image_style
-    image_mapping: card_3_2_960x640_
+    image_mapping: card_3_2_480x320_
     breakpoint_id: stanford_image_styles.xs
     multiplier: 1x
   -
@@ -52,4 +48,4 @@ image_style_mappings:
     breakpoint_id: stanford_image_styles.xs
     multiplier: 2x
 breakpoint_group: stanford_image_styles
-fallback_image_style: card_3_2_1800x1200_
+fallback_image_style: card_3_2_1920x1280_
