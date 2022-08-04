@@ -1,4 +1,4 @@
-{% if public or 'site_manager' in user.roles or 'administrator' in user.roles %}
+{% if public or 'site_manager' in user.roles or 'administrator' in user.roles or 'theme_viewer' in user.roles %}
   {% include '@basic/html.html.twig' %}
 {% else %}
   {% if user.isAnonymous %}
