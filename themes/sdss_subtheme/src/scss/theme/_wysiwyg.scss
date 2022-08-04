@@ -19,6 +19,7 @@
 
     // Quote Text = Block Quote Medium
     &.su-quote-text {
+      @include serif;
       @include sdss-block-quote--med;
     }
 
