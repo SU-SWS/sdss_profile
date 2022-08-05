@@ -13,7 +13,12 @@
 
       a {
         margin-top: 0;
+
+        &.su-button {
+          line-height: inherit;
+        }
       }
+
     }
 
     .su-card__headline {
