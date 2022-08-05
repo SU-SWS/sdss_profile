@@ -49,16 +49,19 @@
     background: transparent;
   }
 
-  a {
-    @include sdss-link--negative;
-
-
-    &.su-button {
-      color: $sdss-color-palo-alto-dark;
-    }
-
-    &.su-button--secondary {
-      @include sdss-button--secondary-neg;
+  div {
+    a {
+      @include sdss-link--negative;
+  
+      &.su-button,
+      &.su-link--external.su-button {
+        color: $sdss-color-palo-alto-dark;
+      }
+  
+      &.su-button--secondary,
+      &.su-link--external.su-button-secondary {
+        @include sdss-button--secondary-neg;
+      }
     }
   }
 
