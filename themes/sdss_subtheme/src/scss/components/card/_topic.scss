@@ -8,8 +8,7 @@
     .su-card__contents {
       padding-left: 0;
 
-      p,
-      a {
+      p {
         @include big_paragraph;
       }
     }

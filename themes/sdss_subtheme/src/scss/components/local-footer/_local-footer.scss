@@ -3,10 +3,10 @@
 nav[aria-label^='footer'] {
   a {
     &:hover {
-      color: $sdss-color-blue-bright-dark;
+      color: $sdss-color-white;
     }
     &.su-link--external:hover {
-      color: $sdss-color-blue-bright-dark;
+      color: $sdss-color-white;
     }
   }
 }
@@ -14,6 +14,20 @@ nav[aria-label^='footer'] {
 .su-local-footer {
   background-color: $sdss-color-palo-alto-dark;
   color: $sdss-color-white;
+
+  a {
+    font-weight: $su-font-semi-bold;
+  }
+
+  // link sizing.
+  .su-local-footer__cell2 {
+    font-size: 1.11em;
+    font-weight: 600;
+  }
+
+  .su-local-footer__action-links {
+    font-size: 1.11em;
+  }
 
   // Setting the 4th grid col to 0px
   .su-local-footer__columns {
@@ -77,7 +91,7 @@ nav[aria-label^='footer'] {
   // Links but excluding the lockup
   .su-local-footer__columns {
     a {
-      @include sdss-link--negative;
+      @include sdss-link--negative-footer;
     }
   }
 
@@ -91,7 +105,7 @@ nav[aria-label^='footer'] {
 
   .su-local-footer__action-links {
     a {
-      @include sdss-link--negative;
+      @include sdss-link--negative-footer;
     }
   }
 
@@ -101,7 +115,7 @@ nav[aria-label^='footer'] {
     font-weight: $su-font-bold;
   }
 
-  //Local footer contact button.address
+  //Local footer contact button address
   a.su-link--external.su-button--secondary {
     @include sdss-button--secondary-neg;
   }

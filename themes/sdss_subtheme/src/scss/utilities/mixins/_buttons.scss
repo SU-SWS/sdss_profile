@@ -19,6 +19,7 @@
 @mixin sdss-button-primary--hover {
   background: $sdss-color-green-hover;
   color: $sdss-color-black;
+  border: 1px solid $sdss-color-green-hover;
   cursor: pointer;
 
   & svg.mailto {
@@ -68,7 +69,7 @@
 // hover/focus/active/disabled buttons
 @mixin sdss-button-secondary-neg--hover {
   background: $sdss-color-green-link;
-  border: none;
+  border: 1px solid $sdss-color-green-link;
   color: $sdss-color-white;
   cursor: pointer;
 
@@ -78,7 +79,7 @@
 }
 
 @mixin sdss-button-secondary-neg--focus {
-  @include padding(.6rem 2.4rem);
+  @include padding(.375em .875em);
   border: 3px solid $sdss-color-white;
   background-color: transparent;
   box-shadow: none;
@@ -95,14 +96,15 @@
 @mixin sdss-button--primary {
   @include button-primary;
   @include sdss-button-primary--hover-and-focus;
-  @include padding(.6rem 2.4rem);
-
+  @include padding(.375em .875em);
   background: $sdss-color-green-bright;
   border-radius: 30px;
   color: $sdss-color-black;
+  border: 1px solid $sdss-color-green-bright;
   font-weight: $su-font-regular;
   line-height: 1.15;
   text-decoration: none;
+  transition: background-color .25s ease-in-out,color .25s ease-in-out,border-color .25s ease-in-out;
 
   &::after {
     background-color: $sdss-color-black;
@@ -116,7 +118,9 @@
   background: $sdss-color-green-bright;
   border-radius: 35px;
   color: $sdss-color-black;
+  border: 1px solid $sdss-color-green-bright;
   text-decoration: none;
+  transition: background-color .25s ease-in-out,color .25s ease-in-out,border-color .25s ease-in-out;
 
   &::after {
     background-color: $sdss-color-black;
@@ -125,8 +129,8 @@
 
 
 @mixin sdss-button--secondary {
-  @include padding(.6rem 2.4rem);
   @include sdss-button-secondary--hover-and-focus;
+  @include padding(.375em .875em);
 
   box-shadow: none;
   background: transparent;
@@ -143,8 +147,8 @@
 }
 
 @mixin sdss-button--secondary-neg {
-  @include padding(.6rem 2.4rem);
   @include sdss-button-secondary-neg--hover-and-focus;
+  @include padding(.375em .875em);
 
   box-shadow: none;
   background: transparent;
@@ -166,7 +170,7 @@
 
 @mixin sdss-button-su-red--primary {
   @include button-primary;
-  @include padding(.6rem 2.4rem);
+  @include padding(.375em .875em);
 
   background: $su-color-bright-red;
   border-radius: 30px;

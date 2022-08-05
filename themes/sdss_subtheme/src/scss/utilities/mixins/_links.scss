@@ -61,6 +61,18 @@
 }
 //End
 
+// Negative hover FOOTER Links
+@mixin sdss-link-negative-footer--hover {
+  color: $sdss-color-white;
+  cursor: pointer;
+
+  & svg.mailto {
+    fill: $sdss-color-white;
+  }
+}
+//End
+
+
 // Primary link details
 @mixin sdss-link--primary {
   @include sdss-link-primary--hover-and-focus;
@@ -88,6 +100,26 @@
   color: $sdss-color-blue-bright;
   outline-color: $sdss-color-blue-bright;
   text-decoration: underline;
+
+  &::after {
+    background-color: $sdss-color-blue-bright;
+  }
+
+  &.mailto {
+    svg {
+      fill: $sdss-color-blue-bright;
+    }
+  }
+}
+//End
+
+// Negative FOOTER link details
+@mixin sdss-link--negative-footer {
+  @include sdss-link-negative-footer--hover-and-focus;
+
+  color: $sdss-color-blue-bright;
+  outline-color: $sdss-color-blue-bright;
+  text-decoration: none;
 
   &::after {
     background-color: $sdss-color-blue-bright;
@@ -152,6 +184,34 @@
 
     &::after {
       background-color: $sdss-color-blue-bright-dark;
+    }
+  }
+}
+//End
+
+// Negative FOOTER link hover states
+@mixin sdss-link-negative-footer--hover-and-focus {
+  &:hover {
+    @include sdss-link-negative-footer--hover;
+
+    &::after {
+      background-color: $sdss-color-white;
+    }
+  }
+
+  &:focus {
+    @include sdss-link-negative--focus;
+
+    &::after {
+      background-color: $sdss-color-white;
+    }
+  }
+
+  &:active {
+    @include sdss-link-negative--active;
+
+    &::after {
+      background-color: $sdss-color-white;
     }
   }
 }
