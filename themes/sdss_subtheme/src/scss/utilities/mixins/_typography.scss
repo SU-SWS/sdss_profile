@@ -4,72 +4,73 @@
 // Example: All mixin names should be prefaced with your abbreviation (saa, soe, ood, etc)
 
 
-// Intro = Display
+// Intro is the Drupal style = Display is the design language.
 @mixin sdss-display {
   font-weight: $su-font-regular;
-  letter-spacing: -0.01em;
 
   @include grid-media-max('sm') {
-    font-size: 46px;
-    line-height: 50px;
+    font-size: 1.5em;
+    line-height: 120%;
   }
 
   @include grid-media-min('md') {
-    font-size: 50px;
-    line-height: 56px;
+    font-size: 1.8em;
+    line-height: 130%;
   }
 
   @include grid-media-min('lg') {
-    font-size: 80px;
-    line-height: 100px;
+    font-size: 1.8em;
+    line-height: 130%;
   }
 }
 
-// Splash = Block Quote Big
+// Splash is the Drupal style = Block Quote Big is the design language.
 @mixin sdss-block-quote--big {
+  color: $sdss-color-palo-alto-dark;
   font-weight: $su-font-regular;
   font-style: italic;
   letter-spacing: -0.01em;
 
   @include grid-media-max('sm') {
-    font-size: 32px;
+    font-size: 1.7em; //32px
     line-height: 40px;
   }
 
   @include grid-media-min('md') {
-    font-size: 48px;
+    font-size: 2.5em;  //48px
     line-height: 60px;
   }
 
   @include grid-media-min('lg') {
-    font-size: 56px;
+    font-size: 3.4em;  //64px
     line-height: 120%;
   }
 }
 
-// Quote Text = Block Quote Medium
+// Quote Text is the Drupal style = Block Quote Medium is the design language.
 @mixin sdss-block-quote--med {
+  color: $sdss-color-palo-alto-dark;
   font-weight: $su-font-regular;
   font-style: italic;
   letter-spacing: -0.01em;
 
   @include grid-media-max('sm') {
-    font-size: 32px;
+    font-size: 1.7em; //32px
     line-height: 40px;
   }
 
   @include grid-media-min('md') {
-    font-size: 48px;
+    font-size: 2.5em;  //48px
     line-height: 60px;
   }
 
   @include grid-media-min('lg') {
-    font-size: 56px;
+    font-size: 3.4em;  //64px
     line-height: 120%;
   }
 }
 
- // Callout text = Block Quote Small
+ // Callout text is the Drupal style = Block Quote Small is the design language.
 @mixin sdss-block-quote--sm {
   font-weight: $su-font-regular;
   font-style: italic;
