@@ -48,12 +48,25 @@
   div {
     a {
       @include sdss-link--negative;
-  
+
       &.su-button,
       &.su-link--external.su-button {
         color: $sdss-color-palo-alto-dark;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &:active,
+        &:focus {
+          text-decoration: underline;
+          color: $sdss-color-white;
+          background: transparent;
+          border: 1px solid $sdss-color-white;
+        }
       }
-  
+
       &.su-button--secondary,
       &.su-link--external.su-button-secondary {
         @include sdss-button--secondary-neg;
