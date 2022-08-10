@@ -24,8 +24,10 @@
 
   .su-secondary-nav__item--current {
     > a.su-secondary-nav__link {
+      color: $sdss-color-palo-alto-dark;
+
       &:before {
-        background-color: transparent;
+        background-color: $sdss-color-palo-alto-dark;
       }
 
       &:hover,
@@ -46,10 +48,20 @@
     }
   }
 
+  a.su-secondary-nav__menu-lv2 {
+    .su-secondary-nav__link {
+      padding-bottom: .4em;
+      padding-left: .4em;
+      padding-top: .4em;
+    }
+  }
+
   a.su-secondary-nav__link {
     color: $sdss-color-grey-dark;
     font-weight: $su-font-regular;
-    font-size: 1.3em;
+    font-size: 1.12em;
+    padding-top: .4em;
+    padding-bottom: .4em;
 
     &:before {
       background-color: transparent;
