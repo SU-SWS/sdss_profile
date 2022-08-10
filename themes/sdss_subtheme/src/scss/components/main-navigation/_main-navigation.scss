@@ -58,11 +58,23 @@
       &:hover {
         > span {
           text-decoration: underline;
+          color: $sdss-color-grey-dark;
+        }
+      }
+
+      &:active {
+        &:before {
+          background-color: $sdss-color-green-link;
         }
       }
 
       &:hover,
       &:focus {
+        > span {
+          text-decoration: underline;
+          color: $sdss-color-grey-dark;
+        }
+
         &::before {
           background-color: $sdss-color-white;
         }
@@ -90,6 +102,7 @@
         &:focus {
           font-weight: $su-font-regular;
         }
+
       }
 
       // underline on current page.
