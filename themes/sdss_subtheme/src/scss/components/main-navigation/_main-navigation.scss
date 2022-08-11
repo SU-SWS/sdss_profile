@@ -85,8 +85,10 @@
   // Color bar on the drop down menu
   .su-multi-menu__item--current {
     >.su-multi-menu__link {
+      color: $sdss-color-palo-alto-dark;
+
       &:before {
-        background-color: $sdss-color-white;
+        background-color: $sdss-color-palo-alto-dark;
       }
     }
   }
