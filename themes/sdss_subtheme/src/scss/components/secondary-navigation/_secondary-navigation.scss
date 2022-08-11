@@ -22,10 +22,29 @@
     }
   }
 
+  .su-secondary-nav__menu-lv1 {
+    > .su-secondary-nav__item {
+      > a.su-secondary-nav__link {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .su-secondary-nav__menu-lv2 {
+    .su-secondary-nav__item {
+      a.su-secondary-nav__link {
+        padding-left: .8em;
+      }
+    }
+  }
+
+
   .su-secondary-nav__item--current {
     > a.su-secondary-nav__link {
+      color: $sdss-color-palo-alto-dark;
+
       &:before {
-        background-color: transparent;
+        background-color: $sdss-color-palo-alto-dark;
       }
 
       &:hover,
@@ -49,7 +68,9 @@
   a.su-secondary-nav__link {
     color: $sdss-color-grey-dark;
     font-weight: $su-font-regular;
-    font-size: 1.3em;
+    font-size: 1.12em;
+    padding-top: .4em;
+    padding-bottom: .4em;
 
     &:before {
       background-color: transparent;
