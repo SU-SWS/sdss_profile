@@ -12,9 +12,9 @@
       @include sdss-display;
     }
 
-    // Splash = Intro text
+    // Splash = Splash text
     &.su-font-splash {
-      @include sdss-display;
+      @include sdss-block-quote--big;
     }
 
     // Quote Text = Block Quote Medium
