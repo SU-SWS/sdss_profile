@@ -88,7 +88,11 @@
       color: $sdss-color-palo-alto-dark;
 
       &:before {
-        background-color: $sdss-color-palo-alto-dark;
+        background-color: $sdss-color-white;
+
+        @include grid-media-max('md') {
+          background-color: $sdss-color-palo-alto-dark;
+        }
       }
     }
   }

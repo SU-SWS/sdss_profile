@@ -20,6 +20,7 @@
 // Config and supporting scss.
 
 // Components.
+@import 'all/index.scss';
 @import 'banner/index.scss';
 @import 'button/index.scss';
 @import 'card/index.scss';
@@ -32,3 +33,4 @@
 @import 'people/index.scss';
 @import 'row-backgrounds/index.scss';
 @import 'secondary-navigation/index.scss';
+@import 'spacer/index.scss';
