@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+// Override bottom margin on all components
+.content {
+    .paragraph-item {
+        @include responsive-spacing('margin-bottom', 4);
+    }
+}

@@ -9,7 +9,8 @@
       padding-left: 0;
 
       p {
-        @include big_paragraph;
+        font-size: 2rem;
+        line-height: 150%;
       }
     }
 

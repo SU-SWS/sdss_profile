@@ -58,11 +58,23 @@
       &:hover {
         > span {
           text-decoration: underline;
+          color: $sdss-color-grey-dark;
+        }
+      }
+
+      &:active {
+        &:before {
+          background-color: $sdss-color-green-link;
         }
       }
 
       &:hover,
       &:focus {
+        > span {
+          text-decoration: underline;
+          color: $sdss-color-grey-dark;
+        }
+
         &::before {
           background-color: $sdss-color-white;
         }
@@ -73,8 +85,14 @@
   // Color bar on the drop down menu
   .su-multi-menu__item--current {
     >.su-multi-menu__link {
+      color: $sdss-color-palo-alto-dark;
+
       &:before {
         background-color: $sdss-color-white;
+
+        @include grid-media-max('md') {
+          background-color: $sdss-color-palo-alto-dark;
+        }
       }
     }
   }
@@ -90,6 +108,7 @@
         &:focus {
           font-weight: $su-font-regular;
         }
+
       }
 
       // underline on current page.

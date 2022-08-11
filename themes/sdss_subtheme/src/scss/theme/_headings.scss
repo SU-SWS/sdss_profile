@@ -6,7 +6,9 @@ h1,
 h2,
 h3,
 h4,
+h5,
 h6 {
+  color: $sdss-color-palo-alto-dark;
   font-weight: $su-font-regular;
 }
 
@@ -38,10 +40,9 @@ h5 {
   h4,
   h5,
   h6 {
-    a,
-    &.su-link--external {
+    a {
       color: $sdss-color-palo-alto-dark;
-      font-weight: unset;
+      font-weight: $su-font-regular;
       text-decoration: none;
 
       &:hover {
@@ -55,6 +56,22 @@ h5 {
       &::after {
         background-color: $sdss-color-palo-alto-dark;
       }
+
+      &.su-link--external {
+        font-weight: $su-font-regular;
+
+        &::after {
+          background-color: $sdss-color-palo-alto-dark;
+        }
+
+        &:hover {
+          color: $sdss-color-blue-dark-hover;
+
+          &::after {
+            background-color: $sdss-color-blue-dark-hover;
+          }
+        }
+      }
     }
   }
 }
@@ -62,11 +79,19 @@ h5 {
 // Headings with Links - green row backgrounds.
 .su-row-bgcolor--green {
   .su-wysiwyg-text {
+
+    .su-quote-text,
+    .su-font-splash {
+      color: $sdss-color-white;
+    }
+
     h2,
     h3,
     h4,
     h5,
     h6 {
+      color: $sdss-color-white;
+
       a,
       &.su-link--external {
         color: $sdss-color-white;

@@ -16,7 +16,7 @@ settings:
       label: Green
     -
       value: su-row-bgcolor--green-stat
-      label: Green Stat Card
+      label: 'Green Stat Card'
     -
       value: su-row-bgcolor--blue
       label: 'Light Blue'

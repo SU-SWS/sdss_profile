@@ -19,8 +19,16 @@
 }
 
 //People teasers
-.stanford-people-grid .views-field-title a {
-  @include sdss-link--primary;
+.stanford-people-grid {
+  .views-field-title {
+    a {
+      @include sdss-link--primary;
+    }
+  }
+
+  .views-field-su-person-full-title {
+    font-size: 2rem;
+  }
 }
 
 
@@ -29,7 +37,7 @@
     a {
       @include sdss-h4;
 
-      color: $sdss-color-green-link;
+      color: $sdss-color-palo-alto-dark;
       font-weight: $su-font-regular;
 
       &:hover {
@@ -51,6 +59,7 @@
 
     .su-person-short-title {
       color: $sdss-color-grey-dark;
+      font-size: 2rem;
     }
   }
 }
