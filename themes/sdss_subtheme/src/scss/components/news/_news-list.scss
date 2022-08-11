@@ -27,12 +27,12 @@
 
   .su-news-list__topics {
     a {
-      @include type_d;
-
+      font-size: 2rem;
       color: $sdss-color-grey-60;
       font-weight: $su-font-regular;
       text-transform: uppercase;
     }
+
     ul {
       margin-top: 0;
 

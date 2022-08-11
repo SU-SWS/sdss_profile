@@ -54,6 +54,7 @@
         font-weight: $su-font-regular;
         text-transform: uppercase;
         text-decoration: none;
+        font-size: 2rem;
       }
     }
 
@@ -62,6 +63,7 @@
         @include link--action;
         @include sdss-link--primary;
 
+        font-weight: $su-font-regular;
         text-decoration: none;
 
         &:after {
