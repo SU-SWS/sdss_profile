@@ -5,16 +5,20 @@
         &.ptype-stanford-spacer {
             margin-bottom: 0;
 
-            .sdss-spacer-default {
+            .sdss-spacer {
                 @include responsive-spacing('margin-bottom', 4);
-            }
 
-            .sdss-spacer-reduced {
-                @include responsive-spacing('margin-bottom', 1);
-            }
-
-            .sdss-spacer-minimal {
-                @include responsive-spacing('margin-bottom', -1);
+                &.sdss-spacer-default {
+                    @include responsive-spacing('margin-bottom', 4);
+                }
+    
+                &.sdss-spacer-reduced {
+                    @include responsive-spacing('margin-bottom', 1);
+                }
+    
+                &.sdss-spacer-minimal {
+                    @include responsive-spacing('margin-bottom', -1);
+                }
             }
         }
     }
