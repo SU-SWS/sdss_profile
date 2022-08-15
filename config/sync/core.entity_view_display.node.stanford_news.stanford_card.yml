@@ -21,13 +21,12 @@ dependencies:
     - ds
     - element_class_formatter
     - field_formatter_class
-    - link
     - stanford_media
     - user
 third_party_settings:
   ds:
     layout:
-      id: pattern_news-vertical-teaser
+      id: pattern_sdss-news-vertical-teaser
       library: null
       disable_css: false
       entity_classes: all_classes
@@ -41,8 +40,8 @@ third_party_settings:
         - node_title
       news_topics:
         - su_news_topics
-      news_source:
-        - su_news_source
+      news_dek:
+        - su_news_dek
       news_url:
         - 'dynamic_token_field:node-news_content_url'
     fields:
@@ -58,6 +57,7 @@ third_party_settings:
         formatter: default
         settings:
           link: false
+          'link class': ''
           wrapper: ''
           class: ''
 id: node.stanford_news.stanford_card
@@ -65,6 +65,19 @@ targetEntityType: node
 bundle: stanford_news
 mode: stanford_card
 content:
+  su_news_dek:
+    type: wrapper_class
+    label: above
+    settings:
+      class: ''
+      tag: div
+      link: false
+      link_class: ''
+      summary: false
+      trim: 200
+    third_party_settings: {  }
+    weight: 3
+    region: news_dek
   su_news_featured_media:
     type: media_multimedia_formatter
     label: hidden
@@ -86,20 +99,6 @@ content:
         class: ''
     weight: 0
     region: news_vertical_teaser_image
-  su_news_source:
-    type: link
-    label: hidden
-    settings:
-      trim_length: null
-      url_only: true
-      url_plain: true
-      rel: '0'
-      target: '0'
-    third_party_settings:
-      field_formatter_class:
-        class: ''
-    weight: 3
-    region: news_source
   su_news_topics:
     type: entity_reference_list_label_class
     label: hidden
@@ -111,7 +110,7 @@ content:
       field_formatter_class:
         class: ''
       ds:
-        ds_limit: '3'
+        ds_limit: '1'
     weight: 2
     region: news_topics
 hidden:
@@ -124,6 +123,6 @@ hidden:
   su_news_banner_media_caption: true
   su_news_byline: true
   su_news_components: true
-  su_news_dek: true
   su_news_publishing_date: true
+  su_news_source: true
   su_shared_tags: true

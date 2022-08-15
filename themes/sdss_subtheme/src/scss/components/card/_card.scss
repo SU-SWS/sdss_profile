@@ -14,6 +14,7 @@
 }
 
 .su-card {
+  background-color: transparent;
 
   @include grid-media-max('sm') {
     figure,

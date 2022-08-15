@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.stanford_news.su_news_publishing_date
     - field.field.node.stanford_news.su_news_source
     - field.field.node.stanford_news.su_news_topics
+    - field.field.node.stanford_news.su_shared_tags
     - node.type.stanford_news
     - views.view.stanford_news
   module:
@@ -291,7 +292,7 @@ third_party_settings:
             region: main
             configuration:
               id: 'field_block:node:stanford_news:su_news_topics'
-              label: 'More News Topics'
+              label: 'Related Topics'
               label_display: visible
               provider: layout_builder
               context_mapping:
@@ -305,31 +306,6 @@ third_party_settings:
                 third_party_settings:
                   field_formatter_class:
                     class: su-new-more-topics
-                  ds:
-                    ds_limit: ''
-            weight: 0
-            additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: jumpstart_ui_one_column
-        layout_settings:
-          label: 'Extra Views'
-          context_mapping: {  }
-          extra_classes: section-supporting-content
-          centered: centered-container
-          columns: default
-        components:
-          d43e60bd-c832-439e-8151-1b2fd851b98e:
-            uuid: d43e60bd-c832-439e-8151-1b2fd851b98e
-            region: main
-            configuration:
-              id: 'views_block:stanford_news-vertical_teaser_term'
-              label: 'More News'
-              label_display: visible
-              provider: views
-              context_mapping: {  }
-              views_label: 'More News'
-              items_per_page: none
             weight: 0
             additional: {  }
         third_party_settings: {  }
