@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+.ds-entity--stanford-page {
+  .su-card {
+
+    .su-card__contents {
+      a {
+        @include sdss-link--primary;
+
+        font-weight: $su-font-regular;
+      }
+    }
+  }
+}
+
 .su-card {
 
   @include grid-media-max('sm') {
