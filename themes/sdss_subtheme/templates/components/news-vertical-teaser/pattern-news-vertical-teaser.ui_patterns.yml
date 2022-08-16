@@ -38,8 +38,3 @@ sdss-news-vertical-teaser:
       description: "The footer area."
       preview: ""
   use: "@sdss_subtheme/news-vertical-teaser/pattern-news-vertical-teaser.html.twig"
-  libraries:
-    - newsverteaser:
-        css:
-          component:
-            ../../../dist/css/news-vertical-teaser.css: { weight: 1000 }
