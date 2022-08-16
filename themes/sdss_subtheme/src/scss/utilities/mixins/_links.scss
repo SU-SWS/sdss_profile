@@ -17,7 +17,7 @@
 
 // Primary hover/focus/active/disabled buttons
 @mixin sdss-link-primary--hover {
-  color: $sdss-color-green-hover;
+  color: $sdss-color-black;
   cursor: pointer;
 
   & svg.mailto {
