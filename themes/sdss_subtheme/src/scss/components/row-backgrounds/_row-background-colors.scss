@@ -20,7 +20,7 @@
 .su-row-bgcolor--green,
 .su-row-bgcolor--blue,
 .su-row-bgcolor--grey {
-  @include responsive-spacing('padding-top', 7);
+  @include responsive-spacing('padding-top', 4);
 }
 
 .su-row-bgcolor--white {
