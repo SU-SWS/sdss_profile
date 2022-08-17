@@ -29,7 +29,7 @@
 }
 
 @mixin sdss-button-primary--focus {
-  border: 3px solid $sdss-color-palo-alto-dark;
+  outline: 3px solid $sdss-color-palo-alto-dark;
   background-color: $sdss-color-green-bright;
   box-shadow: none;
   color: $sdss-color-palo-alto-dark;
@@ -57,7 +57,7 @@
 }
 
 @mixin sdss-button-secondary--focus {
-  border: 3px solid $sdss-color-palo-alto-dark;
+  outline: 3px solid $sdss-color-palo-alto-dark;
   background-color: transparent;
   box-shadow: none;
   color: $sdss-color-palo-alto-dark;
@@ -87,7 +87,7 @@
 
 @mixin sdss-button-secondary-neg--focus {
   @include padding(.375em .875em);
-  border: 3px solid $sdss-color-white;
+  outline: 3px solid $sdss-color-white;
   background-color: transparent;
   box-shadow: none;
   color: $sdss-color-white;
