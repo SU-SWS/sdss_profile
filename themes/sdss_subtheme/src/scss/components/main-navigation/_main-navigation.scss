@@ -36,7 +36,7 @@
     .su-multi-menu__menu-lv2 {
       padding-top: 1px;
       padding-left: 1.2rem;
-      margin-left: -1.7rem;
+      margin-left: 0;
       box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
       z-index: 101;
       max-width: 30rem;
@@ -52,8 +52,7 @@
       border-bottom: none;
       color: $sdss-color-grey-dark;
       font-weight: $su-font-regular;
-      font-size: 20px;
-      line-height: 26px;
+      font-size: 1.9rem;
 
       &:hover {
         > span {
@@ -64,7 +63,7 @@
 
       &:active {
         &:before {
-          background-color: $sdss-color-green-link;
+          background-color: $sdss-color-black;
         }
       }
 
@@ -76,7 +75,8 @@
         }
 
         &::before {
-          background-color: $sdss-color-white;
+          background-color: $sdss-color-black;
+          width: 3px;
         }
       }
     }
@@ -88,7 +88,8 @@
       color: $sdss-color-palo-alto-dark;
 
       &:before {
-        background-color: $sdss-color-white;
+        background-color: $sdss-color-black;
+        width: 3px;
 
         @include grid-media-max('md') {
           background-color: $sdss-color-palo-alto-dark;
@@ -129,6 +130,10 @@
   &.su-multi-menu--dropdowns {
     .su-multi-menu__menu-lv1 {
       >.su-multi-menu__item--parent {
+        >.su-multi-menu__menu {
+          // min-width: 460px;
+        }
+
         >.su-multi-menu__link {
 
           // Remove the pipe | on the dropdrop down menus
@@ -351,6 +356,38 @@
           }
         }
 
+      }
+    }
+  }
+}
+
+// Spacing overrides
+.su-multi-menu {
+  .su-multi-menu__menu-lv2,
+  .su-multi-menu__menu-lv3,
+  .su-multi-menu__menu-lv4,
+  .su-multi-menu__menu-lv5 {
+    .su-multi-menu__item {
+      >.su-multi-menu__link {
+        @include responsive-spacing('padding-bottom', -1);
+        @include responsive-spacing('padding-top', -1);
+
+        margin: 0;
+
+        &:hover {
+          &:before {
+            left: -12px;
+          }
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+
+          > span {
+            color: $sdss-color-green-link;
+          }
+        }
       }
     }
   }
