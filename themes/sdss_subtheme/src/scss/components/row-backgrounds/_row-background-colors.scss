@@ -20,7 +20,7 @@
 .su-row-bgcolor--green,
 .su-row-bgcolor--blue,
 .su-row-bgcolor--grey {
-  @include responsive-spacing('padding-top', 7);
+  @include responsive-spacing('padding-top', 4);
 }
 
 .su-row-bgcolor--white {
@@ -50,6 +50,7 @@
       @include sdss-link--negative;
 
       &.su-button,
+      &.su-button--big,
       &.su-link--external.su-button {
         color: $sdss-color-palo-alto-dark;
         text-decoration: none;
@@ -63,13 +64,30 @@
           text-decoration: underline;
           color: $sdss-color-white;
           background: transparent;
-          border: 1px solid $sdss-color-white;
+          outline: 1px solid $sdss-color-white;
+
+          &::after {
+            background-color: $sdss-color-white;
+          }
         }
       }
 
       &.su-button--secondary,
       &.su-link--external.su-button-secondary {
         @include sdss-button--secondary-neg;
+      }
+    }
+  }
+
+  // Padding adjustment for buttons excluding --big.
+  div {
+    a {
+      &.su-button,
+      &.su-link--external.su-button {
+        &:active,
+        &:focus {
+          padding: 0.375em 0.875em;
+        }
       }
     }
   }

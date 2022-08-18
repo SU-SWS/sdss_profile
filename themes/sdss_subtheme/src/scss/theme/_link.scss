@@ -3,7 +3,6 @@
 // Override to main style.
 a {
   color: $sdss-color-palo-alto-dark;
-  // text-decoration: underline;
   font-weight: $su-font-regular;
 
   &:hover {
@@ -20,12 +19,11 @@ footer {
       color: $sdss-color-grey-dark;
       border: 1px solid $sdss-color-palo-alto-dark;
       background-color: transparent;
-      padding: 0 3px 1px;
     }
 
-    &.su-button {
+    &.su-button--big {
       &:focus {
-        padding: .6rem 2.4rem;
+        padding: 1.5rem 3rem 1.8rem;
       }
     }
 
