@@ -7,9 +7,6 @@
     a {
       @include sdss-h4;
       @include sdss-link--primary;
-
-      // color: $sdss-color-green-link;
-      // font-weight: $su-font-regular;
     }
   }
 
@@ -23,6 +20,8 @@
   .views-field-title {
     a {
       @include sdss-link--primary;
+
+      font-size: 1.5625em;
     }
   }
 
@@ -35,14 +34,11 @@
 .ds-entity--stanford-person {
   .su-card {
     a {
-      @include sdss-h4;
+      font-size: .52em;
 
       color: $sdss-color-palo-alto-dark;
       font-weight: $su-font-regular;
 
-      &:hover {
-        color: $sdss-color-blue-hover;
-      }
 
       &:focus {
         color: $sdss-color-grey-dark;
