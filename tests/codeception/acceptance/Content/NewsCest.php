@@ -94,30 +94,6 @@ class NewsCest {
   }
 
   /**
-   * Test that only two of three new news nodes show up in the more news view
-   * on the node page.
-   */
-  public function testMoreNewsView(AcceptanceTester $I) {
-    $I->logInWithRole('administrator');
-
-    $first_news = $I->createEntity([
-      'type' => 'stanford_news',
-      'title' => $this->faker->words(3, TRUE),
-    ]);
-    $second_news = $I->createEntity([
-      'type' => 'stanford_news',
-      'title' => $this->faker->words(3, TRUE),
-    ]);
-    $third_news = $I->createEntity([
-      'type' => 'stanford_news',
-      'title' => $this->faker->words(3, TRUE),
-    ]);
-
-    $I->amOnPage($second_news->toUrl()->toString());
-    $I->canSeeNumberOfElements(".stanford-news--cards .su-card", [2, 3]);
-  }
-
-  /**
    * Test that the XML sitemap and metatag configuration is set.
    */
   public function testXMLMetaDataRevisions(AcceptanceTester $I) {
