@@ -17,8 +17,9 @@
 
 // Primary hover/focus/active/disabled buttons
 @mixin sdss-link-primary--hover {
-  color: $sdss-color-green-hover;
+  color: $sdss-color-black;
   cursor: pointer;
+  text-decoration: underline;
 
   & svg.mailto {
     fill: $sdss-color-black;
@@ -79,7 +80,6 @@
 
   color: $sdss-color-palo-alto-dark;
   outline-color: $sdss-color-palo-alto-dark;
-  text-decoration: underline;
 
   &::after {
     background-color: $sdss-color-palo-alto-dark;
@@ -139,7 +139,7 @@
     @include sdss-link-primary--hover;
 
     &::after {
-      background-color: $sdss-color-green-hover;
+      background-color: $sdss-color-black;
     }
   }
 
@@ -147,7 +147,7 @@
     @include sdss-link-primary--focus;
 
     &::after {
-      background-color: $sdss-color-palo-alto-dark;
+      background-color: $sdss-color-black;
     }
   }
 
@@ -155,7 +155,7 @@
     @include sdss-link-primary--active;
 
     &::after {
-      background-color: $sdss-color-palo-alto-dark;
+      background-color: $sdss-color-black;
     }
   }
 }

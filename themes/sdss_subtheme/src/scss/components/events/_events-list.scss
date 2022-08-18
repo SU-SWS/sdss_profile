@@ -107,6 +107,7 @@
       >a {
         @include sdss-link--primary;
 
+        display: inline-block;
         text-decoration: none;
       }
     }
