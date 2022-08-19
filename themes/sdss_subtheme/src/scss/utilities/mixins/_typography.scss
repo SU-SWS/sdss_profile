@@ -6,22 +6,9 @@
 
 // Intro is the Drupal style = Display is the design language.
 @mixin sdss-display {
+  @include type_c;
+
   font-weight: $su-font-regular;
-
-  @include grid-media-max('sm') {
-    font-size: 1.5em;
-    line-height: 120%;
-  }
-
-  @include grid-media-min('md') {
-    font-size: 1.8em;
-    line-height: 130%;
-  }
-
-  @include grid-media-min('lg') {
-    font-size: 1.8em;
-    line-height: 130%;
-  }
 }
 
 // Splash is the Drupal style = Block Quote Big is the design language.
@@ -48,25 +35,12 @@
 
 // Quote Text is the Drupal style = Block Quote Medium is the design language.
 @mixin sdss-block-quote--med {
+  @include type_b;
+
   color: $sdss-color-palo-alto-dark;
   font-weight: $su-font-regular;
   font-style: italic;
   letter-spacing: -0.01em;
-
-  @include grid-media-max('sm') {
-    font-size: 1.7em; //32px
-    line-height: 40px;
-  }
-
-  @include grid-media-min('md') {
-    font-size: 2.5em;  //48px
-    line-height: 60px;
-  }
-
-  @include grid-media-min('lg') {
-    font-size: 3.4em;  //64px
-    line-height: 120%;
-  }
 }
 
  // Callout text is the Drupal style = Block Quote Small is the design language.
