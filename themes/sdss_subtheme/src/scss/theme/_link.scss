@@ -17,7 +17,7 @@ footer {
   a {
     &:focus {
       color: $sdss-color-grey-dark;
-      border: 1px solid $sdss-color-palo-alto-dark;
+      outline: 1px solid $sdss-color-palo-alto-dark;
       background-color: transparent;
     }
 
@@ -30,8 +30,8 @@ footer {
     &.su-link--action {
 
       &:focus {
-        border-radius: 30px;
-        padding: 0 6px 1px;
+        // border-radius: 30px;
+        // padding: 0 6px 1px;
       }
     }
 
@@ -76,10 +76,10 @@ footer {
 
   &:focus {
     color: $sdss-color-grey-dark;
-    border: 1px solid $sdss-color-palo-alto-dark;
+    outline: 1px solid $sdss-color-palo-alto-dark;
     background-color: transparent;
-    border-radius: 30px;
-    padding: 0 6px 1px;
+    // border-radius: 30px;
+    // padding: 0 6px 1px;
   }
 
   &:active {

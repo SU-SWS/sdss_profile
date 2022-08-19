@@ -112,6 +112,7 @@
   border: 1px solid $sdss-color-green-bright;
   font-weight: $su-font-regular;
   line-height: 1.15;
+  margin: 0 3px 3px;
   text-decoration: none;
   transition: background-color .25s ease-in-out,color .25s ease-in-out,border-color .25s ease-in-out;
 
@@ -128,6 +129,7 @@
   border-radius: 35px;
   color: $sdss-color-black;
   border: 1px solid $sdss-color-green-bright;
+  margin: 0 3px 3px;
   text-decoration: none;
   transition: background-color .25s ease-in-out,color .25s ease-in-out,border-color .25s ease-in-out;
 
@@ -148,6 +150,7 @@
   border-radius: 30px;
   font-weight: $su-font-regular;
   line-height: 1.15;
+  margin: 0 3px 3px;
   text-decoration: none;
 
   &::after {
@@ -167,6 +170,7 @@
   border-radius: 30px;
   font-weight: $su-font-regular;
   line-height: 1.15;
+  margin: 0 3px 3px;
 
   &::after {
     background-color: $sdss-color-white;
