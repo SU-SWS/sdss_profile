@@ -27,14 +27,6 @@ footer {
       }
     }
 
-    &.su-link--action {
-
-      &:focus {
-        // border-radius: 30px;
-        // padding: 0 6px 1px;
-      }
-    }
-
     &.mailto {
       svg {
         fill: $sdss-color-palo-alto-dark;
@@ -78,8 +70,6 @@ footer {
     color: $sdss-color-grey-dark;
     outline: 1px solid $sdss-color-palo-alto-dark;
     background-color: transparent;
-    // border-radius: 30px;
-    // padding: 0 6px 1px;
   }
 
   &:active {
