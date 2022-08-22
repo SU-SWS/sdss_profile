@@ -107,11 +107,12 @@
   @include sdss-button-primary--hover-and-focus;
   @include padding(.375em .875em);
   background: $sdss-color-green-bright;
-  border-radius: 30px;
+  border-radius: 3rem;
   color: $sdss-color-black;
   border: 1px solid $sdss-color-green-bright;
   font-weight: $su-font-regular;
   line-height: 1.15;
+  margin: 0 .3rem .3rem;
   text-decoration: none;
   transition: background-color .25s ease-in-out,color .25s ease-in-out,border-color .25s ease-in-out;
 
@@ -125,9 +126,10 @@
   @include sdss-button-primary--hover-and-focus;
 
   background: $sdss-color-green-bright;
-  border-radius: 35px;
+  border-radius: 3.5rem;
   color: $sdss-color-black;
   border: 1px solid $sdss-color-green-bright;
+  margin: 0 .3rem .3rem;
   text-decoration: none;
   transition: background-color .25s ease-in-out,color .25s ease-in-out,border-color .25s ease-in-out;
 
@@ -145,9 +147,10 @@
   background: transparent;
   color: $sdss-color-palo-alto-dark;
   border: 1px solid $sdss-color-palo-alto-dark;
-  border-radius: 30px;
+  border-radius: 3rem;
   font-weight: $su-font-regular;
   line-height: 1.15;
+  margin: 0 .3rem .3rem;
   text-decoration: none;
 
   &::after {
@@ -164,9 +167,10 @@
   color: $sdss-color-white;
   border: 1px solid $sdss-color-white;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 3rem;
   font-weight: $su-font-regular;
   line-height: 1.15;
+  margin: 0 .3rem .3rem;
 
   &::after {
     background-color: $sdss-color-white;
@@ -181,7 +185,7 @@
   @include padding(.375em .875em);
 
   background: $su-color-bright-red;
-  border-radius: 30px;
+  border-radius: 3rem;
   font-weight: $su-font-regular;
   line-height: 1.15;
 }

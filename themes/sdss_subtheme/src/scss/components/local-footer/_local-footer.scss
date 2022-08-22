@@ -2,11 +2,22 @@
 
 nav[aria-label^='footer'] {
   a {
+    color: $sdss-color-white;
+
     &:hover {
       color: $sdss-color-white;
     }
-    &.su-link--external:hover {
-      color: $sdss-color-white;
+
+    &.su-link--external {
+      &:hover,
+      &:active,
+      &:focus {
+        color: $sdss-color-white;
+
+        &:after {
+          background-color: $sdss-color-white;
+        }
+      }
     }
   }
 }
@@ -16,7 +27,7 @@ nav[aria-label^='footer'] {
   color: $sdss-color-white;
 
   a {
-    font-weight: $su-font-semi-bold;
+    font-weight: $su-font-regular;
   }
 
   // link sizing.
