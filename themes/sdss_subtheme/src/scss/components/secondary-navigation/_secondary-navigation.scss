@@ -51,11 +51,6 @@
           width: 3px;
         }
       }
-
-      // Padding needed for the focus ring.
-      &:focus {
-        padding: 1.6rem 4.8rem 1.6rem 2.4rem;
-      }
     }
   }
 
@@ -86,9 +81,9 @@
       }
     }
 
-    // Padding needed for the focus ring.
     &:focus {
-      padding: 1.6rem 4.8rem 1.6rem 2.4rem;
+      color: $sdss-color-grey-dark;
+      border: 1px solid $sdss-color-palo-alto-dark;
     }
   }
 

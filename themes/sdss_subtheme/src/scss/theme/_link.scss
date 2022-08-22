@@ -76,9 +76,8 @@ footer {
 
   &:focus {
     color: $sdss-color-grey-dark;
-    border: 1px solid $sdss-color-palo-alto-dark;
+    outline: 1px solid $sdss-color-palo-alto-dark;
     background-color: transparent;
-    border-radius: 30px;
     padding: 0 6px 1px;
   }
 
