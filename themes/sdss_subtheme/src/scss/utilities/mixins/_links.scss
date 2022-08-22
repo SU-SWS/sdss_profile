@@ -30,8 +30,6 @@
   color: $sdss-color-grey-dark;
   border: 1px solid $sdss-color-palo-alto-dark;
   background-color: transparent;
-  border-radius: 30px;
-  padding: 0 6px 1px;
 }
 
 @mixin sdss-link-primary--active {
@@ -53,8 +51,6 @@
   color: $sdss-color-white;
   border: 1px solid $sdss-color-white;
   background-color: transparent;
-  border-radius: 30px;
-  padding: 0 6px 1px;
 }
 
 @mixin sdss-link-negative--active {
@@ -118,7 +114,6 @@
   @include sdss-link-negative-footer--hover-and-focus;
 
   color: $sdss-color-blue-bright;
-  outline-color: $sdss-color-blue-bright;
   text-decoration: none;
 
   &::after {
@@ -175,7 +170,7 @@
     @include sdss-link-negative--focus;
 
     &::after {
-      background-color: $sdss-color-blue-bright-dark;
+      background-color: $sdss-color-white;
     }
   }
 
@@ -183,7 +178,7 @@
     @include sdss-link-negative--active;
 
     &::after {
-      background-color: $sdss-color-blue-bright-dark;
+      background-color: $sdss-color-white;
     }
   }
 }

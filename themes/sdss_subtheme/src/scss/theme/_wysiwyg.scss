@@ -28,4 +28,15 @@
       @include sdss-block-quote--sm;
     }
   }
+
+  .caption {
+    figcaption {
+      color: $su-color-cool-grey;
+      font-size: 1.8rem;
+      font-style: normal;
+      line-height: 1.4;
+      text-align: right;
+      margin-bottom: 1em;
+    }
+  }
 }

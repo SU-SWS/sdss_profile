@@ -17,21 +17,13 @@ footer {
   a {
     &:focus {
       color: $sdss-color-grey-dark;
-      border: 1px solid $sdss-color-palo-alto-dark;
+      outline: 1px solid $sdss-color-palo-alto-dark;
       background-color: transparent;
     }
 
     &.su-button--big {
       &:focus {
         padding: 1.5rem 3rem 1.8rem;
-      }
-    }
-
-    &.su-link--action {
-
-      &:focus {
-        border-radius: 30px;
-        padding: 0 6px 1px;
       }
     }
 
@@ -77,8 +69,6 @@ footer {
   &:focus {
     color: $sdss-color-grey-dark;
     outline: 1px solid $sdss-color-palo-alto-dark;
-    background-color: transparent;
-    padding: 0 6px 1px;
   }
 
   &:active {
