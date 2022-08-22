@@ -51,11 +51,13 @@
 
       &.su-button,
       &.su-button--big,
-      &.su-link--external.su-button {
+      &.su-link--external.su-button,
+      &.su-link--external.su-button--big {
         color: $sdss-color-palo-alto-dark;
         text-decoration: none;
 
         &:hover {
+          background-color: $sdss-color-green-link;
           text-decoration: underline;
         }
 
@@ -95,6 +97,12 @@
   .su-link--action {
     &::after {
       background-color: $sdss-color-blue-bright;
+    }
+  }
+
+  figcaption {
+    &.su-media__caption {
+      color: $sdss-color-white;
     }
   }
 }
