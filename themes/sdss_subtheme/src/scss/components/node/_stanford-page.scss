@@ -2,16 +2,27 @@
 
 .jumpstart-ui--one-column {
   .container-1-items {
-    
-    @include grid-media('md') {
-      margin-right: 50px;
-      margin-left: 50px;
-    }
-  
-    @include grid-media-max('sm') {
-      margin-right: 30px;
-      margin-left: 30px;
-    }
+
+    // @include grid-media('md') {
+    //   margin-right: 50px;
+    //   margin-left: 50px;
+    // }
+
+    // @include grid-media-max('sm') {
+    //   margin-right: 30px;
+    //   margin-left: 30px;
+    // }
 
   }
 }
+
+// For the issue with the h1's collapsting over to the left.
+.jumpstart-ui--one-column.centered-content {
+  @include centered-column;
+
+  > div:first-child {
+    margin-left: unset;
+    margin-right: unset;
+  }
+}
+
