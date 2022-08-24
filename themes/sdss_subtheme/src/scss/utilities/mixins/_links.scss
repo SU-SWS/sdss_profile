@@ -28,7 +28,7 @@
 
 @mixin sdss-link-primary--focus {
   color: $sdss-color-grey-dark;
-  border: 1px solid $sdss-color-palo-alto-dark;
+  outline: 1px solid $sdss-color-palo-alto-dark;
   background-color: transparent;
 }
 
@@ -49,7 +49,7 @@
 
 @mixin sdss-link-negative--focus {
   color: $sdss-color-white;
-  border: 1px solid $sdss-color-white;
+  outline: 1px solid $sdss-color-white;
   background-color: transparent;
 }
 
