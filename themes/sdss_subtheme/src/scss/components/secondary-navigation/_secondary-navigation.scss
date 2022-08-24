@@ -12,7 +12,7 @@
   }
 }
 
-.su-secondary-nav.su-secondary-nav--accordion {
+.su-secondary-nav.su-secondary-nav--buttons {
 
   >.su-secondary-nav__menu {
     @include responsive-spacing('padding-bottom', 6);
@@ -101,32 +101,30 @@
       }
     }
   }
-
 }
 
 
-// Accordion icons
-.su-secondary-nav--accordion {
+// Secondary nav collapse/expand icons
+.su-secondary-nav--buttons {
   .su-secondary-nav__item--parent.su-secondary-nav__item--expanded {
-    >.su-secondary-nav__link {
-      &:after {
+    >.su-nav-toggle {
+      &:before {
         background: transparent url("../../assets/svg/caret-down-green.svg") no-repeat center / 50%;
-        transform: rotate(180deg);
       }
     }
   }
 }
 
-.su-secondary-nav--accordion {
+.su-secondary-nav--buttons {
   .su-secondary-nav__item--parent {
-    >.su-secondary-nav__link {
-      &:after {
+    >.su-nav-toggle {
+      &:before {
         background: transparent url("../../assets/svg/caret-down-green.svg") no-repeat center / 50%;
         border: 2px solid $sdss-color-green-link;
         border-radius: 19px;
         width: 32px;
         height: 32px;
-     }
+      }
     }
   }
 }
