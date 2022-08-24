@@ -12,10 +12,10 @@
         .event-list-item__type {
           a {
             @include sdss-link--primary;
-            @include type_f;
 
             display: inline-block;
             color: $sdss-color-grey-60;
+            font-size: 2rem;
             font-weight: $su-font-regular;
             text-transform: uppercase;
             text-decoration: none;
