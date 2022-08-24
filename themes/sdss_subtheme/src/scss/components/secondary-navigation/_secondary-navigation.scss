@@ -12,7 +12,7 @@
   }
 }
 
-.su-secondary-nav.su-secondary-nav--accordion {
+.su-secondary-nav.su-secondary-nav--buttons {
 
   >.su-secondary-nav__menu {
     @include responsive-spacing('padding-bottom', 6);
@@ -51,11 +51,6 @@
           width: 3px;
         }
       }
-
-      // Padding needed for the focus ring.
-      &:focus {
-        padding: 1.6rem 4.8rem 1.6rem 2.4rem;
-      }
     }
   }
 
@@ -85,11 +80,6 @@
         background-color: transparent;
       }
     }
-
-    // Padding needed for the focus ring.
-    &:focus {
-      padding: 1.6rem 4.8rem 1.6rem 2.4rem;
-    }
   }
 
 
@@ -107,32 +97,30 @@
       }
     }
   }
-
 }
 
 
-// Accordion icons
-.su-secondary-nav--accordion {
+// Secondary nav collapse/expand icons
+.su-secondary-nav--buttons {
   .su-secondary-nav__item--parent.su-secondary-nav__item--expanded {
-    >.su-secondary-nav__link {
-      &:after {
+    >.su-nav-toggle {
+      &:before {
         background: transparent url("../../assets/svg/caret-down-green.svg") no-repeat center / 50%;
-        transform: rotate(180deg);
       }
     }
   }
 }
 
-.su-secondary-nav--accordion {
+.su-secondary-nav--buttons {
   .su-secondary-nav__item--parent {
-    >.su-secondary-nav__link {
-      &:after {
+    >.su-nav-toggle {
+      &:before {
         background: transparent url("../../assets/svg/caret-down-green.svg") no-repeat center / 50%;
         border: 2px solid $sdss-color-green-link;
         border-radius: 19px;
         width: 32px;
         height: 32px;
-     }
+      }
     }
   }
 }
