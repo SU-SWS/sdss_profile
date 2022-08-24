@@ -80,6 +80,10 @@
         background-color: transparent;
       }
     }
+
+    &:focus {
+      color: $sdss-color-grey-dark;
+    }
   }
 
 
