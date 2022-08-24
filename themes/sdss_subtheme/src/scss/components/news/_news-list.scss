@@ -7,6 +7,12 @@
       @include sdss-link--primary;
 
       text-decoration: none;
+
+      &:hover {
+        >h2 {
+          color: $sdss-color-black;
+        }
+      }
     }
   }
 
