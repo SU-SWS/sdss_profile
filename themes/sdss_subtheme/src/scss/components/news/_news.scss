@@ -33,10 +33,10 @@
       @include responsive-spacing('margin-top', -1);
 
       a {
-        @include type_d;
         @include sdss-link--primary;
 
         color: $sdss-color-grey-60;
+        font-size: 2rem;
         font-weight: $su-font-regular;
         text-decoration: none;
         text-transform: uppercase;
