@@ -6,6 +6,13 @@
   }
 }
 
+// Removing margin-bottom for all banners.
+.paragraph-item {
+  &.ptype-stanford-banner {
+    margin-bottom: 0;
+  }
+}
+
 .sdss-banner-wrapper--default {
   //Gradiant on banner image.
   z-index: 1;

@@ -21,6 +21,20 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
+}
+
+main#page-content {
+
+  margin-top: 115px;
+
+  @include grid-media('md') {
+    margin-top: 125px;
+  }
+
+  @include grid-media-min('lg') {
+    margin-top: 177px;
+  }
 }
 
 // if logged in
@@ -136,15 +150,14 @@
   &.su-multi-menu--dropdowns {
     .su-multi-menu__menu-lv1 {
       >.su-multi-menu__item--parent {
-        >.su-multi-menu__menu {
-          // min-width: 460px;
-        }
+        margin: 0 40px 0 0;
 
         >.su-multi-menu__link {
 
           // Remove the pipe | on the dropdrop down menus
           &::after {
             border-right: none;
+            margin-left: 6px;
           }
         }
 
