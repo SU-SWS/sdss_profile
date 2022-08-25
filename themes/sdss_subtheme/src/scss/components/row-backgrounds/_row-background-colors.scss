@@ -21,6 +21,11 @@
 .su-row-bgcolor--blue,
 .su-row-bgcolor--grey {
   @include responsive-spacing('padding-top', 4);
+
+  @include grid-media-max('md') {
+    @include responsive-spacing('padding-bottom', 2);
+    @include responsive-spacing('margin-bottom', 2);
+  }
 }
 
 .su-row-bgcolor--white {
