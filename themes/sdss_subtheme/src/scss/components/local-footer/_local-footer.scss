@@ -103,6 +103,10 @@ nav[aria-label^='footer'] {
   .su-local-footer__columns {
     a {
       @include sdss-link--negative-footer;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
