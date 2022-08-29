@@ -349,6 +349,7 @@ main#page-content {
         &:hover[aria-expanded=false] {
           &::before {
             box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.14);
+            border: 1px solid $sdss-color-grey-dark;
           }
         }
 
@@ -361,7 +362,7 @@ main#page-content {
 
         &:focus {
           &::before {
-            background: $sdss-color-green-link url("#{$su-image-path}/caret-down-white.svg") no-repeat center / 50%;
+            background: $sdss-color-grey-dark url("#{$su-image-path}/caret-down-white.svg") no-repeat center / 50%;
             border-radius: 19px;
           }
         }
