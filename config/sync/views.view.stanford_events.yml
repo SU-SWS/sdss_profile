@@ -526,7 +526,20 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'No events at this time. Please check back later.'
+            format: stanford_html
+          tokenize: false
       sorts:
         su_event_date_time_value:
           id: su_event_date_time_value
@@ -1872,24 +1885,14 @@ display:
               weight: 7
               plugin: views_row
               source: su_event_type
-            'views_row:su_event_subheadline':
-              destination: subheadline
-              weight: 8
-              plugin: views_row
-              source: su_event_subheadline
-            'views_row:su_event_dek':
-              destination: dek
-              weight: 9
-              plugin: views_row
-              source: su_event_dek
             'views_row:su_event_location':
               destination: address
-              weight: 10
+              weight: 8
               plugin: views_row
               source: su_event_location
             'views_row:edit_node':
               destination: edit
-              weight: 11
+              weight: 9
               plugin: views_row
               source: edit_node
       arguments:
@@ -3024,24 +3027,14 @@ display:
               weight: 7
               plugin: views_row
               source: su_event_type
-            'views_row:su_event_subheadline':
-              destination: subheadline
-              weight: 8
-              plugin: views_row
-              source: su_event_subheadline
-            'views_row:su_event_dek':
-              destination: dek
-              weight: 9
-              plugin: views_row
-              source: su_event_dek
             'views_row:su_event_location':
               destination: address
-              weight: 10
+              weight: 8
               plugin: views_row
               source: su_event_location
             'views_row:edit_node':
               destination: edit
-              weight: 11
+              weight: 9
               plugin: views_row
               source: edit_node
       defaults:
@@ -4846,29 +4839,19 @@ display:
               weight: 8
               plugin: views_row
               source: su_event_type
-            'views_row:su_event_subheadline':
-              destination: subheadline
-              weight: 9
-              plugin: views_row
-              source: su_event_subheadline
-            'views_row:su_event_dek':
-              destination: dek
-              weight: 10
-              plugin: views_row
-              source: su_event_dek
             'views_row:su_event_location':
               destination: address
-              weight: 11
+              weight: 9
               plugin: views_row
               source: su_event_location
             'views_row:edit_node':
               destination: edit
-              weight: 12
+              weight: 10
               plugin: views_row
               source: edit_node
             'views_row:past_event_label':
               destination: date_time
-              weight: 13
+              weight: 11
               plugin: views_row
               source: past_event_label
       arguments:

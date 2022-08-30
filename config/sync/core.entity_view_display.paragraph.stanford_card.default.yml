@@ -12,6 +12,7 @@ dependencies:
     - paragraphs.paragraphs_type.stanford_card
   module:
     - ds
+    - field_formatter_class
     - link
     - stanford_media
     - text
@@ -83,8 +84,11 @@ content:
     settings:
       view_mode: default
       link: false
-      image_style: card_2_1
-    third_party_settings: {  }
+      image_style: card_3_2
+      remove_alt: 0
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 0
     region: card_image
   su_card_super_header:

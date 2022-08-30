@@ -13,7 +13,7 @@ default:
       value: All
   description:
     -
-      value: 'The people link'
+      value: 'People List'
   menu_name:
     -
       value: stanford-person-type

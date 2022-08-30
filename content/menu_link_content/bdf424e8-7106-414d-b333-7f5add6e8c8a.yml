@@ -13,7 +13,7 @@ default:
       value: All
   description:
     -
-      value: 'All results'
+      value: 'News List'
   menu_name:
     -
       value: news-topics

@@ -1,16 +1,16 @@
 <?php
 
-namespace Drupal\Tests\stanford_profile\Kernel\Plugin\InstallTask;
+namespace Drupal\Tests\sdss_profile\Kernel\Plugin\InstallTask;
 
 use Drupal\KernelTests\KernelTestBase;
-use Drupal\stanford_profile\Plugin\InstallTask\Users;
+use Drupal\sdss_profile\Plugin\InstallTask\Users;
 use Drupal\user\Entity\Role;
 use Drupal\user\Entity\User;
 
 /**
  * Class UsersTest.
  *
- * @coversDefaultClass \Drupal\stanford_profile\Plugin\InstallTask\Users
+ * @coversDefaultClass \Drupal\sdss_profile\Plugin\InstallTask\Users
  */
 class UsersTest extends KernelTestBase {
 
@@ -27,7 +27,7 @@ class UsersTest extends KernelTestBase {
    */
   protected function setUp(): void {
     parent::setUp();
-    $this->setInstallProfile('stanford_profile');
+    $this->setInstallProfile('sdss_profile');
 
     $this->installEntitySchema('user');
     $this->installEntitySchema('user_role');
@@ -39,10 +39,11 @@ class UsersTest extends KernelTestBase {
    * The correct number of users should be created.
    */
   public function testUsers() {
+    User::create(['name' => 'admin'])->save();
     $user_plugin = Users::create($this->container, [], '', []);
     $install_state = [];
     $user_plugin->runTask($install_state);
-    $this->assertCount(5, User::loadMultiple());
+    $this->assertCount(1, User::loadMultiple());
   }
 
 }

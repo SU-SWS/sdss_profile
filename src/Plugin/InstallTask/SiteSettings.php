@@ -1,15 +1,16 @@
 <?php
 
-namespace Drupal\stanford_profile\Plugin\InstallTask;
+namespace Drupal\sdss_profile\Plugin\InstallTask;
 
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Logger\LoggerChannelFactoryInterface;
+use Drupal\Core\Password\PasswordGeneratorInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Site\Settings;
 use Drupal\Core\State\StateInterface;
 use Drupal\externalauth\AuthmapInterface;
-use Drupal\stanford_profile\InstallTaskBase;
+use Drupal\sdss_profile\InstallTaskBase;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\GuzzleException;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -18,7 +19,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * SNOW site settings installation.
  *
  * @InstallTask(
- *   id="stanford_profile_site_settings"
+ *   id="sdss_profile_site_settings"
  * )
  */
 class SiteSettings extends InstallTaskBase implements ContainerFactoryPluginInterface {
@@ -48,6 +49,13 @@ class SiteSettings extends InstallTaskBase implements ContainerFactoryPluginInte
   protected $authmap;
 
   /**
+   * Password generator service.
+   *
+   * @var \Drupal\Core\Password\PasswordGeneratorInterface
+   */
+  protected $passwordGenerator;
+
+  /**
    * State Service.
    *
    * @var \Drupal\Core\State\StateInterface
@@ -72,6 +80,7 @@ class SiteSettings extends InstallTaskBase implements ContainerFactoryPluginInte
       $container->get('entity_type.manager'),
       $container->get('http_client'),
       $container->get('externalauth.authmap'),
+      $container->get('password_generator'),
       $container->get('state'),
       $container->get('logger.factory')
     );
@@ -80,13 +89,14 @@ class SiteSettings extends InstallTaskBase implements ContainerFactoryPluginInte
   /**
    * {@inheritDoc}
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, EntityTypeManagerInterface $entityTypeManager, ClientInterface $client, AuthmapInterface $authmap, StateInterface $state, LoggerChannelFactoryInterface $logger_factory) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, EntityTypeManagerInterface $entityTypeManager, ClientInterface $client, AuthmapInterface $authmap, PasswordGeneratorInterface $password_generator, StateInterface $state, LoggerChannelFactoryInterface $logger_factory) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->entityTypeManager = $entityTypeManager;
     $this->client = $client;
     $this->authmap = $authmap;
+    $this->passwordGenerator = $password_generator;
     $this->state = $state;
-    $this->logger = $logger_factory->get('stanford_profile');
+    $this->logger = $logger_factory->get('sdss_profile');
   }
 
   /**
@@ -104,7 +114,7 @@ class SiteSettings extends InstallTaskBase implements ContainerFactoryPluginInte
     // @codeCoverageIgnoreStart
     foreach ($node_pages as $page => $uuid) {
       if ($node = $this->getNode($uuid)) {
-        $this->state->set("stanford_profile.$page", '/node/' . $node->id());
+        $this->state->set("sdss_profile.$page", '/node/' . $node->id());
       }
     }
 
@@ -156,7 +166,7 @@ class SiteSettings extends InstallTaskBase implements ContainerFactoryPluginInte
   protected function addSiteOwner($sunet, $email) {
     $new_user = $this->entityTypeManager->getStorage('user')->create([
       'name' => $sunet,
-      'pass' => user_password(),
+      'pass' => $this->passwordGenerator->generate(),
       'mail' => $email,
       'roles' => ['site_manager'],
       'status' => 1,
@@ -175,13 +185,13 @@ class SiteSettings extends InstallTaskBase implements ContainerFactoryPluginInte
    *   Returned data if any exist.
    */
   protected function getSnowData($site_name) {
-    $api_url = Settings::get('stanford_profile_snow_api_url', self::SNOW_API);
+    $api_url = Settings::get('sdss_profile_snow_api_url', self::SNOW_API);
     try {
       $response = $this->client->request('GET', $api_url, [
         'query' => ['website_address' => $site_name],
         'auth' => [
-          Settings::get('stanford_profile_snow_api_user'),
-          Settings::get('stanford_profile_snow_api_pass'),
+          Settings::get('sdss_profile_snow_api_user'),
+          Settings::get('sdss_profile_snow_api_pass'),
         ],
       ]);
 
@@ -228,7 +238,8 @@ class SiteSettings extends InstallTaskBase implements ContainerFactoryPluginInte
    * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    */
   protected function getNode($uuid) {
-    $nodes = $this->entityTypeManager->getStorage('node')->loadByProperties(['uuid' => $uuid]);
+    $nodes = $this->entityTypeManager->getStorage('node')
+      ->loadByProperties(['uuid' => $uuid]);
     return reset($nodes);
   }
 

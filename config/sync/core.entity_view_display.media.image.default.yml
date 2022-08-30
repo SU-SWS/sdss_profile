@@ -5,8 +5,9 @@ dependencies:
   config:
     - field.field.media.image.field_media_image
     - media.type.image
-    - responsive_image.styles.full_responsive
+    - responsive_image.styles.card_3_2
   module:
+    - field_formatter_class
     - responsive_image
 _core:
   default_config_hash: 4Ny-qpsNb-KZOCogLHV8JHe6zj4XdpwpDi_eu-qFVCs
@@ -19,9 +20,11 @@ content:
     type: responsive_image
     label: hidden
     settings:
-      responsive_image_style: full_responsive
+      responsive_image_style: card_3_2
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 0
     region: content
 hidden:
