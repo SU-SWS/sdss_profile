@@ -57,7 +57,7 @@
 
 .su-multi-menu {
 
-  // font set up
+  // Font setup.
   .su-multi-menu__menu {
     .su-multi-menu__link {
       border-bottom: none;
@@ -129,7 +129,7 @@
 
       }
 
-      // underline on current page.
+      // Underline on current page.
       &.su-multi-menu__item--active-trail {
         > .su-multi-menu__link {
           color: $sdss-color-green-link;
@@ -151,7 +151,7 @@
 
         >.su-multi-menu__link {
 
-          // Remove the pipe | on the dropdrop down menus
+          // Remove the pipe, "|", on the dropdrop down menus.
           &::after {
             border-right: none;
             margin-left: 6px;
@@ -169,7 +169,7 @@
               }
             }
 
-          // Mobile toggle - circle background color
+          // Mobile toggle - circle background color.
           @include grid-media-max('md') {
             &::before {
               background: $sdss-color-green-link url("#{$su-image-path}/caret-down-white.svg") no-repeat center / 50%;
@@ -190,13 +190,13 @@
 }
 
 
-// Mobile Style
+// Mobile Style.
 .su-multi-menu {
   .su-multi-menu__menu {
     background-color: $sdss-color-white;
   }
 
-  // this is the green bar  under the mobile hamburger menu
+  // The green bar under the mobile hamburger menu.
   .su-multi-menu__nav-toggle {
     &:focus,
     &:hover {
@@ -218,7 +218,7 @@
     }
   }
 }
-// End Mobile Style
+// End Mobile Style.
 
 @include grid-media-min('lg') {
   .su-multi-menu__menu-lv1 {
@@ -235,7 +235,27 @@
   }
 }
 
-// // Changing the toggle in menus below the -lv1.
+// On desktop breakpoints hide menu links past the first level of menu depth.
+@include grid-media-min('lg') {
+  .su-multi-menu.su-multi-menu--dropdowns {
+    .su-multi-menu__menu.su-multi-menu__menu-lv2 {
+
+      ul.su-multi-menu__menu,
+      button.su-nav-toggle {
+        display: none;
+      }
+
+      .su-multi-menu__link {
+        .su-multi-menu__link-text-wrapper {
+          max-width: initial;
+        }
+      }
+
+    }
+  }
+}
+
+// Changing the toggle in menus below the -lv1.
 @include grid-media-min('lg') {
   .su-multi-menu__menu-lv1 {
     .su-multi-menu__menu {
@@ -263,7 +283,14 @@
     .su-multi-menu__menu {
 
       .su-multi-menu__menu-lv2 {
+        > .su-multi-menu__item {
+          > a.su-multi-menu__link {
+            padding-right: 1rem;
+          }
+        }
+
         > .su-multi-menu__item--parent {
+
           .su-nav-toggle::before {
             right: 15px;
             top: 5px;
