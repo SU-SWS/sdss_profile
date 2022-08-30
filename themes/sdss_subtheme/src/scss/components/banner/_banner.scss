@@ -6,7 +6,12 @@
   }
 }
 
-// Removing margin-bottom for all banners.
+// Removing margin-bottom for top "page" banner and banner paragraph.
+.main-region {
+  .node-stanford-page-su-page-banner {
+    margin-bottom: 0;
+  }
+}
 .paragraph-item {
   &.ptype-stanford-banner {
     margin-bottom: 0;
