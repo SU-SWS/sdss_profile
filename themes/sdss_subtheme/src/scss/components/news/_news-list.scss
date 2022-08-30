@@ -76,3 +76,25 @@
     grid-template-columns: unset;
   }
 }
+
+// News list in responsive size. Having the image appear.
+@include grid-media-max('lg') {
+  .su-news-list {
+    .image {
+      .media {
+        display: unset;
+      }
+    }
+  }
+}
+
+// Changing the layout of the news when xs-med.
+@include grid-media-max('md') {
+  .su-news-list {
+    .su-news-list__header {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-areas: "image" "headline" "date";
+    }
+  }
+}

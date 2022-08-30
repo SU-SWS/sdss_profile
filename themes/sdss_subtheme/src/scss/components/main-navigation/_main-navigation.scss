@@ -13,20 +13,31 @@
   right: 1.2rem;
   width: 24px;
   height: 25px;
+
+  &:hover {
+    background: $sdss-color-green-bright url("#{$su-image-path}/magnifying-glass-24px.svg") no-repeat 0 0;
+  }
 }
 
-// Makes the menu 'sticky'
-.fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-// if logged in
-.role--authenticated {
+// Makes the menu 'sticky' for LG sreens and up
+@include grid-media-min('lg') {
   .fixed-header {
-    top: 79px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  main#page-content {
+    margin-top: 177px;
+  }
+
+  // if logged in
+  .role--authenticated {
+    .fixed-header {
+      top: 79px;
+    }
   }
 }
 
@@ -136,12 +147,14 @@
   &.su-multi-menu--dropdowns {
     .su-multi-menu__menu-lv1 {
       >.su-multi-menu__item--parent {
+        margin: 0 40px 0 0;
 
         >.su-multi-menu__link {
 
           // Remove the pipe, "|", on the dropdrop down menus.
           &::after {
             border-right: none;
+            margin-left: 6px;
           }
         }
 
@@ -360,6 +373,7 @@
         &:hover[aria-expanded=false] {
           &::before {
             box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.14);
+            border: 1px solid $sdss-color-grey-dark;
           }
         }
 
@@ -372,7 +386,7 @@
 
         &:focus {
           &::before {
-            background: $sdss-color-green-link url("#{$su-image-path}/caret-down-white.svg") no-repeat center / 50%;
+            background: $sdss-color-grey-dark url("#{$su-image-path}/caret-down-white.svg") no-repeat center / 50%;
             border-radius: 19px;
           }
         }

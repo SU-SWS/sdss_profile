@@ -1,5 +1,23 @@
 @charset "UTF-8";
 
+// Logo
+.su-masthead {
+
+  .su-lockup {
+    @include grid-media-min('lg') {
+      margin-bottom: 0;
+    }
+
+    .su-lockup__custom-logo {
+      max-height: 5rem;
+
+      @include grid-media-min('lg') {
+        max-height: 5.5rem;
+      }
+    }
+  }
+}
+
 .su-lockup--option-a {
   .su-lockup__line5 {
     font-weight: $su-font-regular;

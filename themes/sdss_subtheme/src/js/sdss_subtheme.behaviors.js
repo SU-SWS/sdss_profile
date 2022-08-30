@@ -15,18 +15,8 @@
 
 
     (function ($) {
-      /* ==========================================
-        scrollTop() >= 300
-        Should be equal the the height of the header
-      ========================================== */
-      $(window).scroll(function(){
-        if ($(window).scrollTop() >= 30) {
-            $('header.su-masthead').addClass('fixed-header');
-        }
-        else {
-            $('header').removeClass('fixed-header');
-        }
-      });
+
+      $('.su-brand-bar,.su-masthead').wrapAll('<div class="fixed-header">');
 
     })(jQuery);
   },
