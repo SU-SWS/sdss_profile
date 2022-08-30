@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.search {
+
+  .views-row {
+    border-bottom: 1px solid $sdss-color-grey-60;
+
+    div:last-child {
+      border: none;
+    }
+
+    h2 {
+      line-height: 100%;
+
+      a {
+        font-weight: $su-font-regular;
+        font-size: .6em;
+      }
+    }
+
+    span.field-content {
+      display: block;
+      padding-bottom: 1em;
+    }
+  }
+}

@@ -13,34 +13,31 @@
   right: 1.2rem;
   width: 24px;
   height: 25px;
+
+  &:hover {
+    background: $sdss-color-green-bright url("#{$su-image-path}/magnifying-glass-24px.svg") no-repeat 0 0;
+  }
 }
 
-// Makes the menu 'sticky'
-.fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-}
-
-main#page-content {
-
-  margin-top: 115px;
-
-  @include grid-media('md') {
-    margin-top: 125px;
+// Makes the menu 'sticky' for LG sreens and up
+@include grid-media-min('lg') {
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
   }
 
-  @include grid-media-min('lg') {
+  main#page-content {
     margin-top: 177px;
   }
-}
 
-// if logged in
-.role--authenticated {
-  .fixed-header {
-    top: 79px;
+  // if logged in
+  .role--authenticated {
+    .fixed-header {
+      top: 79px;
+    }
   }
 }
 
