@@ -23,7 +23,7 @@
     {% set list_attributes = create_attribute() %}
     {% set list_attributes = list_attributes.addClass(class_prefix ~ "__item") %}
     {# Limit menu to only 1 level deep #}
-    {% if item.below is not empty and menu_level <= 1 %}
+    {% if item.below is not empty %}
       {% set list_attributes = list_attributes.addClass(class_prefix ~ "__item--parent") %}
     {% endif %}
     {% if item.in_active_trail == true %}
@@ -41,8 +41,7 @@
           <div class="unpublished-indicator">{{ "Unpublished Page"|t }}</div>
         {% endif %}
       </a>
-      {# Limit menu to only 1 level deep #}
-      {% if item.below and menu_level <= 1 %}
+      {% if item.below %}
         {{ menus.nav_menu(item.below, menu_level + 1, class_prefix) }}
       {% endif %}
     </li>
