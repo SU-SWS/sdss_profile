@@ -39,4 +39,23 @@
       margin-bottom: 1em;
     }
   }
+
+  .localist-widget {
+    h2 {
+      a {
+        color: $sdss-color-palo-alto-dark;
+
+
+        &:hover,
+        &:focus,
+        &:active {
+          @include sdss-link-primary--hover;
+
+          &:after {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
 }
