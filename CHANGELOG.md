@@ -1,5 +1,13 @@
 # SDSS Profile
 
+1.0.2
+--------------------------------------------------------------------------------
+_Release Date: 2022-09-21_
+
+- SDSS-270: Added news RSS (#64)
+- SDSS-257: Updated hover and focus styles on embeddable localist events
+
+
 1.0.1
 --------------------------------------------------------------------------------
 _Release Date: 2022-09-07_
