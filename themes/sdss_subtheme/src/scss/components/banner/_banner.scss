@@ -21,6 +21,7 @@
 .sdss-banner-wrapper--default {
   //Gradiant on banner image.
   z-index: 1;
+  position: relative;
 
   .su-hero__media {
     background: linear-gradient(180deg, rgba(46, 45, 41, 0) 0%, #2E2D29 83.85%);
