@@ -25,6 +25,7 @@ dependencies:
     - field.field.node.stanford_event.su_event_subject
     - field.field.node.stanford_event.su_event_telephone
     - field.field.node.stanford_event.su_event_type
+    - field.field.node.stanford_event.su_sdss_event_topics
     - field.field.node.stanford_event.su_shared_tags
     - node.type.stanford_event
   module:
@@ -184,4 +185,5 @@ hidden:
   su_event_sponsor: true
   su_event_subject: true
   su_event_telephone: true
+  su_sdss_event_topics: true
   su_shared_tags: true
