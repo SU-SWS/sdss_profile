@@ -40,8 +40,8 @@ dependencies:
     - redirect
     - role_delegation
     - scheduler
-    - stanford_migrate
     - sdss_profile
+    - stanford_migrate
     - stanford_publication
     - system
     - taxonomy
