@@ -46,27 +46,6 @@ third_party_settings:
           centered: centered-container
           columns: flex-10-of-12
         components:
-          bc326bbf-ff93-4c18-ab2c-ee15c6427f3c:
-            uuid: bc326bbf-ff93-4c18-ab2c-ee15c6427f3c
-            region: main
-            configuration:
-              id: 'field_block:node:stanford_news:su_news_dek'
-              label: Dek
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: string
-                label: hidden
-                settings:
-                  link_to_entity: false
-                third_party_settings:
-                  field_formatter_class:
-                    class: su-news-dek
-            weight: 5
-            additional: {  }
           1b31bf88-f05a-4d28-b9a8-825322f776c0:
             uuid: 1b31bf88-f05a-4d28-b9a8-825322f776c0
             region: main
@@ -126,22 +105,27 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 6
+            weight: 7
             additional: {  }
           e3245c8b-e701-4062-b8a9-2b92340b19d6:
             uuid: e3245c8b-e701-4062-b8a9-2b92340b19d6
             region: main
             configuration:
               id: 'field_block:node:stanford_news:su_sdss_news_dek_long'
+              label: Dek
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
                 type: text_default
-                label: above
+                label: hidden
                 settings: {  }
-                third_party_settings: {  }
-            weight: 7
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            weight: 6
             additional: {  }
         third_party_settings: {  }
       -
