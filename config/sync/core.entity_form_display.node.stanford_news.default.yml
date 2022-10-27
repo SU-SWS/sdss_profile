@@ -81,24 +81,24 @@ mode: default
 content:
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   stanford_intranet__access:
     type: entity_access
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 5
+    weight: 6
     region: content
     settings:
       display_label: true
@@ -128,7 +128,7 @@ content:
     third_party_settings: {  }
   su_news_components:
     type: entity_reference_paragraphs
-    weight: 4
+    weight: 5
     region: content
     settings:
       title: Paragraph
@@ -170,14 +170,14 @@ content:
       force_deepest: false
     third_party_settings: {  }
   su_sdss_magazine_topics:
-    type: entity_reference_autocomplete
-    weight: 10
+    type: options_shs
+    weight: 4
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      display_node_count: false
+      create_new_items: false
+      create_new_levels: false
+      force_deepest: false
     third_party_settings: {  }
   su_sdss_news_dek_long:
     type: text_textarea
@@ -189,7 +189,7 @@ content:
     third_party_settings: {  }
   su_shared_tags:
     type: options_shs
-    weight: 9
+    weight: 10
     region: content
     settings:
       display_node_count: false

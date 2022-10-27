@@ -91,22 +91,6 @@ third_party_settings:
                     class: su-news-title
             weight: 4
             additional: {  }
-          dfd64d5d-327c-4745-bdea-29d4b5a84ab4:
-            uuid: dfd64d5d-327c-4745-bdea-29d4b5a84ab4
-            region: main
-            configuration:
-              id: 'field_block:node:stanford_news:su_sdss_magazine_topics'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            weight: 7
-            additional: {  }
           e3245c8b-e701-4062-b8a9-2b92340b19d6:
             uuid: e3245c8b-e701-4062-b8a9-2b92340b19d6
             region: main
