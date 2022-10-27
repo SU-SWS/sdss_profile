@@ -15,6 +15,11 @@ dependencies:
     - field.field.node.stanford_news.su_news_publishing_date
     - field.field.node.stanford_news.su_news_source
     - field.field.node.stanford_news.su_news_topics
+    - field.field.node.stanford_news.su_sdss_magazine_topics
+    - field.field.node.stanford_news.su_sdss_news_dek_long
+    - field.field.node.stanford_news.su_sdss_news_focal_areas
+    - field.field.node.stanford_news.su_sdss_news_organization
+    - field.field.node.stanford_news.su_sdss_news_research_area
     - field.field.node.stanford_news.su_shared_tags
     - node.type.stanford_news
   module:
@@ -23,6 +28,7 @@ dependencies:
     - field_formatter_class
     - link
     - stanford_media
+    - text
     - user
 id: node.stanford_news.search_indexing
 targetEntityType: node
@@ -36,6 +42,7 @@ content:
       view_mode: default
       link: false
       image_style: full_responsive
+      remove_alt: false
     third_party_settings:
       field_formatter_class:
         class: ''
@@ -65,14 +72,6 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 6
-    region: content
-  su_news_dek:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 1
     region: content
   su_news_featured_media:
     type: entity_reference_entity_view
@@ -114,10 +113,22 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  su_sdss_news_dek_long:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   layout_builder__layout: true
   layout_selection: true
   links: true
   search_api_excerpt: true
   stanford_intranet__access: true
+  su_news_dek: true
+  su_sdss_magazine_topics: true
+  su_sdss_news_focal_areas: true
+  su_sdss_news_organization: true
+  su_sdss_news_research_area: true
   su_shared_tags: true

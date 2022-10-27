@@ -58,9 +58,9 @@ dependencies:
     - responsive_image
     - role_delegation
     - scheduler
+    - sdss_profile
     - shortcut
     - stanford_media
-    - sdss_profile
     - stanford_publication
     - system
     - taxonomy
