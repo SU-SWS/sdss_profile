@@ -1,5 +1,20 @@
 # SDSS Profile
 
+1.0.3
+--------------------------------------------------------------------------------
+_Release Date: 2022-10-27_
+
+- SDSS-337: Added 3 new fields to the Publication node: Organization, Research Areas/Expertise, and Focal Areas. (#75)
+- SDSS-336: Added 3 new fields to the News node: Organization, Research Areas/Expertise, and Focal Areas. (#74)
+- SDSS-334: Added 5 new fields to the Person node: Organization, Research Area/Expertise, Research Statement, Alternative Title, and Alternative Bio. (#70)
+- SDSS-305: Adjusted Event and Magazine Topic field displays. (#72)
+- SDSS-301: Added new long dek field to news replacing current dek field (#71)
+- SDSS-344: Fixed z-index and position for banner images and anonymous users.
+- SDSS-300: Reduce sticky header and banner gap spacing.
+- SDSS-305: Added new vocabularies. (#69)
+- Move automation from CircleCI to github actions (#67)
+
+
 1.0.2
 --------------------------------------------------------------------------------
 _Release Date: 2022-09-21_

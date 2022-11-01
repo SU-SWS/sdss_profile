@@ -49,7 +49,7 @@ third_party_settings:
       label: 'Editorial Content'
       region: content
       parent_name: ''
-      weight: 2
+      weight: 3
       format_type: fieldset
       format_settings:
         classes: ''
@@ -63,7 +63,7 @@ third_party_settings:
       label: 'Body Content'
       region: content
       parent_name: ''
-      weight: 3
+      weight: 4
       format_type: fieldset
       format_settings:
         classes: ''
@@ -84,7 +84,7 @@ third_party_settings:
       label: 'Event Details'
       region: content
       parent_name: ''
-      weight: 4
+      weight: 5
       format_type: fieldset
       format_settings:
         classes: ''
@@ -97,7 +97,7 @@ third_party_settings:
       label: 'Schedule Details'
       region: content
       parent_name: ''
-      weight: 5
+      weight: 6
       format_type: fieldset
       format_settings:
         classes: ''
@@ -114,7 +114,7 @@ third_party_settings:
       label: Taxonomy
       region: content
       parent_name: ''
-      weight: 13
+      weight: 11
       format_type: details
       format_settings:
         classes: ''
@@ -140,24 +140,24 @@ content:
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   stanford_intranet__access:
     type: entity_access
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 6
+    weight: 7
     region: content
     settings:
       display_label: true
@@ -339,14 +339,14 @@ content:
       force_deepest: false
     third_party_settings: {  }
   su_sdss_event_topics:
-    type: entity_reference_autocomplete
-    weight: 30
+    type: options_shs
+    weight: 1
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      display_node_count: false
+      create_new_items: false
+      create_new_levels: false
+      force_deepest: false
     third_party_settings: {  }
   su_shared_tags:
     type: options_shs
@@ -360,7 +360,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 1
+    weight: 2
     region: content
     settings:
       size: 60
