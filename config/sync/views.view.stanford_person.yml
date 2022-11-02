@@ -827,9 +827,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: string
+          type: entity_title_heading
           settings:
-            link_to_entity: false
+            tag: h3
           group_column: value
           group_columns: {  }
           group_rows: true
