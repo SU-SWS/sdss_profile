@@ -1,12 +1,27 @@
 @charset "UTF-8";
 
-// People all page
+// People all page.
 .stanford-people-grid,
 .people-terms {
   .views-field-title {
     a {
       @include sdss-h4;
       @include sdss-link--primary;
+
+      h2,
+      h3 {
+        display: inline;  // Necessary to get the outline to work correctly on focus.
+        font-weight: $su-font-regular;
+        line-height: 120%;
+      }
+
+      // For the focus outline.
+      &:focus {
+        h2,
+        h3 {
+          @include sdss-link-primary--focus;
+        }
+      }
     }
   }
 
@@ -15,7 +30,7 @@
   }
 }
 
-//People teasers
+// People teasers.
 .stanford-people-grid {
   .views-field-title {
     a {
