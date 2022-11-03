@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
-// People all page
+// People all page.
 .stanford-people-grid,
 .people-terms {
   .views-field-title {
     a {
       @include sdss-h4;
       @include sdss-link--primary;
+
+      h2 {
+        font-weight: 400;
+      }
     }
   }
 
@@ -15,7 +19,7 @@
   }
 }
 
-//People teasers
+// People teasers.
 .stanford-people-grid {
   .views-field-title {
     a {
