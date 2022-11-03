@@ -11,7 +11,7 @@
       h2,
       h3 {
         display: inline;  // Necessary to get the outline to work correctly on focus.
-        font-weight: 400;
+        font-weight: $su-font-regular;
         line-height: 120%;
       }
 
