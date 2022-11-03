@@ -208,5 +208,6 @@ hidden:
   su_event_groups: true
   su_event_keywords: true
   su_event_subject: true
+  su_metatags: true
   su_sdss_event_topics: true
   su_shared_tags: true

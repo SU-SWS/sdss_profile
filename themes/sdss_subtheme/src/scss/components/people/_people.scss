@@ -8,9 +8,19 @@
       @include sdss-h4;
       @include sdss-link--primary;
 
-      h2 {
+      h2,
+      h3 {
+        display: inline;  // Necessary to get the outline to work correctly on focus.
         font-weight: 400;
         line-height: 120%;
+      }
+
+      // For the focus outline.
+      &:focus {
+        h2,
+        h3 {
+          @include sdss-link-primary--focus;
+        }
       }
     }
   }
