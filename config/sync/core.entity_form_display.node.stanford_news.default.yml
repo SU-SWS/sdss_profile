@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.stanford_news.su_sdss_magazine_topics
     - field.field.node.stanford_news.su_sdss_news_dek_long
     - field.field.node.stanford_news.su_sdss_news_focal_areas
+    - field.field.node.stanford_news.su_sdss_news_news_source
     - field.field.node.stanford_news.su_sdss_news_organization
     - field.field.node.stanford_news.su_sdss_news_research_area
     - field.field.node.stanford_news.su_shared_tags
@@ -55,6 +56,7 @@ third_party_settings:
         - su_news_publishing_date
         - su_news_byline
         - su_news_source
+        - su_sdss_news_news_source
       label: 'Editorial Content'
       region: content
       parent_name: ''
@@ -209,6 +211,16 @@ content:
       create_new_items: false
       create_new_levels: false
       force_deepest: false
+    third_party_settings: {  }
+  su_sdss_news_news_source:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   su_sdss_news_organization:
     type: options_shs
