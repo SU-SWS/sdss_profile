@@ -22,15 +22,11 @@
 // Makes the menu 'sticky' for LG sreens and up
 @include grid-media-min('lg') {
   .fixed-header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
-  }
-
-  .dialog-off-canvas-main-canvas {
-    margin-top: 177px;
   }
 
   // if logged in
