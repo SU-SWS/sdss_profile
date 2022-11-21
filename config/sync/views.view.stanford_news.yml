@@ -4,11 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.stanford_card
-    - field.storage.node.su_news_dek
     - field.storage.node.su_news_featured_media
     - field.storage.node.su_news_publishing_date
     - field.storage.node.su_news_source
     - field.storage.node.su_news_topics
+    - field.storage.node.su_sdss_news_dek_long
     - node.type.stanford_news
   module:
     - datetime
@@ -17,6 +17,7 @@ dependencies:
     - stanford_fields
     - stanford_media
     - taxonomy
+    - text
     - ui_patterns_views
     - user
     - views_infinite_scroll
@@ -240,11 +241,68 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        su_news_dek:
-          id: su_news_dek
-          table: node__su_news_dek
-          field: su_news_dek
+        su_sdss_news_dek_long:
+          id: su_sdss_news_dek_long
+          table: node__su_sdss_news_dek_long
+          field: su_sdss_news_dek_long
+          relationship: none
+          group_type: group
+          admin_label: ''
           plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         su_news_topics:
           id: su_news_topics
           table: node__su_news_topics
@@ -675,11 +733,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.su_news_dek'
         - 'config:field.storage.node.su_news_featured_media'
         - 'config:field.storage.node.su_news_publishing_date'
         - 'config:field.storage.node.su_news_source'
         - 'config:field.storage.node.su_news_topics'
+        - 'config:field.storage.node.su_sdss_news_dek_long'
   block_1:
     id: block_1
     display_title: '- Default List -'
@@ -843,7 +901,7 @@ display:
             su_news_publishing_date: 0
             su_news_featured_media: 0
             title: 0
-            su_news_dek: 0
+            su_sdss_news_dek_long: 0
             su_news_topics: 0
             su_news_source: 0
             view_node: 0
@@ -893,9 +951,14 @@ display:
               weight: 5
               plugin: views_row
               source: title
+            'views_row:su_sdss_news_dek_long':
+              destination: news_list_dek
+              weight: 6
+              plugin: views_row
+              source: su_sdss_news_dek_long
             'views_row:edit_node':
               destination: news_list_footer
-              weight: 6
+              weight: 7
               plugin: views_row
               source: edit_node
       block_category: 'News Lists (Views)'
@@ -911,11 +974,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.su_news_dek'
         - 'config:field.storage.node.su_news_featured_media'
         - 'config:field.storage.node.su_news_publishing_date'
         - 'config:field.storage.node.su_news_source'
         - 'config:field.storage.node.su_news_topics'
+        - 'config:field.storage.node.su_sdss_news_dek_long'
   term_block:
     id: term_block
     display_title: 'Taxonomy Term Page List'
@@ -1065,7 +1128,7 @@ display:
             su_news_publishing_date: 0
             su_news_featured_media: 0
             title: 0
-            su_news_dek: 0
+            su_sdss_news_dek_long: 0
             su_news_topics: 0
             su_news_source: 0
             view_node: 0
@@ -1115,9 +1178,14 @@ display:
               weight: 5
               plugin: views_row
               source: title
+            'views_row:su_sdss_news_dek_long':
+              destination: news_list_dek
+              weight: 6
+              plugin: views_row
+              source: su_sdss_news_dek_long
             'views_row:edit_node':
               destination: news_list_footer
-              weight: 6
+              weight: 7
               plugin: views_row
               source: edit_node
       defaults:
@@ -1149,11 +1217,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.su_news_dek'
         - 'config:field.storage.node.su_news_featured_media'
         - 'config:field.storage.node.su_news_publishing_date'
         - 'config:field.storage.node.su_news_source'
         - 'config:field.storage.node.su_news_topics'
+        - 'config:field.storage.node.su_sdss_news_dek_long'
   topics_list:
     id: topics_list
     display_title: 'Topics Links - With Filter'
@@ -1438,11 +1506,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.su_news_dek'
         - 'config:field.storage.node.su_news_featured_media'
         - 'config:field.storage.node.su_news_publishing_date'
         - 'config:field.storage.node.su_news_source'
         - 'config:field.storage.node.su_news_topics'
+        - 'config:field.storage.node.su_sdss_news_dek_long'
   vertical_teaser_term:
     id: vertical_teaser_term
     display_title: 'Vertical Teaser Term'
@@ -1575,11 +1643,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.su_news_dek'
         - 'config:field.storage.node.su_news_featured_media'
         - 'config:field.storage.node.su_news_publishing_date'
         - 'config:field.storage.node.su_news_source'
         - 'config:field.storage.node.su_news_topics'
+        - 'config:field.storage.node.su_sdss_news_dek_long'
   vertical_teaser_term_list:
     id: vertical_teaser_term_list
     display_title: 'Cards - With Filter'
@@ -1682,8 +1750,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.su_news_dek'
         - 'config:field.storage.node.su_news_featured_media'
         - 'config:field.storage.node.su_news_publishing_date'
         - 'config:field.storage.node.su_news_source'
         - 'config:field.storage.node.su_news_topics'
+        - 'config:field.storage.node.su_sdss_news_dek_long'
