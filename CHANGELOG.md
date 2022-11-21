@@ -1,5 +1,16 @@
 # SDSS Profile
 
+1.0.4
+--------------------------------------------------------------------------------
+_Release Date: 2022-11-21_
+
+- SDSS-292: Added News Source vocabulary and field to News. (#83)
+- SDSS-300: Use position sticky for sticky header (#80)
+- Dropped composer autoloads for removed modules. (#79)
+- SDSS-364: Sync people list displays with stanford_profile upstream (#78)
+- SDSS-362: Latest updates from stanford profile.
+
+
 1.0.3
 --------------------------------------------------------------------------------
 _Release Date: 2022-10-27_
