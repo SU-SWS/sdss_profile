@@ -35,6 +35,7 @@ dependencies:
     - field.field.node.stanford_person.su_person_type_group
     - field.field.node.stanford_person.su_sdss_person_alt_bio
     - field.field.node.stanford_person.su_sdss_person_alt_title
+    - field.field.node.stanford_person.su_sdss_person_focal_areas
     - field.field.node.stanford_person.su_sdss_person_organization
     - field.field.node.stanford_person.su_sdss_person_research_area
     - field.field.node.stanford_person.su_sdss_person_research_state
@@ -936,6 +937,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 131
+    region: content
+  su_sdss_person_focal_areas:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 133
     region: content
   su_sdss_person_organization:
     type: entity_reference_label

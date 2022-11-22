@@ -25,6 +25,7 @@ dependencies:
     - field.field.node.stanford_event.su_event_subject
     - field.field.node.stanford_event.su_event_telephone
     - field.field.node.stanford_event.su_event_type
+    - field.field.node.stanford_event.su_metatags
     - field.field.node.stanford_event.su_sdss_event_topics
     - field.field.node.stanford_event.su_shared_tags
     - node.type.stanford_event
@@ -32,7 +33,6 @@ dependencies:
     - address
     - field_group
     - link
-    - metatag
     - paragraphs
     - readonly_field_widget
     - scheduler
@@ -143,12 +143,12 @@ content:
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 10
+    weight: 52
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 9
+    weight: 50
     region: content
     settings: {  }
     third_party_settings: {  }
