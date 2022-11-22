@@ -7812,21 +7812,21 @@
         },
         {
             "name": "drupal/printable",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/printable.git",
-                "reference": "2.1.4"
+                "reference": "2.1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/printable-2.1.4.zip",
-                "reference": "2.1.4",
-                "shasum": "249e515d7c7413dc9a0b2f8bbfbf6140cd1574c8"
+                "url": "https://ftp.drupal.org/files/projects/printable-2.1.5.zip",
+                "reference": "2.1.5",
+                "shasum": "3e04d488abf5fc0da2d936be04408cb10db4d330"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
-                "drupal/pdf_api": "^2.2",
+                "drupal/pdf_api": "^2.2.2",
                 "wa72/htmlpagedom": "^1.3"
             },
             "require-dev": {
@@ -7836,8 +7836,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.4",
-                    "datestamp": "1662953997",
+                    "version": "2.1.5",
+                    "datestamp": "1669009597",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8261,17 +8261,17 @@
         },
         {
             "name": "drupal/scheduler",
-            "version": "2.0.0-rc7",
+            "version": "2.0.0-rc8",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/scheduler.git",
-                "reference": "2.0.0-rc7"
+                "reference": "2.0.0-rc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/scheduler-2.0.0-rc7.zip",
-                "reference": "2.0.0-rc7",
-                "shasum": "dea5c2bd62a298cb537add8aaf2a9d2d6db8a323"
+                "url": "https://ftp.drupal.org/files/projects/scheduler-2.0.0-rc8.zip",
+                "reference": "2.0.0-rc8",
+                "shasum": "1aa120cd855100fba33aeedb46ce55d8a1acd448"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -8285,8 +8285,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-rc7",
-                    "datestamp": "1667225002",
+                    "version": "2.0.0-rc8",
+                    "datestamp": "1668951102",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -11086,16 +11086,16 @@
         },
         {
             "name": "laminas/laminas-diactoros",
-            "version": "2.21.0",
+            "version": "2.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-diactoros.git",
-                "reference": "e5b6419fea007b8b4a71034edc8ec96c88d4c57d"
+                "reference": "df8c7f9e11d854269f4aa7c06ffa38caa42e4405"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/e5b6419fea007b8b4a71034edc8ec96c88d4c57d",
-                "reference": "e5b6419fea007b8b4a71034edc8ec96c88d4c57d",
+                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/df8c7f9e11d854269f4aa7c06ffa38caa42e4405",
+                "reference": "df8c7f9e11d854269f4aa7c06ffa38caa42e4405",
                 "shasum": ""
             },
             "require": {
@@ -11179,7 +11179,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-11T09:01:24+00:00"
+            "time": "2022-11-22T05:54:54+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -13867,16 +13867,16 @@
         },
         {
             "name": "simplesamlphp/saml2",
-            "version": "v4.6.3",
+            "version": "v4.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/saml2.git",
-                "reference": "bfc9c79dd6b728a41d1de988f545f6e64728a51d"
+                "reference": "00c24ce3b28f160169c2a09c4bf2f3070a784636"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/saml2/zipball/bfc9c79dd6b728a41d1de988f545f6e64728a51d",
-                "reference": "bfc9c79dd6b728a41d1de988f545f6e64728a51d",
+                "url": "https://api.github.com/repos/simplesamlphp/saml2/zipball/00c24ce3b28f160169c2a09c4bf2f3070a784636",
+                "reference": "00c24ce3b28f160169c2a09c4bf2f3070a784636",
                 "shasum": ""
             },
             "require": {
@@ -13919,9 +13919,9 @@
             "description": "SAML2 PHP library from SimpleSAMLphp",
             "support": {
                 "issues": "https://github.com/simplesamlphp/saml2/issues",
-                "source": "https://github.com/simplesamlphp/saml2/tree/v4.6.3"
+                "source": "https://github.com/simplesamlphp/saml2/tree/v4.6.4"
             },
-            "time": "2022-06-13T14:04:10+00:00"
+            "time": "2022-11-22T15:47:13+00:00"
         },
         {
             "name": "simplesamlphp/simplesamlphp",
@@ -16129,16 +16129,16 @@
         },
         {
             "name": "su-sws/stanford_profile_helper",
-            "version": "9.0.3",
+            "version": "9.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SU-SWS/stanford_profile_helper.git",
-                "reference": "50d8b1ef0e320f42385035829dce7fe153b84d17"
+                "reference": "21dfd415f9ab3d05824d00082b28a2df5ab3a97b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SU-SWS/stanford_profile_helper/zipball/50d8b1ef0e320f42385035829dce7fe153b84d17",
-                "reference": "50d8b1ef0e320f42385035829dce7fe153b84d17",
+                "url": "https://api.github.com/repos/SU-SWS/stanford_profile_helper/zipball/21dfd415f9ab3d05824d00082b28a2df5ab3a97b",
+                "reference": "21dfd415f9ab3d05824d00082b28a2df5ab3a97b",
                 "shasum": ""
             },
             "require-dev": {
@@ -16220,9 +16220,9 @@
             ],
             "description": "Helper Module For Stanford Profile",
             "support": {
-                "source": "https://github.com/SU-SWS/stanford_profile_helper/tree/9.0.3"
+                "source": "https://github.com/SU-SWS/stanford_profile_helper/tree/9.0.4"
             },
-            "time": "2022-11-11T19:38:26+00:00"
+            "time": "2022-11-21T17:58:46+00:00"
         },
         {
             "name": "su-sws/stanford_ssp",
