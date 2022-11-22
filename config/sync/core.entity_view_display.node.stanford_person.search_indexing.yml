@@ -269,6 +269,8 @@ hidden:
   layout_builder__layout: true
   search_api_excerpt: true
   stanford_intranet__access: true
+  su_metatags: true
+  su_person_pronouns: true
   su_sdss_person_alt_bio: true
   su_sdss_person_alt_title: true
   su_sdss_person_organization: true
