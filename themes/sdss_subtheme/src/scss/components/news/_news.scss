@@ -58,3 +58,20 @@
     color: $sdss-color-palo-alto-dark;
   }
 }
+
+.news-vertical-teaser__pub-date {
+  @include responsive-spacing('padding-bottom', 0);
+  @include responsive-spacing('padding-top', 0);
+}
+
+.news-vertical-teaser__source {
+  @include type-f;
+
+  color: $sdss-color-grey-60;
+  padding-bottom: .5em;
+}
+
+.news-vertical-teaser__pub-date {
+  @include type-f;
+
+}

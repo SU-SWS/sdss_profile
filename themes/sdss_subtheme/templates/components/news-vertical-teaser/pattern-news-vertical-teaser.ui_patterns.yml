@@ -12,6 +12,11 @@ sdss-news-vertical-teaser:
       label: "Headline"
       description: "Text heading"
       preview: "This is a headline"
+    news_list_publishing_date:
+      type: text
+      label: "Date"
+      description: "Publishing date"
+      preview: "This is the published date."
     news_topics:
       type: text
       label: "Topics"

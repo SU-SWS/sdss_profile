@@ -52,8 +52,11 @@
     border-bottom: none;
   }
 
-  .su-news-list__item-date {
+  .su-news-list__source {
     @include responsive-spacing('padding-top', 0);
+    @include type-f;
+
+    color: $sdss-color-grey-60;
   }
 }
 

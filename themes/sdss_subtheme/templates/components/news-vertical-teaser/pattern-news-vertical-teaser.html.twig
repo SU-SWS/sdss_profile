@@ -50,7 +50,7 @@
   {%- if news_url is not empty -%}
     </a>
   {%- endif -%}
-  <div class="news-vertical-teaser__topics">{{ news_topics }}</div>
+  <div class="news-vertical-teaser__pub-date">{{ news_list_publishing_date }}</div>
   <div class="su-news-header">
     {%- if news_url is not empty -%}
       <a {{ news_url_attributes.addClass('su-news-vertical-teaser__link') }} href="{{ news_url }}">
@@ -61,6 +61,8 @@
     {%- if news_url is not empty -%}
       </a>
     {%- endif -%}
+      <div class="news-vertical-teaser__source">{{ news_source }}</div>
+
   </div>
 
   <div class="su-card__contents">
