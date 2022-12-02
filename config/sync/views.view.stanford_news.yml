@@ -993,7 +993,7 @@ display:
               plugin: views_row
               source: view_node
             'views_row:su_news_source':
-              destination: news_source
+              destination: su_news_source
               weight: 1
               plugin: views_row
               source: su_news_source

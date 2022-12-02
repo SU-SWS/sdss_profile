@@ -80,3 +80,14 @@
   @include responsive-spacing('margin-bottom', 1);
 
 }
+
+.news-vertical-teaser__ext-link {
+  display: none;
+}
+
+.su-news-vertical-teaser {
+  a.su-link--external::after {
+    height: 15px;
+    width: 15px;
+  }
+}
