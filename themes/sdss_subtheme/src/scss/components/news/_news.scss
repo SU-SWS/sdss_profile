@@ -75,3 +75,8 @@
   @include type-f;
 
 }
+
+.su-sdss-news-dek-long {
+  @include responsive-spacing('margin-bottom', 1);
+
+}

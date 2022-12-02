@@ -19,10 +19,10 @@
 {%- set attributes = attributes.addClass(['su-news-article', modifier_class]) -%}
 
 {# If the news source url is set go there instead of the default. #}
-{%- if news_source|render|striptags("<drupal-render-placeholder>")|trim is not empty -%}
+{# {%- if news_source|render|striptags("<drupal-render-placeholder>")|trim is not empty -%}
   {%- set news_url = news_source -%}
   {%- set attributes = attributes.addClass('su-news-external') -%}
-{%- endif %}
+{%- endif %} #}
 
 {% set news_url = news_url|render|striptags("<drupal-render-placeholder>")|trim %}
 
