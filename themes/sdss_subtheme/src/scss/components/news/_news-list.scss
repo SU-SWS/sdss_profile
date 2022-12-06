@@ -58,6 +58,13 @@
 
     color: $sdss-color-grey-60;
   }
+
+  .su-link--external {
+    &::after {
+      height: 0.8em;
+      width: 0.5em;
+    }
+  }
 }
 
 // turning on the images when there
