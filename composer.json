@@ -226,6 +226,9 @@
         "su-sws/stanford_profile_helper": "^9.0",
         "su-sws/stanford_ssp": "^8.2"
     },
+    "conflict": {
+        "drupal/jsonapi_menu_items": ">=1.2.4"
+    },
     "config": {
         "sort-packages": true
     },
