@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@include grid-media-min('lg') {
+  .su-masthead {
+    >section:last-of-type {
+      display: grid;
+      grid-template-columns: 200px 1fr 40px;
+      grid-template-areas: "lockup main-nav search";
+      align-items: flex-end;
+      column-gap: 40px;
+
+      background: $sdss-color-blue-light;
+
+      .su-lockup {
+        grid-area: lockup;
+
+        background: $su-color-white;
+        max-width: unset;
+        width: unset;
+        padding-top: 2.4rem; //spacing to get the background-color.
+        margin-right: -40px;
+      }
+
+      #sdss-button--search-link {
+        grid-area: search;
+        width: 32px;
+        height: 32px;
+        position: relative;
+        top: 0;
+        right: unset;
+        align-self: center;
+        background-color: $sdss-color-palo-alto-dark;
+        border-radius: 32px;
+      }
+
+      .su-multi-menu {
+        grid-area: main-nav;
+
+        background-color: $sdss-color-blue-light;
+      }
+    }
+
+    nav+.su-site-search, ul li .su-site-search {
+      display: none;
+    }
+  }
+
+
+  //  Header color outside in the margins.
+  .su-masthead {
+    margin: 0 auto;
+  }
+
+  section {
+    position: relative; /* child absolute */
+  }
+  section:before, section:after{
+    content: "";
+    position: absolute;
+    /* fill vertically */
+    top: 0;
+    bottom: 0;
+    width: 9600px;
+    right: 100%;
+    background: $su-color-white;
+  }
+  section:after {
+    left: 100%;
+    background: $sdss-color-blue-light;
+  }
+
+}

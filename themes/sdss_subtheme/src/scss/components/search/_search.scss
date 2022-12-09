@@ -1,5 +1,32 @@
 @charset "UTF-8";
 
+
+// On desktop views, remove the search input field.
+@include grid-media-min('lg') {
+  #block-sdss-subtheme-search {
+    form {
+      display: none;
+    }
+  }
+
+  .su-site-search__submit {
+    background: url("../../assets/svg/magnifying-glass-24px-white.svg") no-repeat center/75%;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: url("../../assets/svg/magnifying-glass-24px-white.svg") no-repeat center/75%;
+    }
+  }
+
+}
+
+@include grid-media-max('md') {
+  #sdss-button--search-link {
+    display: none;
+  }
+}
+
 .search {
 
   .views-row {
