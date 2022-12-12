@@ -247,9 +247,6 @@
             }
         },
         "patches": {
-            "drupal/decoupled_router": {
-                "Unable to resolve path on node in other language than default": "https://www.drupal.org/files/issues/2021-05-05/3111456-34.patch"
-            },
             "drupal/default_content":{
                 "https://www.drupal.org/project/default_content/issues/3160146": "https://git.drupalcode.org/project/default_content/-/merge_requests/15.patch"
             },
