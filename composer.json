@@ -158,6 +158,7 @@
         "drupal/image_effects": "^3.2",
         "drupal/imagemagick": "^3.1",
         "drupal/jsonapi_extras": "^3.20",
+        "drupal/jsonapi_hypermedia": "^1.9",
         "drupal/jsonapi_image_styles": "^3.0",
         "drupal/jsonapi_menu_items": "^1.2",
         "drupal/jsonapi_views": "^1.0",
@@ -225,9 +226,6 @@
         "su-sws/stanford_migrate": "^8.3",
         "su-sws/stanford_profile_helper": "^9.0",
         "su-sws/stanford_ssp": "^8.2"
-    },
-    "conflict": {
-        "drupal/jsonapi_menu_items": ">=1.2.4"
     },
     "config": {
         "sort-packages": true
