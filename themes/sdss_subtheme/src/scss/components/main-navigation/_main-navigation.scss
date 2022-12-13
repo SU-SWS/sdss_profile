@@ -142,9 +142,13 @@
 .su-multi-menu {
   &.su-multi-menu--dropdowns {
     .su-multi-menu__menu-lv1 {
-      >.su-multi-menu__item--parent:last-of-type {
-        margin: 0;
+
+      @include grid-media-min('lg') {
+        >.su-multi-menu__item--parent:last-of-type {
+          margin: 0;
+        }
       }
+
 
       >.su-multi-menu__item--parent {
         margin: 0 40px 0 0;
@@ -227,7 +231,6 @@
 @include grid-media-min('lg') {
   .su-multi-menu__menu {
     &.su-multi-menu__menu-lv1 {
-      background-color: $sdss-color-blue-light;
       padding-left: 40px;
 
       .su-nav-toggle:before {
