@@ -21,7 +21,9 @@
       var sdss_logo_classes = $('#block-sdss-subtheme-branding').attr('class');
       $('.fixed-header').addClass(sdss_logo_classes);
 
-      $('.su-brand-bar__container').append('<span><a class="sdss-brand-bar__text" href="https://sustainability.stanford.edu/">Stanford</a> | <a class="sdss-brand-bar__text" href="https://stanford.edu">Doeer School of Sustainability</a></span>');
+      if ($('.su-lockup--option-a') || $('.su-lockup--option-b')) {
+        $('.su-brand-bar__container').append('<span><a class="sdss-brand-bar__text" href="https://stanford.edu">Stanford</a>  <a class="sdss-brand-bar__text" href="https://sustainability.stanford.edu/">Doeer School of Sustainability</a></span>');
+      }
 
     })(jQuery);
   },
