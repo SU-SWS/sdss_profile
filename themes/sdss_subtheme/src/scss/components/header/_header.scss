@@ -245,6 +245,25 @@
   }
 }
 
+// SDSS other sites header responsive tweak.
+@include grid-media-max('lg') {
+  .fixed-header.su-lockup--option-a,
+  .fixed-header.su-lockup--option-b {
+    .su-masthead .su-lockup--option-a .su-lockup__cell2 {
+      border-left: none;
+      padding-bottom: 1em;
+      padding-left: 1em;
+    }
+  }
+}
+
+// Removed line 5 from all displays
+.fixed-header.su-lockup--option-a,
+.fixed-header.su-lockup--option-b {
+  .su-lockup__line5 {
+    display: none;
+  }
+}
 
 // SDSS login page
 @include grid-media-min('lg') {
