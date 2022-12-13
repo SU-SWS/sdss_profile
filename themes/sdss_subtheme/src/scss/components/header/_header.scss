@@ -79,7 +79,7 @@
           width: 32px;
           height: 32px;
           position: relative;
-          top: 0;
+          top: 15px;
           right: unset;
           align-self: center;
           background-color: $sdss-color-palo-alto-dark;
@@ -150,7 +150,7 @@
     }
 
     .su-lockup__custom-logo {
-      max-width: 192px;
+      max-width: 166px;
     }
 
     .su-lockup__cell1 {
@@ -175,7 +175,8 @@
     .su-lockup__cell2 {
       border-left: 0;
       background-color: $sdss-color-palo-alto-dark;
-      padding: 20px;
+      padding: 30px 20px 20px;
+      max-width: unset;
   }
 
     .sdss-masthead {
