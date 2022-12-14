@@ -993,7 +993,7 @@ display:
               plugin: views_row
               source: view_node
             'views_row:su_news_source':
-              destination: su_news_source
+              destination: news_external_url
               weight: 1
               plugin: views_row
               source: su_news_source
@@ -1018,7 +1018,7 @@ display:
               plugin: views_row
               source: su_sdss_news_news_source
             'views_row:su_sdss_news_dek_long':
-              destination: news_list_long_dek
+              destination: news_list_dek
               weight: 6
               plugin: views_row
               source: su_sdss_news_dek_long
@@ -2224,7 +2224,7 @@ display:
               plugin: views_row
               source: view_node
             'views_row:su_news_source':
-              destination: news_source
+              destination: news_external_url
               weight: 1
               plugin: views_row
               source: su_news_source
@@ -2249,7 +2249,7 @@ display:
               plugin: views_row
               source: su_sdss_news_news_source
             'views_row:su_sdss_news_dek_long':
-              destination: news_list_long_dek
+              destination: news_list_dek
               weight: 6
               plugin: views_row
               source: su_sdss_news_dek_long

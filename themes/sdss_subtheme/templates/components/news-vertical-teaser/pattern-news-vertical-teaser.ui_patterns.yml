@@ -37,11 +37,11 @@ sdss-news-vertical-teaser:
       label: "URL for item"
       description: "URL for image and heading"
       preview: "http://www.stanford.edu/"
-    su_news_source:
+    news_external_url:
       type: text
       label: "External URL for item"
       description: "URL for image and heading"
-      preview: "http://www.google.com/"
+      preview: "http://www.stanford.edu/"
     news_footer:
       type: text
       label: "Footer"

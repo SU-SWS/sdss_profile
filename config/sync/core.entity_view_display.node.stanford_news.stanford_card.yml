@@ -57,7 +57,7 @@ third_party_settings:
         - su_sdss_news_dek_long
       news_url:
         - 'dynamic_token_field:node-news_content_url'
-      su_news_source:
+      news_external_url:
         - su_news_source
     fields:
       'dynamic_token_field:node-news_content_url':
@@ -116,16 +116,16 @@ content:
     type: link
     label: hidden
     settings:
-      trim_length: null
-      url_only: true
-      url_plain: true
-      rel: '0'
-      target: '0'
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings:
       field_formatter_class:
         class: sdss-news-ext-link
     weight: 7
-    region: su_news_source
+    region: news_external_url
   su_news_topics:
     type: entity_reference_list_label_class
     label: hidden
