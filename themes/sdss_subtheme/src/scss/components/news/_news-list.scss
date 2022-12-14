@@ -53,10 +53,10 @@
   }
 
   .su-news-list__source {
-    @include responsive-spacing('padding-top', 0);
     @include type-f;
 
     color: $sdss-color-grey-60;
+    padding: 1em 0 1.5em;
   }
 
   .su-link--external {

@@ -159,7 +159,7 @@ content:
     settings:
       link: false
       class: ''
-      tag: p
+      tag: span
     third_party_settings:
       field_formatter_class:
         class: ''
