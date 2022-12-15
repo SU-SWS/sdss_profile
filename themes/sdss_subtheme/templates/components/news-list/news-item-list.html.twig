@@ -19,9 +19,8 @@
 {%- set attributes = attributes.addClass(['su-news-article', modifier_class]) -%}
 
 {# If the news source url is set go there instead of the default. #}
-{%- if news_source|render|striptags("<drupal-render-placeholder>")|trim is not empty -%}
-  {%- set news_url = news_source -%}
-  {%- set attributes = attributes.addClass('su-news-external') -%}
+{%- if news_external_url|render|striptags("<drupal-render-placeholder>")|trim is not empty -%}
+  {%- set news_url = news_external_url -%}
 {%- endif %}
 
 {% set news_url = news_url|render|striptags("<drupal-render-placeholder>")|trim %}
@@ -45,6 +44,7 @@
     <header class="su-news-list__header">
 
       <div class="su-news-list__headline-dek">
+
         {# News List Topics #}
         {%- block block_news_list_topics  %}
           {%- if news_list_topics|render|striptags('<drupal-render-placeholder>')|trim is not empty %}
@@ -53,6 +53,17 @@
             </div>
           {% endif -%}
         {% endblock -%}
+
+        {# News List Date #}
+        {%- block block_news_list_date %}
+          {# Since CSS Grid is used, always render an element even if it's empty. #}
+          <div class="su-news-list__item-date">
+            {% if news_list_publishing_date|render|striptags('<drupal-render-placeholder>')|trim is not empty %}
+              <p>{{ news_list_publishing_date|render_clean }}</p>
+            {% endif -%}
+          </div>
+        {% endblock -%}
+
         {# Link for headline h2 #}
         {%- if news_url is not empty -%}
           <a class="su-link--action" {{ news_url_attributes }} href="{{ news_url }}">
@@ -68,17 +79,26 @@
         </a>
         {%- endif -%}
 
-        {# News List Date #}
-        {%- block block_news_list_date %}
-          {# Since CSS Grid is used, always render an element even if it's empty. #}
-          <div class="su-news-list__item-date">
-            {% if news_list_publishing_date|render|striptags('<drupal-render-placeholder>')|trim is not empty %}
-              <p>{{ news_list_publishing_date|render_clean }}</p>
-            {% endif -%}
-          </div>
-        {% endblock -%}
+        {# News List Source #}
+        <div class="su-news-list__source">
+          {% if news_source|render|striptags('<drupal-render-placeholder>')|trim is not empty %}
+            <span>Source: {{ news_source|render_clean }}</span>
+          {% endif -%}
+        </div>
 
-      </div>
+
+        {# News List External link  #}
+        <div class="news-vertical-teaser__ext-link">{{ news_external_url }}</div>
+
+        {# News List Long Dek #}
+        {# Since CSS Grid is used, always render an element even if it's empty. #}
+        <div class="su-news-list__long-dek">
+          {% if news_list_long_dek|render|striptags('<drupal-render-placeholder>')|trim is not empty %}
+            <p>{{ news_list_long_dek|render_clean }}</p>
+          {% endif -%}
+        </div>
+
+      </div> {# End of su-news-list__headline-dek div #}
 
     {# Add the image and link only if they both exist. #}
     {% if news_list_image|render|striptags('<drupal-render-placeholder><img><picture>')|trim is not empty -%}

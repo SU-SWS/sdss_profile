@@ -22,6 +22,11 @@ sdss-news-list:
       label: "Dek"
       description: "This is the dek specific to news items."
       preview: "<p>Sample text goes here and this list should be able to handle a few lines.</p>"
+    news_list_long_dek:
+      type: text
+      label: "Long Dek"
+      description: "This is the long dek specific to news items."
+      preview: "<p>Sample text goes here and this list should be able to handle a few lines.</p>"
     news_list_topics:
       type: text
       label: "Topics"
@@ -31,10 +36,15 @@ sdss-news-list:
       type: text
       label: "Source"
       description: "The source field."
-      preview: "I am a link"
+      preview: "I am text"
     news_url:
       type: text
       label: "URL for item"
+      description: "URL for image and heading"
+      preview: "http://www.stanford.edu/"
+    news_external_url:
+      type: text
+      label: "External URL for item"
       description: "URL for image and heading"
       preview: "http://www.stanford.edu/"
     news_list_footer:

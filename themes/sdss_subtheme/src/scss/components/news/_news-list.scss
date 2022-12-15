@@ -52,8 +52,18 @@
     border-bottom: none;
   }
 
-  .su-news-list__item-date {
-    @include responsive-spacing('padding-top', 0);
+  .su-news-list__source {
+    @include type-f;
+
+    color: $sdss-color-grey-60;
+    padding: 1em 0 1.5em;
+  }
+
+  .su-link--external {
+    &::after {
+      height: 0.8em;
+      width: 0.5em;
+    }
   }
 }
 
