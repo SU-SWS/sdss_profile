@@ -40,7 +40,7 @@
 // Main site heading
 .su-lockup--option-none {
   .su-lockup__custom-logo {
-    max-width: 192px;
+    max-width: 150px;
   }
 
   &.su-lockup {
@@ -59,7 +59,6 @@
         grid-template-columns: 200px 1fr 40px;
         grid-template-areas: "lockup main-nav search";
         align-items: flex-end;
-        column-gap: 40px;
 
         background: $sdss-color-blue-light;
 
@@ -67,7 +66,7 @@
           grid-area: lockup;
 
           background: $su-color-white;
-          width: unset;
+          width: 175px;
           max-width: unset;
           padding: 1em 0; //spacing to get the background-color.
           margin-right: -20px;
@@ -84,6 +83,7 @@
           align-self: center;
           background-color: $sdss-color-palo-alto-dark;
           border-radius: 32px;
+          left: 8px;
         }
 
         .su-multi-menu {
@@ -175,7 +175,7 @@
     .su-lockup__cell2 {
       border-left: 0;
       background-color: $sdss-color-palo-alto-dark;
-      padding: 30px 20px 20px;
+      padding: 30px 30px 30px;
       max-width: unset;
   }
 
@@ -208,6 +208,7 @@
         align-self: center;
         background-color: $sdss-color-palo-alto-dark;
         border-radius: 32px;
+        left: 8px;
       }
 
       .su-multi-menu {
@@ -283,7 +284,6 @@
       "lockup lockup lockup"
       "main-nav main-nav search";
       align-items: flex-end;
-      column-gap: 40px;
     }
 
     .su-masthead {

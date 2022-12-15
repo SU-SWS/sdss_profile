@@ -231,7 +231,6 @@
 @include grid-media-min('lg') {
   .su-multi-menu__menu {
     &.su-multi-menu__menu-lv1 {
-      padding-left: 40px;
 
       .su-nav-toggle:before {
         content: "";
