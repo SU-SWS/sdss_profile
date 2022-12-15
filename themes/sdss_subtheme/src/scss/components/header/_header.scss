@@ -256,6 +256,12 @@
       padding-left: 1em;
     }
   }
+
+  .fixed-header.su-lockup--option-b {
+    .su-lockup__line2 {
+      line-height: 1em;
+    }
+  }
 }
 
 // Removed line 5 from all displays
