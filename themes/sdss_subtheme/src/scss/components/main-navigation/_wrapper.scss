@@ -3,7 +3,8 @@
 .su-masthead {
   > section:last-of-type {
     @include grid-media('lg') {
-      @include padding(3.4rem null null null);
+      display: grid;
+      padding: 0;
     }
   }
 }

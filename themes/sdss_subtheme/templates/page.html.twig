@@ -11,11 +11,12 @@
 {# Masthead Section. #}
 {%- block block_header -%}
   {%- if page.header or page.search or page.menu -%}
-    <header class="su-masthead su-masthead--right">
-      <section>
+    <header class="su-masthead su-masthead--right ">
+      <section class="sdss-masthead">
         {{ page.header }}
         {{ page.search }}
         {{ page.menu }}
+        <a href="/search" id="sdss-button--search-link" class="su-site-search__submit"><span class="visually-hidden">Search</span></a>
       </section>
     </header>
   {%- endif -%}
