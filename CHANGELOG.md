@@ -1,5 +1,29 @@
 # SDSS Profile
 
+1.1.2
+--------------------------------------------------------------------------------
+_Release Date: 2022-12-15_
+
+- SDSS-385-386-391: Changes to the masthead and header. (#90)
+- SDSS-386: Styling of the local header on the main school site
+- SDSS-385: Styling and interaction of the "site search" icon needs to be updated
+- SDSS-391: Styling of the local header on multi-sites
+- Implement staging requests and prep for prod deploy (#93)
+- Added codeCoverageIgnoreEnd to stanford_basic/theme-settings.php to fix test.
+- Removed more patches moved to drupal-patches.
+- Dropped source label from news source field displays.
+- Allow auto-creating news source terms from edit page.
+- SDSS-363: Replaced dek with dek long in news list view pattern. (#84)
+- SDSS-363: Updated Dek field to Dek (Long) in News List display.
+- SDSS-412: Updated styling on News List and Teaser display to use the new Dek (Long) field .
+- SDSS-381: Front-end styling to News item. reorder date field, add News source field
+- SDSS-398: Updated stanford_circle mask image path. (#91)
+- Added jsonapi_hypermedia module (#92)
+- Added jsonapi_hypermedia module to fix dependency issue.
+- Removed patches added to su-sws/drupal-patches.
+- Removed outdated decoupled_router patch.
+
+
 1.1.1
 --------------------------------------------------------------------------------
 _Release Date: 2022-11-21_
