@@ -142,8 +142,20 @@
 .su-multi-menu {
   &.su-multi-menu--dropdowns {
     .su-multi-menu__menu-lv1 {
+
+      @include grid-media-min('lg') {
+        >.su-multi-menu__item--parent:last-of-type {
+          margin: 0;
+        }
+      }
+
+
       >.su-multi-menu__item--parent {
         margin: 0 40px 0 0;
+
+        >.su-multi-menu__item--parent:last-of-type {
+          margin: 0;
+        }
 
         >.su-multi-menu__link {
 
@@ -217,16 +229,19 @@
 // End Mobile Style.
 
 @include grid-media-min('lg') {
-  .su-multi-menu__menu-lv1 {
-    .su-nav-toggle:before {
-      content: "";
-      background: $sdss-color-green-link url("#{$su-image-path}/caret-down-white.svg") no-repeat 50%/50%;
-      height: 30px;
-      width: 30px;
-      display: block;
-      position: absolute;
-      top: 5px;
-      right: 2px;
+  .su-multi-menu__menu {
+    &.su-multi-menu__menu-lv1 {
+
+      .su-nav-toggle:before {
+        content: "";
+        background: $sdss-color-green-link url("#{$su-image-path}/caret-down-white.svg") no-repeat 50%/50%;
+        height: 30px;
+        width: 30px;
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 2px;
+      }
     }
   }
 }
@@ -319,7 +334,7 @@
       &::before {
 
         content: "";
-        background: $sdss-color-white url("#{$su-image-path}/caret-down-black.svg") no-repeat center / 50%;
+        background: transparent url("#{$su-image-path}/caret-down-black.svg") no-repeat center / 50%;
         background-size: 15px;
         border-radius: 19px;
         top: 5px;
@@ -375,7 +390,7 @@
 
         &:active {
           &::before {
-            background: $sdss-color-white url("#{$su-image-path}/caret-down-black.svg") no-repeat center / 50%;
+            background: transparent url("#{$su-image-path}/caret-down-black.svg") no-repeat center / 50%;
             border-radius: 19px;
           }
         }
@@ -388,7 +403,7 @@
         }
 
         &::before {
-          background: $sdss-color-white url("#{$su-image-path}/caret-down-black.svg") no-repeat center / 50%;
+          background: transparent url("#{$su-image-path}/caret-down-black.svg") no-repeat center / 50%;
           border-radius: 19px;
 
           @include grid-media-max('md') {

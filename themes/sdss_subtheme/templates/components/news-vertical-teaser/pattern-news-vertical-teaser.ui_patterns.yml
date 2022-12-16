@@ -12,6 +12,11 @@ sdss-news-vertical-teaser:
       label: "Headline"
       description: "Text heading"
       preview: "This is a headline"
+    news_list_publishing_date:
+      type: text
+      label: "Date"
+      description: "Publishing date"
+      preview: "This is the published date."
     news_topics:
       type: text
       label: "Topics"
@@ -30,6 +35,11 @@ sdss-news-vertical-teaser:
     news_url:
       type: text
       label: "URL for item"
+      description: "URL for image and heading"
+      preview: "http://www.stanford.edu/"
+    news_external_url:
+      type: text
+      label: "External URL for item"
       description: "URL for image and heading"
       preview: "http://www.stanford.edu/"
     news_footer:
