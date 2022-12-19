@@ -1,5 +1,18 @@
 # SDSS Profile
 
+
+1.1.4
+--------------------------------------------------------------------------------
+_Release Date: 2022-12-19_
+
+- SDSS-435: Configured fast_404 and page_cache_query_ignore (#103)
+- Added page_cache_query_ignore module.
+- Updated smart_trim and editoria11y module constraints.
+- Updated editoria11y configuration.
+- Enabled page_cache_query_ignore module and exported configuration.
+- SDSS-247: Removed trim from external url field on news card display. (#102)
+
+
 1.1.3
 --------------------------------------------------------------------------------
 _Release Date: 2022-12-15_
