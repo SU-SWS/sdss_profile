@@ -16,14 +16,18 @@ function sdss_subtheme_preprocess_html(&$variables) {
 /**
  * Implements hook_preprocess_page().
  */
-function sdss_subtheme_preprocess_page(&$variables) {
-  $variables['options_settings']['stanford_basic_lockup']['lockup'] = theme_get_setting('lockup.option');
-  dpm($variables);
 
-  $logo_option = $variables['options_settings']['stanford_basic_lockup']['lockup'] = theme_get_setting('lockup.option');
+ /**
+ * Prepares variables for the page.html.twig template.
+ * To apply the lockup options to header.
+ */
 
-    dpm($logo_option);
+function sdss_subtheme_preprocess_page(&$variables, $hook) {
+  $header_logo_option = theme_get_setting('lockup.option');
+
+  $variables['header_logo_option'] = $header_logo_option;
 }
+
 
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
