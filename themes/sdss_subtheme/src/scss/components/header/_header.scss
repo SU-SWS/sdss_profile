@@ -138,7 +138,7 @@
 @include grid-media-min('lg') {
   .fixed-header.su-lockup--option-a,
   .fixed-header.su-lockup--option-b {
-    margin: 0 auto;
+    // margin: 0 auto;
     line-height: 2em;
     padding: 0;
 
@@ -248,14 +248,50 @@
 }
 
 // SDSS other sites header responsive tweak.
-@include grid-media-max('lg') {
+@include grid-media-max('md') {
+  .su-masthead>section:last-of-type {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
   .fixed-header.su-lockup--option-a,
   .fixed-header.su-lockup--option-b {
-    .su-masthead .su-lockup--option-a .su-lockup__cell2 {
-      border-left: none;
-      padding-bottom: 1em;
-      padding-left: 1em;
+    .su-lockup--option-a {
+      .su-lockup__cell2 {
+        border-left: none;
+        padding-bottom: 1em;
+        padding-left: 1em;
+      }
     }
+
+
+    // Header color outside in the margins.
+    section {
+      position: relative; /* child absolute */
+      background-color: $sdss-color-palo-alto-dark;
+    }
+
+    section {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        /* fill vertically */
+        top: 0;
+        bottom: 0;
+        width: 9600px;
+        right: 90%;
+        background: $su-color-white;
+      }
+    }
+
+    section {
+      &::after {
+        left: 100%;
+        background: $sdss-color-palo-alto-dark;
+      }
+    }
+
   }
 
   .fixed-header.su-lockup--option-b {
@@ -265,11 +301,36 @@
   }
 }
 
+// SDSS other sites header responsive tweak.
+@include grid-media-max('xs') {
+  .fixed-header.su-lockup--option-a,
+  .fixed-header.su-lockup--option-b {
+    .su-masthead .su-lockup--option-a .su-lockup__cell2 {
+      padding-left: 0;
+    }
+  }
+
+  .fixed-header.su-lockup--option-a {
+    .su-lockup__line1 {
+      margin-left: 0;
+    }
+  }
+}
+
 // Removed line 5 from all displays
 .fixed-header.su-lockup--option-a,
 .fixed-header.su-lockup--option-b {
   .su-lockup__line5 {
     display: none;
+  }
+}
+
+// Remove the brand-bar link to right for main site.
+.su-lockup.su-lockup--option-none {
+  .su-brand-bar__container {
+    > span {
+      display: none;
+    }
   }
 }
 

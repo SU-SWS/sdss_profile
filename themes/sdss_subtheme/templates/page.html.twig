@@ -13,7 +13,7 @@
 
 {# Template Paths #}
 {%- if template_brand_bar is empty -%}
-  {%- set template_brand_bar = "@basic-dist/decanter/components/brand-bar/brand-bar.twig" -%}
+  {%- set template_brand_bar = "@sdss_subtheme/components/brand-bar/brand-bar.html.twig" -%}
 {%- endif -%}
 
 {%- if template_global_footer is empty -%}
@@ -26,10 +26,8 @@
 {%- set brand_bar_variant = "su-brand-bar--dark" -%}
 
 {# Header Wrapper #}
-{%- set header_variant = 'option-' ~ header_logo_option -%}
-{% set data = data ~ 'foo' %}
-
-<div class="fixed-header {{ header_variant }}">
+{%- set header_variant = 'su-lockup--option-' ~ header_logo_option -%}
+<div class="fixed-header su-lockup {{ header_variant }}">
 
 {# Brand Bar #}
 {%- block block_brandbar -%}
@@ -45,7 +43,7 @@
 {%- block block_header -%}
   {%- if page.header or page.search or page.menu -%}
     <header class="su-masthead su-masthead--right">
-      <section>
+      <section class="sdss-masthead">
         {{ page.header }}
         {{ page.search }}
         {{ page.menu }}
