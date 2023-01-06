@@ -90,12 +90,12 @@
   }
 
   @include grid-media-min('md') {
-    font-size: 44px;
+    font-size: 52px;
     line-height: 120%;
   }
 
   @include grid-media-min('lg') {
-    font-size: 56px;
+    font-size: 52px;
     line-height: 120%;
   }
 }
@@ -108,12 +108,12 @@
   }
 
   @include grid-media-min('md') {
-      font-size: 32px;
+      font-size: 41px;
       line-height: 120%;
   }
 
   @include grid-media-min('lg') {
-      font-size: 40px;
+      font-size: 41px;
       line-height: 120%;
   }
 }
@@ -142,12 +142,12 @@
   }
 
   @include grid-media-min('md') {
-    font-size: 18px;
+    font-size: 26px;
     line-height: 130%;
   }
 
   @include grid-media-min('lg') {
-      font-size: 24px;
+      font-size: 26px;
       line-height: 130%;
   }
 }
