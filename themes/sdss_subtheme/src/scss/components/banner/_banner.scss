@@ -72,6 +72,10 @@
       .su-hero__card {
         background: $sdss-color-black-dark;
         max-width: 100%;
+
+        .su-card__contents {
+          display: block;
+        }
       }
     }
   }
