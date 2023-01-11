@@ -33,6 +33,14 @@ banner_variant_info:  # part of the key after the :
   bundles:
     - paragraphs_type|stanford_banner
   config:
+    banner_list_size:
+      type: select
+      title: 'Banner Height'
+      description: 'Select the height for the banner.'
+      options:
+        sdss-banner-wrapper--height-default: Default
+        sdss-banner-wrapper--height-center: Modest
+        sdss-banner-wrapper--height-center: Tall
     banner_list_style:
       type: select
       title: 'Banner Style'
