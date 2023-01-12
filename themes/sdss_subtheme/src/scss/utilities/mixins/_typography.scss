@@ -68,7 +68,7 @@
 
 @mixin sdss-h1 {
   @include grid-media-max('sm') {
-    font-size: 40px;
+    font-size: 45px;
     line-height: 120%;
   }
 
@@ -85,42 +85,41 @@
 
 @mixin sdss-h2 {
   @include grid-media-max('sm') {
-    font-size: 40px;
+    font-size: 37px;
     line-height: 120%;
   }
 
   @include grid-media-min('md') {
-    font-size: 44px;
+    font-size: 52px;
     line-height: 120%;
   }
 
   @include grid-media-min('lg') {
-    font-size: 56px;
+    font-size: 52px;
     line-height: 120%;
   }
 }
 
 @mixin sdss-h3 {
-
   @include grid-media-max('sm') {
-    font-size: 32px;
+    font-size: 31px;
     line-height: 120%;
   }
 
   @include grid-media-min('md') {
-      font-size: 32px;
+      font-size: 41px;
       line-height: 120%;
   }
 
   @include grid-media-min('lg') {
-      font-size: 40px;
+      font-size: 41px;
       line-height: 120%;
   }
 }
 
 @mixin sdss-h4 {
   @include grid-media-max('sm') {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 120%;
   }
 
@@ -137,17 +136,17 @@
 
 @mixin sdss-h5 {
   @include grid-media-max('sm') {
-    font-size: 18px;
+    font-size: 21px;
     line-height: 130%;
   }
 
   @include grid-media-min('md') {
-    font-size: 18px;
+    font-size: 26px;
     line-height: 130%;
   }
 
   @include grid-media-min('lg') {
-      font-size: 24px;
+      font-size: 26px;
       line-height: 130%;
   }
 }
