@@ -87,7 +87,7 @@ class BasicPageCest {
   }
 
   /**
-   * There should be Page Metadata fields
+   * Test description metadata.
    */
   public function testPageDescription(AcceptanceTester $I) {
     $title = $this->faker->words(3, TRUE);
