@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-//SDSS other site header - Green
+// SDSS other site header - Green
+// Correcting display of main menu bar.
 .fixed-header {
   &.su-lockup.su-lockup--option-a {
     display: unset;
@@ -134,11 +135,10 @@
   }
 }
 
-// SDSS other sites header
+// SDSS other sites (depts/institutes) header
 @include grid-media-min('lg') {
   .fixed-header.su-lockup--option-a,
   .fixed-header.su-lockup--option-b {
-    // margin: 0 auto;
     line-height: 2em;
     padding: 0;
 
@@ -247,11 +247,54 @@
   }
 }
 
-// SDSS other sites header responsive tweak.
+// SDSS other sites (depts/institutes) header responsive tweak.
 @include grid-media-max('md') {
+  .fixed-header.su-lockup--option-a,
+  .fixed-header.su-lockup--option-b {
+    .su-multi-menu {
+      .su-multi-menu__nav-toggle {
+        color: $su-color-white;
+
+        &::after {
+          @include margin(0 auto);
+          display: inline-block;
+          width: 30px;
+          height: 26px;
+          background: url("#{$su-image-path}/hamburger-white.svg") no-repeat 3px 0;
+          content: "";
+        }
+
+        &:focus,
+        &:hover {
+          &:before {
+            background-color: $su-color-white;
+          }
+        }
+
+        &[aria-expanded=true] {
+          &:before {
+            background-color: $su-color-white;
+          }
+
+          &:focus,
+          &:hover {
+            &:before {
+              background-color: $su-color-white;
+            }
+          }
+
+          &::after {
+            width: 22px;
+            background: url("#{$su-image-path}/close-white.svg") no-repeat 3px 0;
+            background-size: 16px 16px;
+          }
+        }
+      }
+    }
+  }
+
   .su-masthead>section:last-of-type {
-    margin-top: 0;
-    padding-top: 0;
+    padding-top: 2rem;
   }
 
   .fixed-header.su-lockup--option-a,
@@ -264,6 +307,15 @@
       }
     }
 
+    .su-lockup__cell1,
+    .su-lockup__cell2 {
+      border: none;
+    }
+
+    .su-lockup__line1,
+    .su-lockup__line2 {
+      color: $su-color-white;
+    }
 
     // Header color outside in the margins.
     section {
@@ -280,7 +332,7 @@
         top: 0;
         bottom: 0;
         width: 9600px;
-        right: 90%;
+        right: calc(100% - 160px);
         background: $su-color-white;
       }
     }
@@ -301,7 +353,7 @@
   }
 }
 
-// SDSS other sites header responsive tweak.
+// SDSS other sites (depts/institutes) header responsive tweak.
 @include grid-media-max('xs') {
   .fixed-header.su-lockup--option-a,
   .fixed-header.su-lockup--option-b {
@@ -313,6 +365,22 @@
   .fixed-header.su-lockup--option-a {
     .su-lockup__line1 {
       margin-left: 0;
+    }
+  }
+}
+
+// SDSS other sites (depts/institutes) header responsive tweak.
+@include grid-media-max('sm') {
+  .fixed-header.su-lockup--option-a,
+  .fixed-header.su-lockup--option-b {
+    .su-lockup {
+      a {
+        align-items: center;
+        display: inline-flex;
+        gap: 20px;
+        justify-content: flex-start;
+        vertical-align: bottom;
+      }
     }
   }
 }
