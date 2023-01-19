@@ -51,10 +51,10 @@ function sdss_subtheme_form_system_theme_settings_alter(array &$form, FormStateI
     '#title' => t('Lockup Options'),
     '#options' => [
       'none' => t('Logo Only'),
-      'a' => t('Option A'),
-      'b' => t('Option B'),
+      'a' => t('Option A: Line 1-site title'),
+      'b' => t('Option B: Line 1-super header, Line 2-site title'),
     ],
-    '#default_value' => theme_get_setting('lockup.option') ?? 'a',
+    '#default_value' => theme_get_setting('lockup.option') ?? 'b',
     '#description' => t("Layout options."),
   ];
 

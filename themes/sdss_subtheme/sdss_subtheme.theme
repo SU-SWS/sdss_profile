@@ -23,9 +23,17 @@ function sdss_subtheme_preprocess_html(&$variables) {
  */
 
 function sdss_subtheme_preprocess_page(&$variables, $hook) {
+  $variables['hello'] = \Drupal::config('system.site')->get('lockup_settings');
+
+
+  $variables['lockup_option'] = \Drupal::config('config_pages')->get('lockup_settings.su_lockup_options');
+
+
   $header_logo_option = theme_get_setting('lockup.option');
 
   $variables['header_logo_option'] = $header_logo_option;
+
+  dpm($variables);
 }
 
 
