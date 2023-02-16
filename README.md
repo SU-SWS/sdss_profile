@@ -1,3 +1,14 @@
+# SDSS PROFILE -- OLD
+
+## DEPRECATED
+
+As of **2023-02-15** this repo has been deprecated. The `sdss_profile` has been consolidated into the [ace-sdssgryphon](https://github.com/SU-SWS/ace-sdssgryphon) repo.
+
+Original README continues below.
+
+***
+
+
 # [SDSS Profile](https://github.com/SU-SWS/sdss_profile)
 ##### 1.x
 [![CircleCI](https://circleci.com/gh/SU-SWS/sdss_profile.svg?style=svg)](https://circleci.com/gh/SU-SWS/sdss_profile)
